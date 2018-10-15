@@ -3,8 +3,8 @@
 |------|----|-------|
 |name|string|null: false|
 |email|integer|null: false, unique: true|
-|image|string|index: true|
-|cover_image|string|index: true|
+|image|string|
+|cover_image|string|
 ### Association
 - belongs_to :introduction
 - has_many :projects, :through: project_members
