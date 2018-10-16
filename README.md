@@ -8,7 +8,9 @@
 ### Association
 - belongs_to :introduction
 - has_many :projects, :through: project_members
+- has_many :projects_members
 - has_many :settings
+
 ## introductionsテーブル
 |Column|Type|Options|
 |------|----|-------|
@@ -118,8 +120,8 @@
 ## languagesテーブル
 |Column|Type|Options|
 |------|----|-------|
-|can_language|string|null :false, foreign_key: true|
-|level|string|foreign_key: true|
+|can_language|integer(enum)|null :false, foreign_key: true|
+|level|integer(enum)|foreign_key: true|
 ### Association
 - belongs_to :introduction
 
@@ -174,7 +176,7 @@
 ## topicsテーブル
 |Column|Type|Options|
 |------|----|-------|
-|topic|string||
+|topic|integer(enum)||
 |user_id|integer|foreign_key: true|
 ### Association
 - belongs_to :introduction
@@ -182,21 +184,21 @@
 ## informationテーブル
 |Column|Type|Options|
 |------|----|-------|
-|sex|string|foreign_key: true|
+|sex|integer(enum)|foreign_key: true|
 |date|date|foreign_key: true|
-|unmarried|string|foreign_key: true|
-|children|string|foreign_key: true|
+|unmarried|integer(enum)|foreign_key: true|
+|children|integer(enum)|foreign_key: true|
 ### Association
 - belongs_to :introduction
 
 ## settingsテーブル
 |Column|Type|Options|
 |------|----|-------|
-|display_laguage|srtring|null :false|
-|living|string|null: false|
+|display_laguage|integer(enum)|null :false|
+|living|integer(enum)|null: false|
 |scout_span|text|
 |rejection_company|text|
-|search results|integer|null: false|
-|alert|integer|null: false|
+|search results|integer(enum)|null: false|
+|alert|integer(enum)|null: false|
 ### Association
 - belongs_to :user
