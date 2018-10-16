@@ -7,9 +7,9 @@
 |cover_image|string|
 ### Association
 - belongs_to :introduction
-- has_many :projects, :through: project_members
-- has_many :projects_members
-- has_many :settings
+- has_many :projects, :through: project_members, dependent: :destroy
+- has_many :projects_members, dependent: :destroy
+- has_many :settings, dependent: :destroy
 
 ## introductionsテーブル
 |Column|Type|Options|
@@ -34,34 +34,34 @@
 |file|text|index: true|
 ### Association
 - belongs_to :user
-- has_many :school_historys
-- has_many :seminars
-- has_many :clubs
-- has_many :work_historys
-- has_many :projects
-- has_many :skill
-- has_many :languages
-- has_many :award_historys
-- has_many :writing_historys
-- has_many :portfolios
-- has_many :youtubes
-- has_many :topics
-- has_many :informations
+- has_many :school_historys, dependent: :destroy
+- has_many :seminars, dependent: :destroy
+- has_many :clubs, dependent: :destroy
+- has_many :work_historys, dependent: :destroy
+- has_many :projects, dependent: :destroy
+- has_many :skill, dependent: :destroy
+- has_many :languages, dependent: :destroy
+- has_many :award_historys, dependent: :destroy
+- has_many :writing_historys, dependent: :destroy
+- has_many :portfolios, dependent: :destroy
+- has_many :youtubes, dependent: :destroy
+- has_many :topics, dependent: :destroy
+- has_many :informations, dependent: :destroy
 
 ## school_historysテーブル
 |Column|Type|Options|
 |------|----|-------|
-|schoolname|string|null :false, foreign_key: true|
-|department|string|foreign_key: true|
-|graduate|date|foreign_key: true|
-|research_content|text|
+|schoolname|string||
+|department|string||
+|graduate|date||
+|research_content|text||
 ### Association
 - belongs_to :introduction
 
 ## seminarsテーブル
 |Column|Type|Options|
 |------|----|-------|
-|name|string|null :false, foreign_key: true|
+|name|string||
 |url|text|
 |period|date|foreign_key: true|
 |information|text|
@@ -71,35 +71,35 @@
 ## clubsテーブル
 |Column|Type|Options|
 |------|----|-------|
-|name|string|null :false, foreign_key: true|
-|url|text|
-|period|date|foreign_key: true|
-|information|text|
+|name|string||
+|url|text||
+|period|date||
+|information|text||
 ### Association
 - belongs_to :introduction
 
 ## work_historysテーブル
 |Column|Type|Options|
 |------|----|-------|
-|company_name|string|null :false, foreign_key: true|
-|position|string|foreign_key: true|
-|company_period|date|foreign_key: true|
-|company_information|text|
+|company_name|string||
+|position|string||
+|company_period|date||
+|company_information|text||
 ### Association
 - belongs_to :introduction
 
 ## projectsテーブル
 |Column|Type|Options|
 |------|----|-------|
-|name|string|null :false, foreign_key: true|
-|url|text|
-|period|date|foreign_key: true|
-|information|text|
+|name|string||
+|url|text||
+|period|date||
+|information|text||
 |user_id|integer|foreign_key: true|
 ### Association
 - belongs_to :introduction
-- has_many :users, :through: project_members
-- has_many :project_members
+- has_many :users, :through: project_members, dependent: :destroy
+- has_many :project_members, dependent: :destroy
 
 ## project_membersテーブル
 |Column|Type|Options|
@@ -113,39 +113,39 @@
 ## skillテーブル
 |Column|Type|Options|
 |------|----|-------|
-|skill|string|foreign_key: true|
+|skill|string||
 ### Association
 - belongs_to :introduction
 
 ## languagesテーブル
 |Column|Type|Options|
 |------|----|-------|
-|can_language|integer(enum)|null :false, foreign_key: true|
-|level|integer(enum)|foreign_key: true|
+|can_language|integer(enum)||
+|level|integer(enum)||
 ### Association
 - belongs_to :introduction
 
 ## qualificationsテーブル
 |Column|Type|Options|
 |------|----|-------|
-|name|string|null :false, foreign_key: true|
-|get_date|date|foreign_key: true|
+|name|string||
+|get_date|date||
 ### Association
 - belongs_to :introduction
 
 ## award_historysテーブル
 |Column|Type|Options|
 |------|----|-------|
-|year|date|foreign_key: true|
-|title|string|foreign_key: true|
+|year|date||
+|title|string||
 ### Association
 - belongs_to :introduction
 
 ## writing_historysテーブル
 |Column|Type|Options|
 |------|----|-------|
-|date|date|foreign_key: true|
-|title|string|foreign_key: true|
+|date|date||
+|title|string||
 |url|text|
 ### Association
 - belongs_to :introduction
@@ -154,10 +154,10 @@
 |Column|Type|Options|
 |------|----|-------|
 |image|text|index: true|
-|name|string|foreign_key: true|
+|name|string||
 |url|text|
 |information|text|
-|date|date|foreign_key: true|
+|date|date||
 ### Association
 - belongs_to :introduction
 
@@ -165,11 +165,10 @@
 |Column|Type|Options|
 |------|----|-------|
 |url|text|
-|name|string|foreign_key: true|
+|name|string||
 |relation_url|text|
 |information|text|
-
-|date|date|foreign_key: true|
+|date|date||
 ### Association
 - belongs_to :introduction
 
@@ -184,10 +183,10 @@
 ## informationテーブル
 |Column|Type|Options|
 |------|----|-------|
-|sex|integer(enum)|foreign_key: true|
-|date|date|foreign_key: true|
-|unmarried|integer(enum)|foreign_key: true|
-|children|integer(enum)|foreign_key: true|
+|sex|integer(enum)|null: false|
+|date|date|null: false|
+|unmarried|integer(enum)||
+|children|integer(enum)||
 ### Association
 - belongs_to :introduction
 
