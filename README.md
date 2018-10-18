@@ -14,6 +14,7 @@
 ## introductionsテーブル
 |Column|Type|Options|
 |------|----|-------|
+|user_id|integer|null: false, foreign_key:true|
 |introduction|text|
 |will|text|
 |school_historys_id|integer|foreign_key: true|
@@ -51,6 +52,7 @@
 ## school_historysテーブル
 |Column|Type|Options|
 |------|----|-------|
+|user_id|integer|null: false, foreign_key:true|
 |schoolname|string||
 |department|string||
 |graduate|date||
@@ -61,6 +63,7 @@
 ## seminarsテーブル
 |Column|Type|Options|
 |------|----|-------|
+|user_id|integer|null: false, foreign_key:true|
 |name|string||
 |url|text|
 |period|date|foreign_key: true|
@@ -71,6 +74,7 @@
 ## clubsテーブル
 |Column|Type|Options|
 |------|----|-------|
+|user_id|integer|null: false, foreign_key:true|
 |name|string||
 |url|text||
 |period|date||
@@ -81,6 +85,7 @@
 ## work_historysテーブル
 |Column|Type|Options|
 |------|----|-------|
+|user_id|integer|null: false, foreign_key:true|
 |company_name|string||
 |position|string||
 |company_period|date||
@@ -91,6 +96,7 @@
 ## projectsテーブル
 |Column|Type|Options|
 |------|----|-------|
+|user_id|integer|null: false, foreign_key:true|
 |name|string||
 |url|text||
 |period|date||
@@ -113,6 +119,7 @@
 ## skillテーブル
 |Column|Type|Options|
 |------|----|-------|
+|user_id|integer|null: false, foreign_key:true|
 |skill|string||
 ### Association
 - belongs_to :introduction
@@ -120,6 +127,7 @@
 ## languagesテーブル
 |Column|Type|Options|
 |------|----|-------|
+|user_id|integer|null: false, foreign_key:true|
 |can_language|integer(enum)||
 |level|integer(enum)||
 ### Association
@@ -128,6 +136,7 @@
 ## qualificationsテーブル
 |Column|Type|Options|
 |------|----|-------|
+|user_id|integer|null: false, foreign_key:true|
 |name|string||
 |get_date|date||
 ### Association
@@ -136,6 +145,7 @@
 ## award_historysテーブル
 |Column|Type|Options|
 |------|----|-------|
+|user_id|integer|null: false, foreign_key:true|
 |year|date||
 |title|string||
 ### Association
@@ -144,6 +154,7 @@
 ## writing_historysテーブル
 |Column|Type|Options|
 |------|----|-------|
+|user_id|integer|null: false, foreign_key:true|
 |date|date||
 |title|string||
 |url|text|
@@ -153,6 +164,7 @@
 ## portfoliosテーブル
 |Column|Type|Options|
 |------|----|-------|
+|user_id|integer|null: false, foreign_key:true|
 |image|text|index: true|
 |name|string||
 |url|text|
@@ -183,6 +195,7 @@
 ## informationテーブル
 |Column|Type|Options|
 |------|----|-------|
+|user_id|integer|null: false, foreign_key:true|
 |sex|integer(enum)|null: false|
 |date|date|null: false|
 |unmarried|integer(enum)||
@@ -193,6 +206,7 @@
 ## settingsテーブル
 |Column|Type|Options|
 |------|----|-------|
+|user_id|integer|null: false, foreign_key:true|
 |display_laguage|integer(enum)|null :false|
 |living|integer(enum)|null: false|
 |scout_span|text|
