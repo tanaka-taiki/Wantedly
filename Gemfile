@@ -58,4 +58,4 @@ gem 'sprockets', '>= 2.11.0'
 gem 'devise'
 gem 'haml-rails'
 gem 'erb2haml'
-
+gem 'font-awesome-rails'

@@ -1,0 +1,468 @@
+.main
+  .main-inner
+    .user-profile-wrapper
+      .user-profile-header
+        .user-profile-cover-header
+          .user-profile-cover-header__image
+        .profile-header-wrapper
+          %a.profile-header-wrapper__check{:href => "users/id"}
+            自分のプロフィール画面を確認する
+          %i.profile-header-wrapper__icon
+            = fa_icon 'arrow-alt-circle-right', class: 'icon'
+          .profile-header-wrapper-image
+            .add-cover-photo-wrapper
+              .add-cover-photo-link
+                %a.add-cover-photo-link__icon-picture
+                  = fa_icon 'image'
+                %i.add-cover-photo-link__character{:href => "users/id"}
+                  カバー写真を変更
+          .profile-header-cover
+            .profile-photo-box
+              .profile-photo
+                %a.profile-photo__photo
+              .edit-photo
+                %a.profile-photo__icon-camera
+                  = fa_icon 'camera'
+                %i.profile-photo__character
+                  写真を変更
+            .user-name-tags
+              .profile-name-top
+                .name-and-tagline
+                  %i.name-and-tagline__name
+                    濟川奈津美
+                .tagline-wrapper
+                  %span.tagline-wrapper__quot
+                    = fa_icon 'quote-right'
+                  %a.tagline-wrapper__text
+                    キャッチコピーを入力する
+                  %span.tagline-wrapper__quot-end
+                    = fa_icon 'quote-left'
+                .user-social-profiles
+                  %a.edit-profile-button
+                    %i.icon-pencil
+                      = fa_icon 'pencil-alt'
+                  %span.social-preference
+                    .privacy-mode
+                      .data-qtip-users
+                        .selection
+                          = fa_icon 'users'
+                        %span.arrow
+                          %i.icon-caret-down
+                            = fa_icon 'caret-down'
+                  .user-sns
+                    .user-sns__lists
+                      %li.facebook
+                        %a.ui-show-modal
+                          %i.icon-facebook
+                            = fa_icon 'facebook-f'
+                      %li.twitter
+                        %a.ui-show-modal
+                          %i.icon-twitter
+                            = fa_icon 'twitter'
+                      %li.googleplus
+                        %a.ui-show-modal
+                          %i.icon-google-plus
+                            = fa_icon 'google-plus-g'
+                      %li.linkedin
+                        %a.ui-show-modal
+                          %i.icon-linkedin
+                            = fa_icon 'linkedin-in'
+                      %li.github
+                        %a.ui-show-modal
+                          %i.icon-github
+                            = fa_icon 'github'
+                      %li.hatena
+                        %a.ui-show-modal
+                          %i.wt-icon.wt-icon-hatena
+                            = fa_icon 'bold'
+              .user-tags-bottom
+                .user-tags-bottom-inner
+                  %ul.user-tags
+                    %li.job-title
+                      %a.job-title__icon
+                        = fa_icon 'briefcase'
+                      %i.job-title__character
+                        その他
+                    %li.user-location
+                      %a.user-location__icon
+                        = fa_icon 'map-marker-alt'
+                      %i.user-location__character
+                        東京都  板橋区
+                  .setting-and-edit
+                    .edit-profile
+                      %a.edit-profile__icon
+                        = fa_icon 'pencil-alt'
+                      %i.edit-profile__character
+                        編集する
+                    .social-privacy-mode
+                      .data-qtip
+                        = fa_icon 'globe'
+                        %span.social-arrow
+                          %a.icon-caret-down
+                            = fa_icon 'caret-down'
+      .user-profile-bottom
+        .two-column
+          .column-main
+            .column-main-inner
+              .user-progress-section
+                .progress-container
+                  .progress-label
+                    %i.progress-label__character
+                      プロフィール完成度
+                    %span.progress-label__percent
+                      50%
+                  .progress-holder
+                    .progress-bar
+                .user-alert-section
+                  .alert-container
+                    %ul
+                      %li
+                        %p
+                          「職歴」を入力すると、あなたのこれまでの経験が伝わります
+                .user-next-steps-section
+                  %ul.steps
+                    %li.nextstep
+                      %i.nextstep__icon
+                        = fa_icon 'plus-circle'
+                      %a.nextstep__character
+                        インターン歴を追加する
+                      %p.step-comment
+                        その他1件の項目
+                .user-cover-post-section
+                  .user-cover-post
+                    .cover-post-inner
+                      %a.cover-post-inner__icon-pencil-paper
+                        = fa_icon 'plus'
+                      %i.cover-post-inner__character
+                        ストーリーを設定する
+                %section.user-introduction-section
+                  %h2 紹介文
+                  .setting-and-edit
+                    %span.button
+                      .button__icon
+                        = fa_icon 'pencil-alt'
+                      .button__character
+                        編集する
+                    .privacy-mode
+                      .button
+                        %span.selection
+                          = fa_icon 'users'
+                        %span.arrow
+                          %i.arrow__icon
+                            = fa_icon 'caret-down'
+                  %p.editable-attribute
+                %section.user-statement-section
+                  %h2 このさきやってみたいこと
+                  .setting-and-edit
+                    %span.button
+                      %a.button__icon
+                        = fa_icon 'pencil-alt'
+                      %i.button__character
+                        編集する
+                    .privacy-mode
+                      .button
+                        %span.selection
+                          = fa_icon 'users'
+                        %span.arrow
+                          %a.arrow__icon
+                            = fa_icon 'caret-down'
+                  %p.editable-attribute
+                %section.user-education-section
+                  %h2 学歴
+                  .setting-and-edit
+                    %span.button
+                      %a.button__icon
+                        = fa_icon 'plus-circle'
+                      %i.button__character
+                        追加する
+                    .privacy-mode
+                      .button
+                        %span.selection
+                          = fa_icon 'users'
+                        %span.arrow
+                          %i.arrow__icon
+                            = fa_icon 'caret-down'
+                  %p.editable-attribute
+                %section.user-seminar-section
+                  %h2 研究室・ゼミ
+                  .setting-and-edit
+                    %span.button
+                      %a.button__icon
+                        = fa_icon 'plus-circle'
+                      %i.button__character
+                        追加する
+                    .privacy-mode
+                      .button
+                        %span.selection
+                          = fa_icon 'users'
+                        %span.arrow
+                          %a.arrow__icon
+                            = fa_icon 'caret-down'
+                  %p.editable-attribute
+                %section.user-volunteering-section
+                  %h2 部活・サークル・ボランティア
+                  .setting-and-edit
+                    %span.button
+                      %a.button__icon
+                        = fa_icon 'plus-circle'
+                      %i.button__character
+                        追加する
+                    .privacy-mode
+                      .button
+                        %span.selection
+                          = fa_icon 'users'
+                        %span.arrow
+                          %a.arrow__icon
+                            = fa_icon 'caret-down'
+                  %p.editable-attribute
+                %section.user-work-history-section
+                  %h2 職歴
+                  .setting-and-edit
+                    %span.button
+                      %a.button__icon
+                        = fa_icon 'plus-circle'
+                      %i.button__character
+                        追加する
+                    .privacy-mode
+                      .button
+                        %span.selection
+                          = fa_icon 'users'
+                        %span.arrow
+                          %i.icon
+                            = fa_icon 'caret-down'
+                  %p.editable-attribute
+                %section.user-work-section
+                  %h2 社内外・在学中のプロジェクト
+                  .setting-and-edit
+                    %span.button
+                      %a.button__icon
+                        = fa_icon 'plus-circle'
+                      %i.button__character
+                        追加する
+                  %ul.education.profile-entries
+                %section.skill-section
+                  %h2 スキル・特徴
+                  .setting-and-edit
+                    %small
+                      シェアして+1してもらう
+                    %a.shared
+                      %i.shared__icon
+                        = fa_icon 'share'
+                    %span.button
+                      %a.button__edit-icon
+                        = fa_icon 'pencil-alt'
+                      %i.button__edit-character
+                        編集する
+                    .edit-privacy-mode
+                      .button
+                        %span.selection
+                          = fa_icon 'globe'
+                  .editable-attribute
+                %section.language
+                  %h2  言語
+                  .setting-and-edit
+                    %span.button
+                      %a.button__icon
+                        = fa_icon 'plus-circle'
+                      %i.button__character
+                        追加する
+                    .privacy-mode
+                      .button
+                        %span.selection
+                          = fa_icon 'users'
+                        %span.arrow
+                          %a.arrow__icon
+                            = fa_icon 'caret-down'
+                  .editable-attribute
+                %section.user-certificate-section
+                  %h2 資格
+                  .setting-and-edit
+                    %span.button
+                      %a.button__icon
+                        = fa_icon 'plus-circle'
+                      %i.button__character
+                        追加する
+                    .privacy-mode
+                      .button
+                        %span.selection
+                          = fa_icon 'users'
+                        %span.arrow
+                          %a.arrow__icon
+                            = fa_icon 'caret-down'
+                  .editable-attribute
+                %section.user-awards-section
+                  %h2 受賞歴
+                  .setting-and-edit
+                    %span.button
+                      %a.button__icon
+                        = fa_icon 'plus-circle'
+                      %i.button__character
+                        追加する
+                    .privacy-mode
+                      .button
+                        %span.selection
+                          = fa_icon 'users'
+                        %span.arrow
+                          %a.arrow__icon
+                            = fa_icon 'caret-down'
+                  .editable-attribute
+                %section.user-writings-section
+                  %h2 執筆歴
+                  .setting-and-edit
+                    %span.button
+                      %a.button__icon
+                        = fa_icon 'plus-circle'
+                      %i.button__character
+                        追加する
+                    .privacy-mode
+                      .button
+                        %span.selection
+                          = fa_icon 'users'
+                        %span.arrow
+                          %a.arrow__icon
+                            = fa_icon 'caret-down'
+                  .editable-attribute
+                %section.user-portfolio-section
+                  %h2 ポートフォリオ・作品
+                  .setting-and-edit
+                    %span.button
+                      %a.button__icon
+                        = fa_icon 'plus-circle'
+                      %i.button__character
+                        追加する
+                  %p.editable-attribute
+                %section.user-links-section
+                  %h2 関連リンク
+                  .setting-and-edit
+                    %span.button
+                      %a.button__icon
+                        = fa_icon 'plus-circle'
+                      %i.button__character
+                        追加する
+                    .privacy-mode
+                      .button
+                        %span.selection
+                          = fa_icon 'users'
+                        %span.arrow
+                          %a.arrow__icon
+                            = fa_icon 'caret-down'
+                  %p.editable-attribute
+                %section.user-topics-section
+                  %h2 関心トピック
+                  .setting-and-edit
+                    %span.button
+                      %a.button__icon
+                        = fa_icon 'pencil-alt'
+                      %i.button__character
+                        編集する
+                    .privacy-mode
+                      .button
+                        %span.selection
+                          = fa_icon 'users'
+                        %span.arrow
+                          %i.arrow__icon
+                            = fa_icon 'caret-down'
+                  %p.editable-attribute
+                %section.user-private-section
+                  %h2 基本情報
+                  .setting-and-edit
+                    %span.button
+                      %a.button__.icon
+                        = fa_icon 'pencil-alt'
+                      %i.button__character
+                        編集する
+                    .privacy-mode
+                      .button
+                        %span.selection
+                          = fa_icon 'users'
+                  %p.editable-attribute
+                %section.ng-non-bindable
+                  .data-attachment-files-count
+                    .section-header
+                      %i.section-header__title
+                        添付ファイル
+                      %a.section-header__icon
+                        = fa_icon 'users'
+                    .file-base
+                      %a.file-base__icon
+                        = fa_icon 'plus'
+                      %i.file-base__character
+                        PDFをアップロード
+          .column-side
+            .column-side-inner
+              %section.user-profile-aside
+                %small
+                  あなたのプロフィールURL
+                .shared
+                  %a.shared__icon
+                .profile-url
+                  https://www.wantedly.com/users/85521318
+                .private-key
+                  %a.private-key__icon
+                    = fa_icon 'lock'
+                  %i.lock-alt__character
+                    限定公開URLを発行する
+              %section.scout-settings
+                .scout_status_form
+                  %h4  スカウトの設定
+                  %select.button
+                    %option 受け取らない
+                    %option 月5通まで受け取る
+                    %option 何通でも受け取る
+              %section.user-wantedly-score
+                .user-wantedly-score-circle
+                  %h5  ウォンテッド・スコア
+                  %p.wantedly-score
+                    13
+                .about-wantedly-score
+                  ウォンテッド・スコアとは?
+                .wantedly-score-ranking
+                  ランキング
+              %section.user-profile-aside-section
+                %h2  コンタクト情報
+                .setting-and-edit
+                  .button
+                    %a.button__icon
+                      = fa_icon 'pencil-alt'
+                    %i.button__character
+                      編集する
+                .editable-attribute
+                  %li.contact-line
+                    %a.contact-line__icon
+                      = fa_icon 'phone'
+                    %i.contact-line__character
+                      __
+                  %li.contact-line
+                    %a.contact-line__icon
+                      = fa_icon 'building'
+                    %i.contact-line__character
+                      __
+                  %li.contact-line
+                    %a.contact-line__icon
+                      = fa_icon 'envelope'
+                    %i.contact-line__character
+                      __
+                  %li.contact-line
+                    %a.contact-line__icon
+                      = fa_icon 'home'
+                    %i.contact-line__character
+                      __
+              .banner-wrapper
+                .wantedly-premium
+                  .wantedly_premium_link
+                    %img{:alt => "Premium banner", :src => "https://dubpy8abnqmkw.cloudfront.net/user_plan/wantedly_premium/premium-banner.png"}/
+                .user-experience-story-section
+                  %a{:href => "/experience_stories/new", :onclick => "ga('send', 'event', 'experienceStory', 'new', 'sidebar')"}
+                  .profile-extra-banner
+                    .overlay-inner
+                      %i.overlay-inner__title
+                        インターン体験談を投稿する
+                      %a.overlay-inner__icon
+                        = fa_icon 'arrow-circle-right'
+
+
+
+
+
+
+
