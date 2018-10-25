@@ -1,0 +1,37 @@
+.header
+  .header-inner
+    .global-header
+      .global-menu-wrapper
+        .header-logo
+          %a.header-logo__icon
+            %img{:alt => "Wantedly", :height => "44px", :src => "https://de7iszmjjjuya.cloudfront.net/assets/wantedly-logo-a0ae0c0da51ab402f4ae76a1772c19579277ec2b369fc42ea61a35c9957a2acc.svg", :width => "44px"}/
+        .global-menu
+          %li.user-menu
+            %a.recruitment
+              募集をみる
+          %li.user-menu
+            %a.feeds
+              フェードをみる
+          %li.selected.user-menu
+            %a.profile{:href => "/users/profile/edit"}プロフィール
+          %li.user-menu
+            %a.tools{:href => "/tools"}ツール
+          %li.form-bar
+            %form.search{"accept-charset" => "UTF-8", :action => "/search", :method => "get"}
+              %span.twitter-typeahead{:style => "position: relative; display: inline-block; direction: ltr;"}
+                %input#global-search.allow_submit.tt-input{:autocomplete => "off", :dir => "auto", :name => "q", :placeholder => "人や会社、募集を検索", :spellcheck => "false", :style => "position: relative; vertical-align: top;", :type => "text"}/
+                %span.tt-dropdown-menu
+              %i.wt-icon.wt-icon-search-short
+                = fa_icon 'search'
+      .user-menu-wrapper
+        %img{:alt => "Picture?height=80&width=80", :height => "40", :onerror => "this.src = \"https://dubpy8abnqmkw.cloudfront.net/images/anonymous/anonymous.png\";", :src => "https://graph.facebook.com/698893323801773/picture?height=80&width=80", :width => "40"}/
+
+      .notifications
+        %li.comment
+          = fa_icon 'comment-dots'
+        %li.flag
+          = fa_icon 'user'
+        %li.globe
+          = fa_icon 'bell'
+
+
