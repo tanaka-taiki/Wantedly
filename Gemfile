@@ -53,6 +53,10 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'pry-rails'
-gem 'compass-rails','~> 2.0'
+gem 'compass-rails', github: 'Compass/compass-rails'
 gem 'sprockets', '>= 2.11.0'
 gem 'devise'
+gem 'bootstrap'
+gem 'jquery-rails'
+gem 'haml-rails'
+gem 'erb2haml'
