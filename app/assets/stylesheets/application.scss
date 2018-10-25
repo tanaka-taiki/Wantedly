@@ -1,3 +1,12 @@
+@import "projects";
+@import "mixins/mixin";
+@import "mixins/vendor_prefix";
+@import "modules/main-header";
+@import "modules/recruit";
+@import "modules/profile";
+@import "./reset";
+@import "profiles/profile.scss";
+
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
@@ -17,3 +26,4 @@
 @import "bootstrap";
 // Custom bootstrap variables must be set or imported *before* bootstrap.
 @import "bootstrap";
+
