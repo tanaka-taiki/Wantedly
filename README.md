@@ -2,7 +2,7 @@
 |Column|Type|Options|
 |------|----|-------|
 |name|string|null: false|
-|email|integer|null: false, unique: true|
+|email|string|null: false, unique: true|
 |image|string|
 |cover_image|string|
 ### Association
