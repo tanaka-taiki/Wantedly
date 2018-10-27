@@ -6,6 +6,7 @@
   height: 100%;
   margin-bottom: 0;
   position: relative;
+  padding-top: 60px;
   width: 100%;
   .main-inner {
   	padding: 0;
@@ -148,8 +149,7 @@
 			      .user-name-tags{
 			      	width: calc(100% - 130px);
 			      	position: relative;
-			      	padding-left: 130px;
-		      	  margin-top: -120px;
+		      	  margin-top: -67px;
 			      	float: left;
 			        height: 120px;
 			        .profile-name-top{
@@ -1985,6 +1985,7 @@
 		            	  height: 24px;
 							      line-height: 26px;
 							      padding: 0 15px;
+							      margin-right: 40px;
 							      font-size: 14px;
 							      font-weight: 300;
 							      color: #45494B;
@@ -2150,11 +2151,10 @@
 		  	  			}
 		  	  			.wantedly-score-ranking{
 		  	  				margin: 0 auto;
-		  	  				padding: 20px 0 40px;
 		  	  				display: block;
 		  	  				text-align: center;
-		  	  				width: 70px;
-                  border-radius: 10px;
+		  	  				width: 80px;
+                  border-radius: 20px;
 							    background: #00A4BB;
 							    color: #fff;
 							    padding: 3px 10px;
