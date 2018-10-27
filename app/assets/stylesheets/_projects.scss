@@ -21,8 +21,8 @@
   	    position: absolute;
   	    top: 50%;
   	    margin-top: -39px;
-  	    width: 31px;
-  	    height: 58px;
+  	    width: 50px;
+  	    height: 75px;
   	    background: rgba(0,0,0,0.5);
   	    padding: 10px;
   	    cursor: pointer;
@@ -40,9 +40,10 @@
         right: 0;
   	    top: 50%;
   	    margin-top: -39px;
-  	    width: 31px;
-  	    height: 58px;
+  	    width: 50px;
+  	    height: 75px;
   	    background: rgba(0,0,0,0.5);
+        border-radius: 3px 0 0 3px;
   	    padding: 10px;
   	    cursor: pointer;
   	  	img{
@@ -64,13 +65,19 @@
   	    user-select: none;
   	    touch-action: pan-y;
         -webkit-tap-highlight-color: transparent;
-        animation: slider 20s infinite ease;
+        animation: slider 40s infinite ease;
         @-webkit-keyframes slider {
-          8% {
-          -webkit-transform: translateX(-6400px);
-          transform: translateX(-6400px);
-          animation-play-state: paused;
-          }
+          0% {left: 0;}
+          10% {left: -640;}
+          20% {left: -1280px;}
+          30% {left: -1920px;}
+          40% {left: -2560px;}
+          50% {left: -3200px;}
+          60% {left: -3840px;}
+          70% {left: -4480px;}
+          80% {left: -5120px;}
+          90% {left: -5760px;}
+          100% {left: -6400px;}
         }
         .slick-list{
           transform: translate3d(0, 0, 0);
