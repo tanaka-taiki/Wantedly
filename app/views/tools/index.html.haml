@@ -1,0 +1,1325 @@
+= render 'shared/main-header'
+.main
+  .main-inner
+    .company-tools-top
+      .tools-shared-navigation
+        .tools-shared-navigation-menu
+          %h1
+            %a.tools-shared-navigation-menu-title{:href => '/tools'}
+              Wantedly
+              %span.tools-shared-navigation-menu-title-bold Tools
+        %a.tools-shared-navigation-user-name
+          濟川奈津美
+          %i.tools-shared-navigation-user__icon
+            = fa_icon 'chevron-right'
+          %span.tools-shared-navigation-user__name
+        %aside.tools-shared-navigation-section
+          .tools-shared-search
+            .tools-shared-search-bar
+              %input.tools-shared-search-bar{:autocomplete => "off", :dir => "auto", :name => "q", :placeholder => "ツールを検索...", :spellcheck => "false", :type => "text"}/ 
+              %i.tools-shared-search-bar__icon
+                = fa_icon 'search'
+            .tools-shared-autocomplete
+              %ul.tools-shared-autocomplete-rows
+          %h3.tools-shared-navigation-section-title
+            カテゴリー
+          %ul.tools-shared-navigation-section-body
+            %li.tools-shared-navigation-section-row
+              .tools-shared-navigation-category
+                %a{:href => '/tools/categories/communication' }
+                  .tools-shared-navigation-category-name-and-chevron
+                    .tools-shared-navigation-category-name
+                      コミュニケーション
+                    .tools-shared-navigation-category-chevron
+                      %i.wt-icon-chavron-down
+                        = fa_icon 'chavron-down'
+                .tools-shared-navigation-subcategory-section
+                  .tools-shared-navigation-subcategory-line-and-collection
+                    .tools-shared-navigation-subcategory-line
+                    .tools-shared-navigation-subcategory-collection
+                      %a.tools-shared-navigation-subcategory-name-and-count{:href => "/tools/categories/messenger"}
+                        .tools-shared-navigation-subcategory-name
+                          社内チャット
+                        .tools-shared-navigation-subcategory-count
+                          38
+                      %a.tools-shared-navigation-subcategory-name-and-count{:href => "/tools/categories/tv_web_conference"}
+                        .tools-shared-navigation-subcategory-name
+                          テレビ・ウェブ会議
+                        .tools-shared-navigation-subcategory-count
+                          23
+                      %a.tools-shared-navigation-subcategory-name-and-count{:href => "/tools/categories/telephone_and_communication"}
+                        .tools-shared-navigation-subcategory-name
+                          電話・通信
+                        .tools-shared-navigation-subcategory-count
+                          10
+                      %a.tools-shared-navigation-subcategory-name-and-count{:href => "/tools/categories/communication"}
+                        .tools-shared-navigation-subcategory-name
+                          すべてのコミュニケーション
+                        .tools-shared-navigation-subcategory-count
+                          106
+            %li.tools-shared-navigation-section-row
+              .tools-shared-navigation-category
+                %a{:href => "/tools/categories/knowledge"}
+                  .tools-shared-navigation-category-name-and-chevron
+                    .tools-shared-navigation-category-name
+                      情報共有・蓄積
+                    .tools-shared-navigation-category-chevron
+                      %i.wt-icon-chavron-down
+                        = fa_icon 'chavron-down'
+                .tools-shared-navigation-subcategory-section
+                  .tools-shared-navigation-subcategory-line-and-collection
+                    .tools-shared-navigation-subcategory-line
+                    .tools-shared-navigation-subcategory-collection
+                      %a.tools-shared-navigation-subcategory-name-and-count{:href => "/tools/categories/data_analytics"}
+                        .tools-shared-navigation-subcategory-name
+                          データ構築・分析
+                        .tools-shared-navigation-subcategory-count
+                          54
+                      %a.tools-shared-navigation-subcategory-name-and-count{:href => "/tools/categories/file_sharing"}
+                        .tools-shared-navigation-subcategory-name
+                          ファイル共有
+                        .tools-shared-navigation-subcategory-count
+                          21
+                      %a.tools-shared-navigation-subcategory-name-and-count{:href => "/tools/categories/information_sharing"}
+                        .tools-shared-navigation-subcategory-name
+                          社内情報共有
+                        .tools-shared-navigation-subcategory-count
+                          33
+                      %a.tools-shared-navigation-subcategory-name-and-count{:href => "/tools/categories/information_management"}
+                        .tools-shared-navigation-subcategory-name
+                          情報管理
+                        .tools-shared-navigation-subcategory-count
+                          15
+                      %a.tools-shared-navigation-subcategory-name-and-count{:href => "/tools/categories/knowledge"}
+                        .tools-shared-navigation-subcategory-name
+                          すべての情報共有・蓄積
+                        .tools-shared-navigation-subcategory-count
+                          128
+            %li.tools-shared-navigation-section-row
+              .tools-shared-navigation-category
+                %a{:href => "/tools/categories/project_management"}
+                  .tools-shared-navigation-category-name-and-chevron
+                    .tools-shared-navigation-category-name
+                      プロジェクト管理
+                    .tools-shared-navigation-category-chevron
+                      %i.wt-icon-chavron-down
+                        = fa_icon 'chavron-down'
+                .tools-shared-navigation-subcategory-section
+                  .tools-shared-navigation-subcategory-line-and-collection
+                    .tools-shared-navigation-subcategory-line
+                    .tools-shared-navigation-subcategory-collection
+                      %a.tools-shared-navigation-subcategory-name-and-count{:href => "/tools/categories/task_management"}
+                        .tools-shared-navigation-subcategory-name
+                          タスク管理
+                        .tools-shared-navigation-subcategory-count
+                          47
+                      %a.tools-shared-navigation-subcategory-name-and-count{:href => "/tools/categories/project_management"}
+                        .tools-shared-navigation-subcategory-name
+                          すべてのプロジェクト管理
+                        .tools-shared-navigation-subcategory-count
+                          85
+            %li.tools-shared-navigation-section-row
+              .tools-shared-navigation-category
+                %a{:href => "/tools/categories/human_resource"}
+                  .tools-shared-navigation-category-name-and-chevron
+                    .tools-shared-navigation-category-name
+                      採用・育成
+                    .tools-shared-navigation-category-chevron
+                      %i.wt-icon-chavron-down
+                        = fa_icon 'chavron-down'
+                .tools-shared-navigation-subcategory-section
+                  .tools-shared-navigation-subcategory-line-and-collection
+                    .tools-shared-navigation-subcategory-line
+                    .tools-shared-navigation-subcategory-collection
+                      %a.tools-shared-navigation-subcategory-name-and-count{:href => "/tools/categories/recruiting"}
+                        .tools-shared-navigation-subcategory-name
+                          求人媒体
+                        .tools-shared-navigation-subcategory-count
+                          31
+                      %a.tools-shared-navigation-subcategory-name-and-count{:href => "/tools/categories/recruiting_support"}
+                        .tools-shared-navigation-subcategory-name
+                          採用支援
+                        .tools-shared-navigation-subcategory-count
+                          22
+                      %a.tools-shared-navigation-subcategory-name-and-count{:href => "/tools/categories/attendance_management"}
+                        .tools-shared-navigation-subcategory-name
+                          勤怠管理
+                        .tools-shared-navigation-subcategory-count
+                          5
+                      %a.tools-shared-navigation-subcategory-name-and-count{:href => "/tools/categories/hrms"}
+                        .tools-shared-navigation-subcategory-name
+                          人事システム
+                        .tools-shared-navigation-subcategory-count
+                          21
+                      %a.tools-shared-navigation-subcategory-name-and-count{:href => "/tools/categories/employee_training_and_development"}
+                        .tools-shared-navigation-subcategory-name
+                          社員研修・育成
+                        .tools-shared-navigation-subcategory-count
+                          3
+                      %a.tools-shared-navigation-subcategory-name-and-count{:href => "/tools/categories/outsourcing"}
+                        .tools-shared-navigation-subcategory-name
+                          アウトソーシング
+                        .tools-shared-navigation-subcategory-count
+                          4
+                      %a.tools-shared-navigation-subcategory-name-and-count{:href => "/tools/categories/e_learning"}
+                        .tools-shared-navigation-subcategory-name
+                          eラーニング
+                        .tools-shared-navigation-subcategory-count
+                          30
+                      %a.tools-shared-navigation-subcategory-name-and-count{:href => "/tools/categories/employee_benefits"}
+                        .tools-shared-navigation-subcategory-name
+                          福利厚生
+                        .tools-shared-navigation-subcategory-count
+                          1
+                      %a.tools-shared-navigation-subcategory-name-and-count{:href => "/tools/categories/human_resource"}
+                        .tools-shared-navigation-subcategory-name
+                          すべての採用・育成
+                        .tools-shared-navigation-subcategory-count
+                          140
+            %li.tools-shared-navigation-section-row
+              .tools-shared-navigation-category
+                %a{:href => "/tools/categories/sales"}
+                  .tools-shared-navigation-category-name-and-chevron
+                    .tools-shared-navigation-category-name
+                      営業
+                    .tools-shared-navigation-category-chevron
+                      %i.wt-icon-chavron-down
+                        = fa_icon 'chavron-down'
+                .tools-shared-navigation-subcategory-section
+                  .tools-shared-navigation-subcategory-line-and-collection
+                    .tools-shared-navigation-subcategory-line
+                    .tools-shared-navigation-subcategory-collection
+                      %a.tools-shared-navigation-subcategory-name-and-count{:href => "/tools/categories/crm"}
+                        .tools-shared-navigation-subcategory-name
+                          CRM
+                        .tools-shared-navigation-subcategory-count
+                          34
+                      %a.tools-shared-navigation-subcategory-name-and-count{:href => "/tools/categories/sales_support"}
+                        .tools-shared-navigation-subcategory-name
+                          営業支援
+                        .tools-shared-navigation-subcategory-count
+                          14
+                      %a.tools-shared-navigation-subcategory-count{:href => "/tools/categories/business_card_management"}
+                        .tools-shared-navigation-subcategory-name
+                          名刺管理
+                        .tools-shared-navigation-subcategory-count
+                          12
+                      %a.tools-shared-navigation-subcategory-name-and-count{:href => "/tools/categories/sales_operations_management"}
+                        .tools-shared-navigation-subcategory-name
+                          営業管理
+                        .tools-shared-navigation-subcategory-count
+                          9
+                      %a.tools-shared-navigation-subcategory-name-and-count{:href => "/tools/categories/oursourced_sales"}
+                        .tools-shared-navigation-subcategory-name
+                          営業代行
+                        .tools-shared-navigation-subcategory-count
+                          1
+                      %a.tools-shared-navigation-subcategory-name-and-count{:href => "/tools/categories/sales"}
+                        .tools-shared-navigation-subcategory-name
+                          すべての営業
+                        .tools-shared-navigation-subcategory-count
+                          70
+            %li.tools-shared-navigation-section-row
+              .tools-shared-navigation-category
+                %a{:href => "/tools/categories/marketing"}
+                  .tools-shared-navigation-category-name-and-chevron
+                    .tools-shared-navigation-category-name
+                      マーケティング
+                    .tools-shared-navigation-category-chevron
+                      %i.wt-icon-chavron-down
+                        = fa_icon 'chavron-down'
+                .tools-shared-navigation-subcategory-section
+                  .tools-shared-navigation-subcategory-line-and-collection
+                    .tools-shared-navigation-subcategory-line
+                    .tools-shared-navigation-subcategory-collection
+                      %a.tools-shared-navigation-subcategory-name-and-count{:href => "/tools/categories/marketing_analytics"}
+                        .tools-shared-navigation-subcategory-name
+                          効果検証
+                        .tools-shared-navigation-subcategory-count
+                          22
+                      %a.tools-shared-navigation-subcategory-name-and-count{:href => "/tools/categories/social_media"}
+                        .tools-shared-navigation-subcategory-name
+                          ソーシャルメディア
+                        .tools-shared-navigation-subcategory-count
+                          14
+                      %a.tools-shared-navigation-subcategory-name-and-count{:href => "/tools/categories/marketing_automation_platforms"}
+                        .tools-shared-navigation-subcategory-name
+                          マーケティングオートメーション
+                        .tools-shared-navigation-subcategory-count
+                          11
+                      %a.tools-shared-navigation-subcategory-name-and-count{:href => "/tools/categories/seo"}
+                        .tools-shared-navigation-subcategory-name
+                          SEO対策
+                        .tools-shared-navigation-subcategory-count
+                          6
+                      %a.tools-shared-navigation-subcategory-name-and-count{:href => "/tools/categories/email_management"}
+                        .tools-shared-navigation-subcategory-name
+                          メール配信
+                        .tools-shared-navigation-subcategory-count
+                          17
+                      %a.tools-shared-navigation-subcategory-name-and-count{:href => "/tools/categories/video"}
+                        .tools-shared-navigation-subcategory-name
+                          動画
+                        .tools-shared-navigation-subcategory-count
+                          3
+                      %a.tools-shared-navigation-subcategory-name-and-count{:href => "/tools/categories/pr_delivery"}
+                        .tools-shared-navigation-subcategory-name
+                          PR配信
+                        .tools-shared-navigation-subcategory-count
+                          3
+                      %a.tools-shared-navigation-subcategory-name-and-count{:href => "/tools/categories/outsourced_pr"}
+                        .tools-shared-navigation-subcategory-name
+                          PR代行
+                        .tools-shared-navigation-subcategory-count
+                          2
+                      %a.tools-shared-navigation-subcategory-name-and-count{:href => "/tools/categories/marketing"}
+                        .tools-shared-navigation-subcategory-name
+                          すべてのマーケティング
+                        .tools-shared-navigation-subcategory-count
+                          127
+            %li.tools-shared-navigation-section-row
+              .tools-shared-navigation-category
+                %a{:href => "/tools/categories/development"}
+                  .tools-shared-navigation-category-name-and-chevron
+                    .tools-shared-navigation-category-name
+                      開発・テクノロジー
+                    .tools-shared-navigation-category-chevron
+                      %i.wt-icon-chavron-down
+                        = fa_icon 'chavron-down'
+                .tools-shared-navigation-subcategory-section
+                  .tools-shared-navigation-subcategory-line-and-collection
+                    .tools-shared-navigation-subcategory-line
+                    .tools-shared-navigation-subcategory-collection
+                      %a.tools-shared-navigation-subcategory-name-and-count{:href => "/tools/categories/development_platforms"}
+                        .tools-shared-navigation-subcategory-name
+                          開発基盤
+                        .tools-shared-navigation-subcategory-count
+                          29
+                      %a.tools-shared-navigation-subcategory-name-and-count{:href => "/tools/categories/web_production_cms"}
+                        .tools-shared-navigation-subcategory-name
+                          Web制作・CMS
+                        .tools-shared-navigation-subcategory-count
+                          13
+                      %a.tools-shared-navigation-subcategory-name-and-count{:href => "/tools/categories/error_notification"}
+                        .tools-shared-navigation-subcategory-name
+                          エラー通知
+                        .tools-shared-navigation-subcategory-count
+                          3
+                      %a.tools-shared-navigation-subcategory-name-and-count{:href => "/tools/categories/iaas"}
+                        .tools-shared-navigation-subcategory-name
+                          IaaS
+                        .tools-shared-navigation-subcategory-count
+                          7
+                      %a.tols-shared-navigation-subcategory-name-and-count{:href => "/tools/categories/security"}
+                        .tools-shared-navigation-subcategory-name
+                          セキュリティ
+                        .tools-shared-navigation-subcategory-count
+                          19
+                      %a.tools-shared-navigation-subcategory-name-and-count{:href => "/tools/categories/library"}
+                        .tools-shared-navigation-subcategory-name
+                          ライブラリ
+                        .tools-shared-navigation-subcategory-count
+                          1
+                      %a.tools-shared-navigation-subcategory-name-and-count{:href => "/tools/categories/development"}
+                        .tools-shared-navigation-subcategory-name
+                          すべての開発・テクノロジー
+                        .tools-shared-navigation-subcategory-count
+                          89
+            %li.tools-shared-navigation-section-row
+              .tools-shared-navigation-category
+                %a{:href => "/tools/categories/design"}
+                  .tools-shared-navigation-category-name-and-chevron
+                    .tools-shared-navigation-category-name
+                      デザイン
+                    .tools-shared-navigation-category-chevron
+                      %i.wt-icon-chavron-down
+                        = fa_icon 'chavron-down'
+                .tools-shared-navigation-subcategory-section
+                  .tools-shared-navigation-subcategory-line-and-collection
+                    .tools-shared-navigation-subcategory-line
+                    .tools-shared-navigation-subcategory-collection
+                      %a.tools-shared-navigation-subcategory-name-and-count{:href => "/tools/categories/design_tools"}
+                        .tools-shared-navigation-subcategory-name
+                          デザイン作成
+                        .tools-shared-navigation-subcategory-count
+                          34
+                      %a.tools-shared-navigation-subcategory-name-and-count{:href => "/tools/categories/prototype"}
+                        .tools-shared-navigation-subcategory-name
+                          プロトタイプ
+                        .tools-shared-navigation-subcategory-count
+                          10
+                      %a.tools-shared-navigation-subcategory-name-and-count{:href => "/tools/categories/design_management"}
+                        .tools-shared-navigation-subcategory-name
+                          デザイン管理
+                        .tools-shared-navigation-subcategory-count
+                          4
+                      %a.tools-shared-navigation-subcategory-name-and-count{:href => "/tools/categories/design"}
+                        .tools-shared-navigation-subcategory-name
+                          すべてのデザイン
+                        .tools-shared-navigation-subcategory-count
+                          60
+            %li.tools-shared-navigation-section-row
+              .tools-shared-navigation-category
+                %a{:href => "/tools/categories/accounting"}
+                  .tools-shared-navigation-category-name-and-chevron
+                    .tools-shared-navigation-category-name
+                      経理・財務
+                    .tools-shared-navigation-category-chevron
+                      %i.wt-icon-chavron-down
+                        = fa_icon 'chavron-down'
+                .tools-shared-navigation-subcategory-section
+                  .tools-shared-navigation-subcategory-line-and-collection
+                    .tools-shared-navigation-subcategory-line
+                    .tools-shared-navigation-subcategory-collection
+                      %a.tools-shared-navigation-subcategory-name-and-count{:href => "/tools/categories/accounting_software"}
+                        .tools-shared-navigation-subcategory-name
+                          会計ソフト
+                        .tools-shared-navigation-subcategory-count
+                          13
+                      %a.tools-shared-navigation-subcategory-name-and-count{:href => "/tools/categories/expense_management"}
+                        .tools-shared-navigation-subcategory-name
+                          経費精算
+                        .tools-shared-navigation-subcategory-count
+                          16
+                      %a.tools-shared-navigation-subcategory-name-and-count{:href => "/tools/categories/invoicing"}
+                        .tools-shared-navigation-subcategory-name
+                          請求書発行
+                        .tools-shared-navigation-subcategory-count
+                          7
+                      %a.tools-shared-navigation-subcategory-name-and-count{:href => "/tools/categories/payments_processing"}
+                        .tools-shared-navigation-subcategory-name
+                          決済代行
+                        .tools-shared-navigation-subcategory-count
+                          20
+                      %a.tools-shared-navigation-subcategory-name-and-count{:href => "/tools/categories/payroll_management"}
+                        .tools-shared-navigation-subcategory-name
+                          給与計算
+                        .tools-shared-navigation-subcategory-count
+                          9
+                      %a.tools-shared-navigation-subcategory-name-and-count{:href => "/tools/categories/accounting"}
+                        .tools-shared-navigation-subcategory-name
+                          すべての経理・財務
+                        .tools-shared-navigation-subcategory-count
+                          88
+            %li.tools-shared-navigation-section-row
+              .tools-shared-navigation-category
+                %a{:href => "/tools/categories/customer_support"}
+                  .tools-shared-navigation-category-name-and-chevron
+                    .tools-shared-navigation-category-name
+                      カスタマーサポート
+                    .tools-shared-navigation-category-chevron
+                      %i.wt-icon-chavron-down
+                        = fa_icon 'chavron-down'
+                .tools-shared-navigation-subcategory-section
+                  .tools-shared-navigation-subcategory-line-and-collection
+                    .tools-shared-navigation-subcategory-line
+                    .tools-shared-navigation-subcategory-collection
+                      %a.tools-shared-navigation-subcategory-name-and-count{:href => "/tools/categories/cs_support"}
+                        .tools-shared-navigation-subcategory-name
+                          CS支援
+                        .tools-shared-navigation-subcategory-count
+                          36
+                      %a.tools-shared-navigation-subcategory-name-and-count{:href => "/tools/categories/cs_agency"}
+                        .tools-shared-navigation-subcategory-name
+                          CS代行
+                        .tools-shared-navigation-subcategory-count
+                          3
+                      %a.tools-shared-navigation-subcategory-name-and-count{:href => "/tools/categories/customer_support"}
+                        .tools-shared-navigation-subcategory-name
+                          すべてのカスタマーサポート
+                        .tools-shared-navigation-subcategory-count
+                          45
+        %a#tools-shared-navigation-enterprise-button{:href => "http://tools-enterprise.wantedly.com", :target => "_blank"}
+          .button-text
+            %p.button-text__first
+              Wantedly Tools へ
+            %p.button-text__next
+              掲載希望の企業の方はこちら
+      #company-tools-top-main
+        #company-tools-top-header
+          %section#company-tools-top-header-top
+            #company-tools-top-header-title-wrapper
+              #company-tools-top-header-title
+                %h2#company-tools-top-header-title-name
+                  Wantedly
+                  %span#company-tools-top-header-title-name-bold
+                    Tools
+                %p#company-tools-top-header-title-tagline
+                  業務効率化ツール口コミサイト
+              %p#company-tools-top-header-description
+                気になる企業がどんな環境で働いているか見てみましょう。
+                %br/
+                きっとあなたに合った業務効率化ツールが見つかるはずです。
+          %seciton#company-tools-top-header-middle
+            #company-tools-top-header-three-features
+              %article.company-tools-top-header-feature
+                %img.company-tools-top-header-feature-icon{:alt => "Search", :src => "https://huntr-static.s3.amazonaws.com/tools/top/search.png"}/
+                %h3.company-tools-top-header-feature-title
+                  人気のツールが掲載
+                .company-tools-top-header-feature-description
+                  1,000社以上の企業の声から、
+                  %br/
+                  人気のツールを見つけられます
+              %article.company-tools-top-header-feature
+                %img.company-tools-top-header-feature-icon{:alt => "Review", :src => "https://huntr-static.s3.amazonaws.com/tools/top/review.png"}/
+                %h3.company-tools-top-header-feature-title
+                  実名制の口コミ
+                .company-tools-top-header-feature-description
+                  2万件以上の実名制口コミを見て、
+                  %br/
+                  最適なツールを選べます
+              %article.company-tools-top-header-feature
+                %img.company-tools-top-header-feature-icon{:alt => "Material", :src => "https://huntr-static.s3.amazonaws.com/tools/top/material.png"}/
+                %h3.company-tools-top-header-feature-title
+                  ボタン1つで資料ダウンロード
+                .company-tools-top-header-feature-description
+                  ボタンをクリックするだけで、
+                  %br/
+                  ツールの資料を簡単に入手できます
+          %section#company-tools-top-header-social-share-buttons
+            .fb-like-wrapper
+              .fb-like.fb_iframe_widget{"data-action" => "like", "data-height" => "20", "data-href" => "https://www.wantedly.com/tools", "data-layout" => "button", "data-share" => "true", "data-show-faces" => "false", "data-size" => "small", "data-width" => "120", "fb-iframe-plugin-query" => "action=like&app_id=234170156611754&container_width=0&height=20&href=https%3A%2F%2Fwww.wantedly.com%2Ftools&layout=button&locale=ja_JP&sdk=joey&share=true&show_faces=false&size=small&width=120", "fb-xfbml-state" => "rendered"}
+                %span{:style => "vertical-align: bottom; width: 119px; height: 20px;"}
+                  %iframe{:allow => "encrypted-media", :allowfullscreen => "true", :allowtransparency => "true", :frameborder => "0", :height => "20px", :name => "f29796c15f0a51", :scrolling => "no", :src => "https://www.facebook.com/v2.10/plugins/like.php?action=like&app_id=234170156611754&channel=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2F__Bz3h5RzMx.js%3Fversion%3D42%23cb%3Df24394d918102dc%26domain%3Dwww.wantedly.com%26origin%3Dhttps%253A%252F%252Fwww.wantedly.com%252Ff30aaae9fa506f%26relation%3Dparent.parent&container_width=0&height=20&href=https%3A%2F%2Fwww.wantedly.com%2Ftools&layout=button&locale=ja_JP&sdk=joey&share=true&show_faces=false&size=small&width=120", :style => "border: none; visibility: visible; width: 119px; height: 20px;", :title => "fb:like Facebook Social Plugin", :width => "120px"}
+            .twitter-share-button-wrapper
+              %iframe#twitter-widget-0.twitter-share-button.twitter-share-button-rendered.twitter-tweet-button{:allowtransparency => "true", "data-url" => "https://www.wantedly.com/tools", :frameborder => "0", :scrolling => "no", :src => "https://platform.twitter.com/widgets/tweet_button.7922da55a4ca5d4a2b1d31eedc0501e8.ja.html#dnt=false&hashtags=WantedlyTools&id=twitter-widget-0&lang=ja&original_referer=https%3A%2F%2Fwww.wantedly.com%2Ftools&size=m&text=%E7%A4%BE%E5%86%85%E3%83%84%E3%83%BC%E3%83%AB%E3%82%92%E7%B4%B9%E4%BB%8B%E3%81%97%E5%90%88%E3%81%86%E5%8F%A3%E3%82%B3%E3%83%9F%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9%20-%20Wantedly%20Tools&time=1540701402229&type=share&url=https%3A%2F%2Fwww.wantedly.com%2Ftools", :style => "position: static; visibility: visible; width: 75px; height: 20px;", :title => "Twitter Tweet Button"}
+        #company-tools-top-contents
+          %section#megaphones-single-material-download-in-tools-top.megaphone
+            %img.close-button{:alt => "Close light", :data_url => "/megaphone_close?t=gaJpZM4ALOCA", :src => "https://de7iszmjjjuya.cloudfront.net/assets/close_light-c0500c3127a26f8f2a31f09aa7db6d05221eb07abb876d9f278a259036aa1bcb.png"}/
+            %img#megaphones-single-material-download-in-tools-top-image{:alt => "A8b7c45b c274 4cb5 80a8 a860257f846b", :height => "80", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=160,dh=160,da=l,ds=s,cw=160,ch=160,cc=FFFFFF)/assets/images/298758/original/a8b7c45b-c274-4cb5-80a8-a860257f846b.png?1478483295", :width => "80"}/
+            #megaphones-single-material-download-in-tools-top-body
+              %h3#megaphones-single-material-download-in-tools-top-title
+                成長企業の経理を支える「クラウドERP」とは
+              %p#megaphones-single-material-download-in-tools-top-description
+                個人事業主から500名規模の法人まで幅広く対応。会計の専門知識がなくても、経理をまとめて効率化してくれます。
+                %br/
+                = succeed "\u{3092}\u{8a87}\u{308b}freee\u{3092}\u{6d3b}\u{7528}\u{3057}\u{3066}\u{7d4c}\u{7406}\u{696d}\u{52d9}\u{3092}\u{98db}\u{8e8d}\u{3055}\u{305b}\u{307e}\u{305b}\u{3093}\u{304b}\u{ff1f}" do
+                  %strong クラウド会計ソフトシェアNo.1
+            #megaphones-single-material-download-in-tools-top-button-wrapper
+              %a#megaphones-single-material-download-in-tools-top-button.click-button-async{"data-click-url" => "/megaphone_click?t=gaJpZM4ALOCA&url=%23", "data-tool-info" => "{\"tool_id\":177,\"company_tool_name\":\"freee\",\"material_url\":\"https://tools-materials.s3.amazonaws.com/%E3%82%AF%E3%83%A9%E3%82%A6%E3%83%89%E4%BC%9A%E8%A8%88%E3%82%BD%E3%83%95%E3%83%88%20freee%E7%B4%B9%E4%BB%8B%E8%B3%87%E6%96%99.pdf\"}", :href => "#"}
+                %span 資料ダウンロード
+              %p#megaphones-single-material-download-in-tools-top-text-below-button
+                資料ダウンロードすると、掲載企業からお客様に直接連絡が入る場合があります。
+          %section.company-tools-top-section
+            .company-tools-top-section-header.cf
+              %h3.company-tools-top-section-title
+                人気ツール
+              %p.company-tools-top-section-description
+                Wantedly で人気のツールはこちらです
+            #tools-tops-show-popular-tools.company-tools-top-section-body.tools-shared-card-collection
+              %a.tools-shared-tool-card{:href => "/tools/slack"}
+                %article
+                  %img.tools-shared-tool-card-logo{:alt => "100x100bb", :height => "80", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=160,dh=160,da=l,ds=s,cw=160,ch=160,cc=FFFFFF)/assets/images/293290/original/100x100bb.jpg?1455072425", :width => "80"}/
+                  .tools-shared-tool-card-add-to-my-tools-wrapper
+                    .tools-shared-tool-card-logo-mask
+                    .tools-shared-add-to-my-tools
+                      .tools-shared-add-to-my-tools-popup.cf
+                        .tools-shared-add-to-my-tools-popup-account{"data-account-id" => "85521318", "data-account-type" => "user", "data-tool-id" => "1", "data-tool-name" => "Slack", "data-using" => "false"}
+                          %img.tools-shared-add-to-my-tools-popup-account-icon.data-qtip{:alt => "Picture?height=60&width=60", "data-qtipv" => "濟川 奈津美に追加", :onerror => "this.src = \"https://dubpy8abnqmkw.cloudfront.net/images/anonymous/anonymous.png\";", :src => "https://graph.facebook.com/698893323801773/picture?height=60&width=60"}/
+                          .tools-shared-add-to-my-tools-popup-account-icon-mask.data-qtip{"data-qtipv" => "濟川 奈津美に追加済み"}
+                            %i.tools-shared-add-to-my-tools-popup-account-check.wt-icon.wt-icon-check
+                      .tools-shared-add-to-my-tools-label.cf{"data-account-id" => "85521318", "data-account-type" => "user"}
+                        %img.tools-shared-add-to-my-tools-label-icon{:alt => "Picture?height=36&width=36", :onerror => "this.src = \"https://dubpy8abnqmkw.cloudfront.net/images/anonymous/anonymous.png\";", :src => "https://graph.facebook.com/698893323801773/picture?height=36&width=36"}/
+                        .tools-shared-add-to-my-tools-label-text
+                          マイツールに追加
+                        .tools-shared-add-to-my-tools-label-already-using
+                          .tools-shared-add-to-my-tools-label-already-using-inner.cf
+                            %i.tools-shared-add-to-my-tools-label-already-using-check.wt-icon.wt-icon-check
+                            %span.tools-shared-add-to-my-tools-label-already-using-text
+                              追加済み
+                  %h1.tools-shared-tool-card-name
+                    Slack
+                  %p.tools-shared-tool-card-category
+                    コミュニケーション
+                  %p.tools-shared-tool-card-usage-fee
+                    %span.tools-shared-tool-card-usage-fee-free-plan
+                      無料プランあり
+                    $6.67~
+                  .tools-shared-tool-card-rating
+                    .tools-shared-rating
+                      %i.bright.tools-shared-rating-star.wt-icon.wt-icon-star
+                      %i.bright.tools-shared-rating-star.wt-icon.wt-icon-star
+                      %i.bright.tools-shared-rating-star.wt-icon.wt-icon-star
+                      %i.bright.tools-shared-rating-star.wt-icon.wt-icon-star
+                      %i.bright.tools-shared-rating-star.wt-icon.wt-icon-star
+                      .tools-shared-rating-total-count
+                        (856)
+                  .tools-shared-tool-card-info
+                    .tools-shared-tool-card-using-companies
+                      .tools-shared-tool-card-using-companies-title
+                        利用している企業 (996)
+                      .tools-shared-tool-card-using-companies-icons.cf
+                        %img.tools-shared-tool-card-using-companies-icon.data-qtip{:alt => "株式会社メルカリ", "data-qtipv" => "株式会社メルカリ", :height => "28", :onerror => "this.src = \"https://dubpy8abnqmkw.cloudfront.net/images/anonymous/anonymous.png\";", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=56,dh=56,da=l,ds=s,cw=56,ch=56,cc=FFFFFF)/assets/images/35323/original/280ea972-2a2c-44a2-bf31-a2e858a47149?1499942068", :width => "28"}/
+                        %img.tools-shared-tool-card-using-companies-icon.data-qtip{:alt => "UUUM株式会社", "data-qtipv" => "UUUM株式会社", :height => "28", :onerror => "this.src = \"https://dubpy8abnqmkw.cloudfront.net/images/anonymous/anonymous.png\";", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=56,dh=56,da=l,ds=s,cw=56,ch=56,cc=FFFFFF)/assets/images/8999/original/38953fde-bcf1-4ebc-afff-79a55c739d33.jpeg?1440732749", :width => "28"}/
+                        %img.tools-shared-tool-card-using-companies-icon.data-qtip{:alt => "チームラボ株式会社", "data-qtipv" => "チームラボ株式会社", :height => "28", :onerror => "this.src = \"https://dubpy8abnqmkw.cloudfront.net/images/anonymous/anonymous.png\";", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=56,dh=56,da=l,ds=s,cw=56,ch=56,cc=FFFFFF)/assets/images/592/original/ef2f4cf1-8cc8-4251-be5e-d60182e91934.png?1455592110", :width => "28"}/
+                        %img.tools-shared-tool-card-using-companies-icon.data-qtip{:alt => "株式会社Loco Partners", "data-qtipv" => "株式会社Loco Partners", :height => "28", :onerror => "this.src = \"https://dubpy8abnqmkw.cloudfront.net/images/anonymous/anonymous.png\";", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=56,dh=56,da=l,ds=s,cw=56,ch=56,cc=FFFFFF)/assets/images/458914/original/376f9d2e-0bef-453d-9b2d-6fdac3765832.jpeg?1467624242", :width => "28"}/
+                        %img.tools-shared-tool-card-using-companies-icon.data-qtip{:alt => "Retty株式会社", "data-qtipv" => "Retty株式会社", :height => "28", :onerror => "this.src = \"https://dubpy8abnqmkw.cloudfront.net/images/anonymous/anonymous.png\";", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=56,dh=56,da=l,ds=s,cw=56,ch=56,cc=FFFFFF)/assets/images/1024/original/7f7255dc-a0b6-45fd-94b3-19808a962e2b.png?1484877187", :width => "28"}/
+              %a.tools-shared-tool-card{:href => "/tools/google_drive"}
+                %article
+                  %img.tools-shared-tool-card-logo{:alt => "Th", :height => "80", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=160,dh=160,da=l,ds=s,cw=160,ch=160,cc=FFFFFF)/assets/images/293316/original/th.jpeg?1455073109", :width => "80"}/
+                  .tools-shared-tool-card-add-to-my-tools-wrapper
+                    .tools-shared-tool-card-logo-mask
+                    .tools-shared-add-to-my-tools
+                      .tools-shared-add-to-my-tools-popup.cf
+                        .tools-shared-add-to-my-tools-popup-account{"data-account-id" => "85521318", "data-account-type" => "user", "data-tool-id" => "40", "data-tool-name" => "Google Drive", "data-using" => "false"}
+                          %img.tools-shared-add-to-my-tools-popup-account-icon.data-qtip{:alt => "Picture?height=60&width=60", "data-qtipv" => "濟川 奈津美に追加", :onerror => "this.src = \"https://dubpy8abnqmkw.cloudfront.net/images/anonymous/anonymous.png\";", :src => "https://graph.facebook.com/698893323801773/picture?height=60&width=60"}/
+                          .tools-shared-add-to-my-tools-popup-account-icon-mask.data-qtip{"data-qtipv" => "濟川 奈津美に追加済み"}
+                            %i.tools-shared-add-to-my-tools-popup-account-check.wt-icon.wt-icon-check
+                      .tools-shared-add-to-my-tools-label.cf{"data-account-id" => "85521318", "data-account-type" => "user"}
+                        %img.tools-shared-add-to-my-tools-label-icon{:alt => "Picture?height=36&width=36", :onerror => "this.src = \"https://dubpy8abnqmkw.cloudfront.net/images/anonymous/anonymous.png\";", :src => "https://graph.facebook.com/698893323801773/picture?height=36&width=36"}/
+                        .tools-shared-add-to-my-tools-label-text
+                          マイツールに追加
+                        .tools-shared-add-to-my-tools-label-already-using
+                          .tools-shared-add-to-my-tools-label-already-using-inner.cf
+                            %i.tools-shared-add-to-my-tools-label-already-using-check.wt-icon.wt-icon-check
+                            %span.tools-shared-add-to-my-tools-label-already-using-text
+                              追加済み
+                  %h1.tools-shared-tool-card-name
+                    Google Drive
+                  %p.tools-shared-tool-card-category
+                    情報共有・蓄積
+                  %p.tools-shared-tool-card-usage-fee
+                    %span.tools-shared-tool-card-usage-fee-free-plan
+                      無料プランあり
+                    $1.99~
+                  .tools-shared-tool-card-rating
+                    .tools-shared-rating
+                      %i.bright.tools-shared-rating-star.wt-icon.wt-icon-star
+                      %i.bright.tools-shared-rating-star.wt-icon.wt-icon-star
+                      %i.bright.tools-shared-rating-star.wt-icon.wt-icon-star
+                      %i.bright.tools-shared-rating-star.wt-icon.wt-icon-star
+                      %i.wt-icon.wt-icon-star.tools-shared-rating-star
+                      .tools-shared-rating-total-count
+                        (521)
+                  .tools-shared-tool-card-info
+                    .tools-shared-tool-card-using-companies
+                      .tools-shared-tool-card-using-companies-title
+                        利用している企業 (952)
+                      .tools-shared-tool-card-using-companies-icons.cf
+                        %img.tools-shared-tool-card-using-companies-icon.data-qtip{:alt => "株式会社メルカリ", "data-qtipv" => "株式会社メルカリ", :height => "28", :onerror => "this.src = \"https://dubpy8abnqmkw.cloudfront.net/images/anonymous/anonymous.png\";", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=56,dh=56,da=l,ds=s,cw=56,ch=56,cc=FFFFFF)/assets/images/35323/original/280ea972-2a2c-44a2-bf31-a2e858a47149?1499942068", :width => "28"}/
+                        %img.tools-shared-tool-card-using-companies-icon.data-qtip{:alt => "UUUM株式会社", "data-qtipv" => "UUUM株式会社", :height => "28", :onerror => "this.src = \"https://dubpy8abnqmkw.cloudfront.net/images/anonymous/anonymous.png\";", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=56,dh=56,da=l,ds=s,cw=56,ch=56,cc=FFFFFF)/assets/images/8999/original/38953fde-bcf1-4ebc-afff-79a55c739d33.jpeg?1440732749", :width => "28"}/
+                        %img.tools-shared-tool-card-using-companies-icon.data-qtip{:alt => "チームラボ株式会社", "data-qtipv" => "チームラボ株式会社", :height => "28", :onerror => "this.src = \"https://dubpy8abnqmkw.cloudfront.net/images/anonymous/anonymous.png\";", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=56,dh=56,da=l,ds=s,cw=56,ch=56,cc=FFFFFF)/assets/images/592/original/ef2f4cf1-8cc8-4251-be5e-d60182e91934.png?1455592110", :width => "28"}/
+                        %img.tools-shared-tool-card-using-companies-icon.data-qtip{:alt => "Retty株式会社", "data-qtipv" => "Retty株式会社", :height => "28", :onerror => "this.src = \"https://dubpy8abnqmkw.cloudfront.net/images/anonymous/anonymous.png\";", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=56,dh=56,da=l,ds=s,cw=56,ch=56,cc=FFFFFF)/assets/images/1024/original/7f7255dc-a0b6-45fd-94b3-19808a962e2b.png?1484877187", :width => "28"}/
+                        %img.tools-shared-tool-card-using-companies-icon.data-qtip{:alt => "株式会社サイバーエージェント キャリア採用", "data-qtipv" => "株式会社サイバーエージェント キャリア採用", :height => "28", :onerror => "this.src = \"https://dubpy8abnqmkw.cloudfront.net/images/anonymous/anonymous.png\";", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=56,dh=56,da=l,ds=s,cw=56,ch=56,cc=FFFFFF)/assets/images/116276/original/334ca1e4-2208-413a-bae2-f895a427b19c.png?1429093826", :width => "28"}/
+              %a.tools-shared-tool-card{:href => "/tools/skype"}
+                %article
+                  %img.tools-shared-tool-card-logo{:alt => "100x100bb", :height => "80", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=160,dh=160,da=l,ds=s,cw=160,ch=160,cc=FFFFFF)/assets/images/293281/original/100x100bb.jpg?1455072362", :width => "80"}/
+                  .tools-shared-tool-card-add-to-my-tools-wrapper
+                    .tools-shared-tool-card-logo-mask
+                    .tools-shared-add-to-my-tools
+                      .tools-shared-add-to-my-tools-popup.cf
+                        .tools-shared-add-to-my-tools-popup-account.using{"data-account-id" => "85521318", "data-account-type" => "user", "data-tool-id" => "29", "data-tool-name" => "Skype", "data-using" => "true"}
+                          %img.tools-shared-add-to-my-tools-popup-account-icon.data-qtip{:alt => "Picture?height=60&width=60", "data-qtipv" => "濟川 奈津美に追加", :onerror => "this.src = \"https://dubpy8abnqmkw.cloudfront.net/images/anonymous/anonymous.png\";", :src => "https://graph.facebook.com/698893323801773/picture?height=60&width=60"}/
+                          .tools-shared-add-to-my-tools-popup-account-icon-mask.data-qtip{"data-qtipv" => "濟川 奈津美に追加済み"}
+                            %i.tools-shared-add-to-my-tools-popup-account-check.wt-icon.wt-icon-check
+                      .cf.tools-shared-add-to-my-tools-label.using{"data-account-id" => "85521318", "data-account-type" => "user"}
+                        %img.tools-shared-add-to-my-tools-label-icon{:alt => "Picture?height=36&width=36", :onerror => "this.src = \"https://dubpy8abnqmkw.cloudfront.net/images/anonymous/anonymous.png\";", :src => "https://graph.facebook.com/698893323801773/picture?height=36&width=36"}/
+                        .tools-shared-add-to-my-tools-label-text
+                          マイツールに追加
+                        .tools-shared-add-to-my-tools-label-already-using
+                          .tools-shared-add-to-my-tools-label-already-using-inner.cf
+                            %i.tools-shared-add-to-my-tools-label-already-using-check.wt-icon.wt-icon-check
+                            %span.tools-shared-add-to-my-tools-label-already-using-text
+                              追加済み
+                  %h1.tools-shared-tool-card-name
+                    Skype
+                  %p.tools-shared-tool-card-category
+                    コミュニケーション
+                  %p.tools-shared-tool-card-usage-fee
+                    %span.tools-shared-tool-card-usage-fee-free-plan
+                      無料プランあり
+                    ¥5.6~
+                  .tools-shared-tool-card-rating
+                    .tools-shared-rating
+                      %i.bright.tools-shared-rating-star.wt-icon.wt-icon-star
+                      %i.bright.tools-shared-rating-star.wt-icon.wt-icon-star
+                      %i.bright.tools-shared-rating-star.wt-icon.wt-icon-star
+                      %i.bright.tools-shared-rating-star.wt-icon.wt-icon-star
+                      %i.wt-icon.wt-icon-star.tools-shared-rating-star
+                      .tools-shared-rating-total-count
+                        (359)
+                  .tools-shared-tool-card-info
+                    .tools-shared-tool-card-using-companies
+                      .tools-shared-tool-card-using-companies-title
+                        利用している企業 (547)
+                      .tools-shared-tool-card-using-companies-icons.cf
+                        %img.tools-shared-tool-card-using-companies-icon.data-qtip{:alt => "UUUM株式会社", "data-qtipv" => "UUUM株式会社", :height => "28", :onerror => "this.src = \"https://dubpy8abnqmkw.cloudfront.net/images/anonymous/anonymous.png\";", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=56,dh=56,da=l,ds=s,cw=56,ch=56,cc=FFFFFF)/assets/images/8999/original/38953fde-bcf1-4ebc-afff-79a55c739d33.jpeg?1440732749", :width => "28"}/
+                        %img.tools-shared-tool-card-using-companies-icon.data-qtip{:alt => "チームラボ株式会社", "data-qtipv" => "チームラボ株式会社", :height => "28", :onerror => "this.src = \"https://dubpy8abnqmkw.cloudfront.net/images/anonymous/anonymous.png\";", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=56,dh=56,da=l,ds=s,cw=56,ch=56,cc=FFFFFF)/assets/images/592/original/ef2f4cf1-8cc8-4251-be5e-d60182e91934.png?1455592110", :width => "28"}/
+                        %img.tools-shared-tool-card-using-companies-icon.data-qtip{:alt => "Retty株式会社", "data-qtipv" => "Retty株式会社", :height => "28", :onerror => "this.src = \"https://dubpy8abnqmkw.cloudfront.net/images/anonymous/anonymous.png\";", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=56,dh=56,da=l,ds=s,cw=56,ch=56,cc=FFFFFF)/assets/images/1024/original/7f7255dc-a0b6-45fd-94b3-19808a962e2b.png?1484877187", :width => "28"}/
+                        %img.tools-shared-tool-card-using-companies-icon.data-qtip{:alt => "C Channel株式会社", "data-qtipv" => "C Channel株式会社", :height => "28", :onerror => "this.src = \"https://dubpy8abnqmkw.cloudfront.net/images/anonymous/anonymous.png\";", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=56,dh=56,da=l,ds=s,cw=56,ch=56,cc=FFFFFF)/assets/images/133397/original/42c86f16-c448-4010-87b4-ce9e189889ee.png?1432604733", :width => "28"}/
+                        %img.tools-shared-tool-card-using-companies-icon.data-qtip{:alt => "MATCHA", "data-qtipv" => "MATCHA", :height => "28", :onerror => "this.src = \"https://dubpy8abnqmkw.cloudfront.net/images/anonymous/anonymous.png\";", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=56,dh=56,da=l,ds=s,cw=56,ch=56,cc=FFFFFF)/assets/images/50995/original/0c11a39b-87b8-45b4-8c85-e02c52bdbbeb.png?1447222391", :width => "28"}/
+              %a.tools-shared-tool-card{:href => "/tools/chatwork"}
+                %article
+                  %img.tools-shared-tool-card-logo{:alt => "7165aa16 7e64 43e4 870b 15d42ff85e36", :height => "80", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=160,dh=160,da=l,ds=s,cw=160,ch=160,cc=FFFFFF)/assets/images/293302/original/7165aa16-7e64-43e4-870b-15d42ff85e36.png?1465812420", :width => "80"}/
+                  .tools-shared-tool-card-add-to-my-tools-wrapper
+                    .tools-shared-tool-card-logo-mask
+                    .tools-shared-add-to-my-tools
+                      .tools-shared-add-to-my-tools-popup.cf
+                        .tools-shared-add-to-my-tools-popup-account{"data-account-id" => "85521318", "data-account-type" => "user", "data-tool-id" => "2", "data-tool-name" => "Chatwork", "data-using" => "false"}
+                          %img.tools-shared-add-to-my-tools-popup-account-icon.data-qtip{:alt => "Picture?height=60&width=60", "data-qtipv" => "濟川 奈津美に追加", :onerror => "this.src = \"https://dubpy8abnqmkw.cloudfront.net/images/anonymous/anonymous.png\";", :src => "https://graph.facebook.com/698893323801773/picture?height=60&width=60"}/
+                          .tools-shared-add-to-my-tools-popup-account-icon-mask.data-qtip{"data-qtipv" => "濟川 奈津美に追加済み"}
+                            %i.tools-shared-add-to-my-tools-popup-account-check.wt-icon.wt-icon-check
+                      .tools-shared-add-to-my-tools-label.cf{"data-account-id" => "85521318", "data-account-type" => "user"}
+                        %img.tools-shared-add-to-my-tools-label-icon{:alt => "Picture?height=36&width=36", :onerror => "this.src = \"https://dubpy8abnqmkw.cloudfront.net/images/anonymous/anonymous.png\";", :src => "https://graph.facebook.com/698893323801773/picture?height=36&width=36"}/
+                        .tools-shared-add-to-my-tools-label-text
+                          マイツールに追加
+                        .tools-shared-add-to-my-tools-label-already-using
+                          .tools-shared-add-to-my-tools-label-already-using-inner.cf
+                            %i.tools-shared-add-to-my-tools-label-already-using-check.wt-icon.wt-icon-check
+                            %span.tools-shared-add-to-my-tools-label-already-using-text
+                              追加済み
+                  %h1.tools-shared-tool-card-name
+                    Chatwork
+                  %p.tools-shared-tool-card-category
+                    コミュニケーション
+                  %p.tools-shared-tool-card-usage-fee
+                    %span.tools-shared-tool-card-usage-fee-free-plan
+                      無料プランあり
+                    ¥500~
+                  .tools-shared-tool-card-rating
+                    .tools-shared-rating
+                      %i.bright.tools-shared-rating-star.wt-icon.wt-icon-star
+                      %i.bright.tools-shared-rating-star.wt-icon.wt-icon-star
+                      %i.bright.tools-shared-rating-star.wt-icon.wt-icon-star
+                      %i.bright.tools-shared-rating-star.wt-icon.wt-icon-star
+                      %i.wt-icon.wt-icon-star.tools-shared-rating-star
+                      .tools-shared-rating-total-count
+                        (343)
+                  .tools-shared-tool-card-info
+                    .tools-shared-tool-card-using-companies
+                      .tools-shared-tool-card-using-companies-title
+                        利用している企業 (538)
+                      .tools-shared-tool-card-using-companies-icons.cf
+                        %img.tools-shared-tool-card-using-companies-icon.data-qtip{:alt => "株式会社サイバーエージェント キャリア採用", "data-qtipv" => "株式会社サイバーエージェント キャリア採用", :height => "28", :onerror => "this.src = \"https://dubpy8abnqmkw.cloudfront.net/images/anonymous/anonymous.png\";", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=56,dh=56,da=l,ds=s,cw=56,ch=56,cc=FFFFFF)/assets/images/116276/original/334ca1e4-2208-413a-bae2-f895a427b19c.png?1429093826", :width => "28"}/
+                        %img.tools-shared-tool-card-using-companies-icon.data-qtip{:alt => "株式会社favy", "data-qtipv" => "株式会社favy", :height => "28", :onerror => "this.src = \"https://dubpy8abnqmkw.cloudfront.net/images/anonymous/anonymous.png\";", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=56,dh=56,da=l,ds=s,cw=56,ch=56,cc=FFFFFF)/assets/images/148723/original/de8227fa-a0d7-4db4-b51b-9b1474c6abbf.png?1435402565", :width => "28"}/
+                        %img.tools-shared-tool-card-using-companies-icon.data-qtip{:alt => "株式会社マネーフォワード", "data-qtipv" => "株式会社マネーフォワード", :height => "28", :onerror => "this.src = \"https://dubpy8abnqmkw.cloudfront.net/images/anonymous/anonymous.png\";", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=56,dh=56,da=l,ds=s,cw=56,ch=56,cc=FFFFFF)/assets/images/3893/original/49ef9acc-c4d9-4b98-8a36-0856b8e0e586.png?1411809805", :width => "28"}/
+                        %img.tools-shared-tool-card-using-companies-icon.data-qtip{:alt => "株式会社LITALICO", "data-qtipv" => "株式会社LITALICO", :height => "28", :onerror => "this.src = \"https://dubpy8abnqmkw.cloudfront.net/images/anonymous/anonymous.png\";", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=56,dh=56,da=l,ds=s,cw=56,ch=56,cc=FFFFFF)/assets/images/32440/original/e2446995-eb76-4a5a-8565-e5a3a24305b9.jpeg?1438331029", :width => "28"}/
+                        %img.tools-shared-tool-card-using-companies-icon.data-qtip{:alt => "MATCHA", "data-qtipv" => "MATCHA", :height => "28", :onerror => "this.src = \"https://dubpy8abnqmkw.cloudfront.net/images/anonymous/anonymous.png\";", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=56,dh=56,da=l,ds=s,cw=56,ch=56,cc=FFFFFF)/assets/images/50995/original/0c11a39b-87b8-45b4-8c85-e02c52bdbbeb.png?1447222391", :width => "28"}/
+              %a.tools-shared-tool-card{:href => "/tools/github"}
+                %article
+                  %img.tools-shared-tool-card-logo{:alt => "Th", :height => "80", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=160,dh=160,da=l,ds=s,cw=160,ch=160,cc=FFFFFF)/assets/images/293439/original/th.jpeg?1455080881", :width => "80"}/
+                  .tools-shared-tool-card-add-to-my-tools-wrapper
+                    .tools-shared-tool-card-logo-mask
+                    .tools-shared-add-to-my-tools
+                      .tools-shared-add-to-my-tools-popup.cf
+                        .tools-shared-add-to-my-tools-popup-account.using{"data-account-id" => "85521318", "data-account-type" => "user", "data-tool-id" => "16", "data-tool-name" => "GitHub", "data-using" => "true"}
+                          %img.tools-shared-add-to-my-tools-popup-account-icon.data-qtip{:alt => "Picture?height=60&width=60", "data-qtipv" => "濟川 奈津美に追加", :onerror => "this.src = \"https://dubpy8abnqmkw.cloudfront.net/images/anonymous/anonymous.png\";", :src => "https://graph.facebook.com/698893323801773/picture?height=60&width=60"}/
+                          .tools-shared-add-to-my-tools-popup-account-icon-mask.data-qtip{"data-qtipv" => "濟川 奈津美に追加済み"}
+                            %i.tools-shared-add-to-my-tools-popup-account-check.wt-icon.wt-icon-check
+                      .cf.tools-shared-add-to-my-tools-label.using{"data-account-id" => "85521318", "data-account-type" => "user"}
+                        %img.tools-shared-add-to-my-tools-label-icon{:alt => "Picture?height=36&width=36", :onerror => "this.src = \"https://dubpy8abnqmkw.cloudfront.net/images/anonymous/anonymous.png\";", :src => "https://graph.facebook.com/698893323801773/picture?height=36&width=36"}/
+                        .tools-shared-add-to-my-tools-label-text
+                          マイツールに追加
+                        .tools-shared-add-to-my-tools-label-already-using
+                          .tools-shared-add-to-my-tools-label-already-using-inner.cf
+                            %i.tools-shared-add-to-my-tools-label-already-using-check.wt-icon.wt-icon-check
+                            %span.tools-shared-add-to-my-tools-label-already-using-text
+                              追加済み
+                  %h1.tools-shared-tool-card-name
+                    GitHub
+                  %p.tools-shared-tool-card-category
+                    情報共有・蓄積, プロジェクト管理
+                  %p.tools-shared-tool-card-usage-fee
+                    %span.tools-shared-tool-card-usage-fee-free-plan
+                      無料プランあり
+                    $7~
+                  .tools-shared-tool-card-rating
+                    .tools-shared-rating
+                      %i.bright.tools-shared-rating-star.wt-icon.wt-icon-star
+                      %i.bright.tools-shared-rating-star.wt-icon.wt-icon-star
+                      %i.bright.tools-shared-rating-star.wt-icon.wt-icon-star
+                      %i.bright.tools-shared-rating-star.wt-icon.wt-icon-star
+                      %i.bright.tools-shared-rating-star.wt-icon.wt-icon-star
+                      .tools-shared-rating-total-count
+                        (569)
+                  .tools-shared-tool-card-info
+                    .tools-shared-tool-card-using-companies
+                      .tools-shared-tool-card-using-companies-title
+                        利用している企業 (790)
+                      .tools-shared-tool-card-using-companies-icons.cf
+                        %img.tools-shared-tool-card-using-companies-icon.data-qtip{:alt => "UUUM株式会社", "data-qtipv" => "UUUM株式会社", :height => "28", :onerror => "this.src = \"https://dubpy8abnqmkw.cloudfront.net/images/anonymous/anonymous.png\";", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=56,dh=56,da=l,ds=s,cw=56,ch=56,cc=FFFFFF)/assets/images/8999/original/38953fde-bcf1-4ebc-afff-79a55c739d33.jpeg?1440732749", :width => "28"}/
+                        %img.tools-shared-tool-card-using-companies-icon.data-qtip{:alt => "チームラボ株式会社", "data-qtipv" => "チームラボ株式会社", :height => "28", :onerror => "this.src = \"https://dubpy8abnqmkw.cloudfront.net/images/anonymous/anonymous.png\";", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=56,dh=56,da=l,ds=s,cw=56,ch=56,cc=FFFFFF)/assets/images/592/original/ef2f4cf1-8cc8-4251-be5e-d60182e91934.png?1455592110", :width => "28"}/
+                        %img.tools-shared-tool-card-using-companies-icon.data-qtip{:alt => "株式会社Loco Partners", "data-qtipv" => "株式会社Loco Partners", :height => "28", :onerror => "this.src = \"https://dubpy8abnqmkw.cloudfront.net/images/anonymous/anonymous.png\";", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=56,dh=56,da=l,ds=s,cw=56,ch=56,cc=FFFFFF)/assets/images/458914/original/376f9d2e-0bef-453d-9b2d-6fdac3765832.jpeg?1467624242", :width => "28"}/
+                        %img.tools-shared-tool-card-using-companies-icon.data-qtip{:alt => "Retty株式会社", "data-qtipv" => "Retty株式会社", :height => "28", :onerror => "this.src = \"https://dubpy8abnqmkw.cloudfront.net/images/anonymous/anonymous.png\";", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=56,dh=56,da=l,ds=s,cw=56,ch=56,cc=FFFFFF)/assets/images/1024/original/7f7255dc-a0b6-45fd-94b3-19808a962e2b.png?1484877187", :width => "28"}/
+                        %img.tools-shared-tool-card-using-companies-icon.data-qtip{:alt => "株式会社サイバーエージェント キャリア採用", "data-qtipv" => "株式会社サイバーエージェント キャリア採用", :height => "28", :onerror => "this.src = \"https://dubpy8abnqmkw.cloudfront.net/images/anonymous/anonymous.png\";", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=56,dh=56,da=l,ds=s,cw=56,ch=56,cc=FFFFFF)/assets/images/116276/original/334ca1e4-2208-413a-bae2-f895a427b19c.png?1429093826", :width => "28"}/
+          #megaphones-bulk-material-download-in-tools-top.megaphone
+            %img.close-button{:alt => "Close light", :data_url => "/megaphone_close?t=gaJpZM4ALSDc", :src => "https://de7iszmjjjuya.cloudfront.net/assets/close_light-c0500c3127a26f8f2a31f09aa7db6d05221eb07abb876d9f278a259036aa1bcb.png"}/
+            %h3#megaphones-bulk-material-download-in-tools-top-title
+              注目の会計・経費精算サービスで業務を効率化しませんか？
+            %p#megaphones-bulk-material-download-in-tools-top-description
+              %strong> ランサーズ、リアルワールド、トランスコスモス
+              など多くの企業が会計・経費精算業務効率化に取り組んでいます。
+              %br/
+              あなたも活用してみませんか？
+            #megaphones-bulk-material-download-in-tools-top-packed-tools
+              .megaphones-bulk-material-download-in-tools-top-packed-tool
+                %img.megaphones-bulk-material-download-in-tools-top-packed-tool-icon{:alt => "78237062 f6c4 4aeb b932 33542abc0061", :height => "80", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=160,dh=160,da=l,ds=s,cw=160,ch=160,cc=FFFFFF)/assets/images/472013/original/78237062-f6c4-4aeb-b932-33542abc0061.png?1475025451", :width => "80"}/
+                %p.megaphones-bulk-material-download-in-tools-top-packed-tool-name
+                  Dr. 経費精算
+              .megaphones-bulk-material-download-in-tools-top-packed-tool
+                %img.megaphones-bulk-material-download-in-tools-top-packed-tool-icon{:alt => "A8b7c45b c274 4cb5 80a8 a860257f846b", :height => "80", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=160,dh=160,da=l,ds=s,cw=160,ch=160,cc=FFFFFF)/assets/images/298758/original/a8b7c45b-c274-4cb5-80a8-a860257f846b.png?1478483295", :width => "80"}/
+                %p.megaphones-bulk-material-download-in-tools-top-packed-tool-name
+                  会計freee
+              .megaphones-bulk-material-download-in-tools-top-packed-tool
+                %img.megaphones-bulk-material-download-in-tools-top-packed-tool-icon{:alt => "6507bc08 8316 46ba 8ebb ed31c62c91c4", :height => "80", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=160,dh=160,da=l,ds=s,cw=160,ch=160,cc=FFFFFF)/assets/images/482088/original/6507bc08-8316-46ba-8ebb-ed31c62c91c4.png?1478499944", :width => "80"}/
+                %p.megaphones-bulk-material-download-in-tools-top-packed-tool-name
+                  ジョブカン経費精算
+            #megaphones-bulk-material-download-in-tools-top-button-wrapper
+              %a#megaphones-bulk-material-download-in-tools-top-button.click-button-async{"data-click-url" => "/megaphone_click?t=gaJpZM4ALSDc&url=%23", "data-pack-name" => "accounting_pack", "data-packed-material-url" => "https://tools-materials.s3.amazonaws.com/Wantedly%20Tools%20Accounting%20Services.zip", "data-tool-info-list" => "[{\"tool_id\":241,\"company_tool_name\":\"dr-keihiseisan\",\"material_url\":\"https://tools-materials.s3.amazonaws.com/Dr.%E7%B5%8C%E8%B2%BB%E7%B2%BE%E7%AE%97%E6%8F%90%E6%A1%88%E6%9B%B8.pdf\"},{\"tool_id\":177,\"company_tool_name\":\"freee\",\"material_url\":\"https://tools-materials.s3.amazonaws.com/%E3%82%AF%E3%83%A9%E3%82%A6%E3%83%89%E4%BC%9A%E8%A8%88%E3%82%BD%E3%83%95%E3%83%88%20freee%E7%B4%B9%E4%BB%8B%E8%B3%87%E6%96%99.pdf\"},{\"tool_id\":328,\"company_tool_name\":\"jobcan_ex\",\"material_url\":\"https://huntr-assets.s3.amazonaws.com/tmp/d7689fa2-5e16-4184-99b5-55a4fe474b46\"}]", :href => "#"}
+                %span まとめて一括資料ダウンロード
+            %p#megaphones-bulk-material-download-in-tools-top-text-below-button
+              資料ダウンロードすると、掲載企業からお客様に直接連絡が入る場合があります。
+          %section.company-tools-top-section1
+            .company-tools-top-section-header.cf
+              %h3.company-tools-top-section-title
+                カテゴリーから探す
+              %p.company-tools-top-section-description
+                注目のツールをカテゴリー別に紹介
+            .company-tools-top-section-body.tools-shared-card-collection
+              %a.tools-shared-category-card{:href => "/tools/categories/project_management"}
+                %article
+                  .tools-shared-category-card-name-wrapper
+                    %h1.tools-shared-category-card-name
+                      プロジェクト管理
+                  .tools-shared-category-card-info
+                    .tools-shared-category-card-tools
+                      .tools-shared-category-card-tools-title
+                        ツール (85)
+                      .tools-shared-category-card-tools-icons
+                        %img.tools-shared-category-card-tools-icon.data-qtip{:alt => "GitHub", "data-qtipv" => "GitHub", :height => "28", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=56,dh=56,da=l,ds=s,cw=56,ch=56,cc=FFFFFF)/assets/images/293439/original/th.jpeg?1455080881", :width => "28"}/
+                        %img.tools-shared-category-card-tools-icon.data-qtip{:alt => "Redmine", "data-qtipv" => "Redmine", :height => "28", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=56,dh=56,da=l,ds=s,cw=56,ch=56,cc=FFFFFF)/assets/images/293440/original/th.jpeg?1455080915", :width => "28"}/
+                        %img.tools-shared-category-card-tools-icon.data-qtip{:alt => "Backlog", "data-qtipv" => "Backlog", :height => "28", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=56,dh=56,da=l,ds=s,cw=56,ch=56,cc=FFFFFF)/assets/images/293442/original/032370b6-4953-4fd1-9ca6-fdfd719253c6.png?1465812217", :width => "28"}/
+                        %img.tools-shared-category-card-tools-icon.data-qtip{:alt => "Trello", "data-qtipv" => "Trello", :height => "28", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=56,dh=56,da=l,ds=s,cw=56,ch=56,cc=FFFFFF)/assets/images/293289/original/100x100bb.jpg?1455072425", :width => "28"}/
+                        %img.tools-shared-category-card-tools-icon.data-qtip{:alt => "タスクワールド", "data-qtipv" => "タスクワールド", :height => "28", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=56,dh=56,da=l,ds=s,cw=56,ch=56,cc=FFFFFF)/assets/images/1685589/original/5150997c-890a-422c-85a5-77441f3b9b5b.png?1498098332", :width => "28"}/
+                        %img.tools-shared-category-card-tools-icon.data-qtip{:alt => "Asana", "data-qtipv" => "Asana", :height => "28", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=56,dh=56,da=l,ds=s,cw=56,ch=56,cc=FFFFFF)/assets/images/178929/original/a878c71f-dade-4cf0-8bff-fd4d1fa61000.png?1455235213", :width => "28"}/
+                        %img.tools-shared-category-card-tools-icon.data-qtip{:alt => "JIRA", "data-qtipv" => "JIRA", :height => "28", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=56,dh=56,da=l,ds=s,cw=56,ch=56,cc=FFFFFF)/assets/images/293409/original/th.jpeg?1455080117", :width => "28"}/
+                        %img.tools-shared-category-card-tools-icon.data-qtip{:alt => "GitLab", "data-qtipv" => "GitLab", :height => "28", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=56,dh=56,da=l,ds=s,cw=56,ch=56,cc=FFFFFF)/assets/images/293461/original/apple-touch-icon-180x180.png?1455081715", :width => "28"}/
+                        %img.tools-shared-category-card-tools-icon.data-qtip{:alt => "Todoist", "data-qtipv" => "Todoist", :height => "28", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=56,dh=56,da=l,ds=s,cw=56,ch=56,cc=FFFFFF)/assets/images/293397/original/100x100bb.jpg?1455078865", :width => "28"}/
+                        %img.tools-shared-category-card-tools-icon.data-qtip{:alt => "サイボウズLive", "data-qtipv" => "サイボウズLive", :height => "28", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=56,dh=56,da=l,ds=s,cw=56,ch=56,cc=FFFFFF)/assets/images/297596/original/apple-touch-icon.png?1455603627", :width => "28"}/
+              %a.tools-shared-category-card{:href => "/tools/categories/communication"}
+                %article
+                  .tools-shared-category-card-name-wrapper
+                    %h1.tools-shared-category-card-name
+                      コミュニケーション
+                  .tools-shared-category-card-info
+                    .tools-shared-category-card-tools
+                      .tools-shared-category-card-tools-title
+                        ツール (106)
+                      .tools-shared-category-card-tools-icons
+                        %img.tools-shared-category-card-tools-icon.data-qtip{:alt => "Slack", "data-qtipv" => "Slack", :height => "28", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=56,dh=56,da=l,ds=s,cw=56,ch=56,cc=FFFFFF)/assets/images/293290/original/100x100bb.jpg?1455072425", :width => "28"}/
+                        %img.tools-shared-category-card-tools-icon.data-qtip{:alt => "Skype", "data-qtipv" => "Skype", :height => "28", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=56,dh=56,da=l,ds=s,cw=56,ch=56,cc=FFFFFF)/assets/images/293281/original/100x100bb.jpg?1455072362", :width => "28"}/
+                        %img.tools-shared-category-card-tools-icon.data-qtip{:alt => "Chatwork", "data-qtipv" => "Chatwork", :height => "28", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=56,dh=56,da=l,ds=s,cw=56,ch=56,cc=FFFFFF)/assets/images/293302/original/7165aa16-7e64-43e4-870b-15d42ff85e36.png?1465812420", :width => "28"}/
+                        %img.tools-shared-category-card-tools-icon.data-qtip{:alt => "LINE", "data-qtipv" => "LINE", :height => "28", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=56,dh=56,da=l,ds=s,cw=56,ch=56,cc=FFFFFF)/assets/images/293283/original/100x100bb.jpg?1455072367", :width => "28"}/
+                        %img.tools-shared-category-card-tools-icon.data-qtip{:alt => "Facebook messenger", "data-qtipv" => "Facebook messenger", :height => "28", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=56,dh=56,da=l,ds=s,cw=56,ch=56,cc=FFFFFF)/assets/images/293306/original/e522dd19-c68f-4c5d-af85-145485c47d6d.png?1465811983", :width => "28"}/
+                        %img.tools-shared-category-card-tools-icon.data-qtip{:alt => "Google Hangout", "data-qtipv" => "Google Hangout", :height => "28", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=56,dh=56,da=l,ds=s,cw=56,ch=56,cc=FFFFFF)/assets/images/293304/original/3148be24-3a0a-4dd9-be42-ceab13f2b15b.png?1465812101", :width => "28"}/
+                        %img.tools-shared-category-card-tools-icon.data-qtip{:alt => "タスクワールド", "data-qtipv" => "タスクワールド", :height => "28", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=56,dh=56,da=l,ds=s,cw=56,ch=56,cc=FFFFFF)/assets/images/1685589/original/5150997c-890a-422c-85a5-77441f3b9b5b.png?1498098332", :width => "28"}/
+                        %img.tools-shared-category-card-tools-icon.data-qtip{:alt => "サイボウズ", "data-qtipv" => "サイボウズ", :height => "28", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=56,dh=56,da=l,ds=s,cw=56,ch=56,cc=FFFFFF)/assets/images/293284/original/dd4283b3-a759-40aa-8391-69c762a840fa.png?1465811837", :width => "28"}/
+                        %img.tools-shared-category-card-tools-icon.data-qtip{:alt => "Talknote", "data-qtipv" => "Talknote", :height => "28", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=56,dh=56,da=l,ds=s,cw=56,ch=56,cc=FFFFFF)/assets/images/293307/original/100x100bb.jpg?1455072703", :width => "28"}/
+                        %img.tools-shared-category-card-tools-icon.data-qtip{:alt => "Re:lation（リレーション）", "data-qtipv" => "Re:lation（リレーション）", :height => "28", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=56,dh=56,da=l,ds=s,cw=56,ch=56,cc=FFFFFF)/assets/images/1611897/original/e006a434-dac0-4f9a-ada5-d91847aa2c69.png?1493545823", :width => "28"}/
+              %a.tools-shared-category-card{:href => "/tools/categories/knowledge"}
+                %article
+                  .tools-shared-category-card-name-wrapper
+                    %h1.tools-shared-category-card-name
+                      情報共有・蓄積
+                  .tools-shared-category-card-info
+                    .tools-shared-category-card-tools
+                      .tools-shared-category-card-tools-title
+                        ツール (128)
+                      .tools-shared-category-card-tools-icons
+                        %img.tools-shared-category-card-tools-icon.data-qtip{:alt => "Google Drive", "data-qtipv" => "Google Drive", :height => "28", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=56,dh=56,da=l,ds=s,cw=56,ch=56,cc=FFFFFF)/assets/images/293316/original/th.jpeg?1455073109", :width => "28"}/
+                        %img.tools-shared-category-card-tools-icon.data-qtip{:alt => "GitHub", "data-qtipv" => "GitHub", :height => "28", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=56,dh=56,da=l,ds=s,cw=56,ch=56,cc=FFFFFF)/assets/images/293439/original/th.jpeg?1455080881", :width => "28"}/
+                        %img.tools-shared-category-card-tools-icon.data-qtip{:alt => "Dropbox", "data-qtipv" => "Dropbox", :height => "28", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=56,dh=56,da=l,ds=s,cw=56,ch=56,cc=FFFFFF)/assets/images/293286/original/3d70db57-f819-4e74-a492-2dea09c4389d.jpeg?1465812768", :width => "28"}/
+                        %img.tools-shared-category-card-tools-icon.data-qtip{:alt => "Wantedly People", "data-qtipv" => "Wantedly People", :height => "28", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=56,dh=56,da=l,ds=s,cw=56,ch=56,cc=FFFFFF)/assets/images/778911/original/e005e248-28e8-4e0e-8343-993c335d9cac.png?1479173609", :width => "28"}/
+                        %img.tools-shared-category-card-tools-icon.data-qtip{:alt => "Sansan", "data-qtipv" => "Sansan", :height => "28", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=56,dh=56,da=l,ds=s,cw=56,ch=56,cc=FFFFFF)/assets/images/178940/original/bc8cc025-4705-4007-b2e5-fc6dbca2626e.gif?1455235496", :width => "28"}/
+                        %img.tools-shared-category-card-tools-icon.data-qtip{:alt => "Box", "data-qtipv" => "Box", :height => "28", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=56,dh=56,da=l,ds=s,cw=56,ch=56,cc=FFFFFF)/assets/images/293288/original/100x100bb.jpg?1455072424", :width => "28"}/
+                        %img.tools-shared-category-card-tools-icon.data-qtip{:alt => "esa.io", "data-qtipv" => "esa.io", :height => "28", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=56,dh=56,da=l,ds=s,cw=56,ch=56,cc=FFFFFF)/assets/images/293322/original/th.jpeg?1455073293", :width => "28"}/
+                        %img.tools-shared-category-card-tools-icon.data-qtip{:alt => "Confluence", "data-qtipv" => "Confluence", :height => "28", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=56,dh=56,da=l,ds=s,cw=56,ch=56,cc=FFFFFF)/assets/images/293320/original/th.jpeg?1455073273", :width => "28"}/
+                        %img.tools-shared-category-card-tools-icon.data-qtip{:alt => "Evernote", "data-qtipv" => "Evernote", :height => "28", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=56,dh=56,da=l,ds=s,cw=56,ch=56,cc=FFFFFF)/assets/images/293287/original/100x100bb.jpg?1455072424", :width => "28"}/
+                        %img.tools-shared-category-card-tools-icon.data-qtip{:alt => "Slideshare", "data-qtipv" => "Slideshare", :height => "28", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=56,dh=56,da=l,ds=s,cw=56,ch=56,cc=FFFFFF)/assets/images/293319/original/th.jpeg?1455073253", :width => "28"}/
+              %a.tools-shared-category-card{:href => "/tools/categories/human_resource"}
+                %article
+                  .tools-shared-category-card-name-wrapper
+                    %h1.tools-shared-category-card-name
+                      採用・育成
+                  .tools-shared-category-card-info
+                    .tools-shared-category-card-tools
+                      .tools-shared-category-card-tools-title
+                        ツール (140)
+                      .tools-shared-category-card-tools-icons
+                        %img.tools-shared-category-card-tools-icon.data-qtip{:alt => "Wantedly Admin", "data-qtipv" => "Wantedly Admin", :height => "28", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=56,dh=56,da=l,ds=s,cw=56,ch=56,cc=FFFFFF)/assets/images/293506/original/th.jpeg?1455083497", :width => "28"}/
+                        %img.tools-shared-category-card-tools-icon.data-qtip{:alt => "Linkedin", "data-qtipv" => "Linkedin", :height => "28", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=56,dh=56,da=l,ds=s,cw=56,ch=56,cc=FFFFFF)/assets/images/293293/original/100x100bb.jpg?1455072436", :width => "28"}/
+                        %img.tools-shared-category-card-tools-icon.data-qtip{:alt => "Green", "data-qtipv" => "Green", :height => "28", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=56,dh=56,da=l,ds=s,cw=56,ch=56,cc=FFFFFF)/assets/images/424618/original/6bc0ca93-c87f-472b-9bce-34b75d0c407e.png?1465814218", :width => "28"}/
+                        %img.tools-shared-category-card-tools-icon.data-qtip{:alt => "ゼロワンインターン", "data-qtipv" => "ゼロワンインターン", :height => "28", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=56,dh=56,da=l,ds=s,cw=56,ch=56,cc=FFFFFF)/assets/images/2984413/original/d24dfce1-9f3e-46ed-9858-88e05abb91e4.png?1532658987", :width => "28"}/
+                        %img.tools-shared-category-card-tools-icon.data-qtip{:alt => "ビズリーチ", "data-qtipv" => "ビズリーチ", :height => "28", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=56,dh=56,da=l,ds=s,cw=56,ch=56,cc=FFFFFF)/assets/images/293411/original/e361d8c7-c315-4357-997c-573abb7c19fb.png?1465814722", :width => "28"}/
+                        %img.tools-shared-category-card-tools-icon.data-qtip{:alt => "リクナビ", "data-qtipv" => "リクナビ", :height => "28", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=56,dh=56,da=l,ds=s,cw=56,ch=56,cc=FFFFFF)/assets/images/293412/original/100x100bb.jpg?1455080388", :width => "28"}/
+                        %img.tools-shared-category-card-tools-icon.data-qtip{:alt => "en転職", "data-qtipv" => "en転職", :height => "28", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=56,dh=56,da=l,ds=s,cw=56,ch=56,cc=FFFFFF)/assets/images/424629/original/9f5d16a0-cff1-4587-8c2e-1dc11caf4cf6.jpeg?1465814752", :width => "28"}/
+                        %img.tools-shared-category-card-tools-icon.data-qtip{:alt => "SmartHR", "data-qtipv" => "SmartHR", :height => "28", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=56,dh=56,da=l,ds=s,cw=56,ch=56,cc=FFFFFF)/assets/images/645073/original/12d4847d-81b8-407e-bba1-29f15f109dab?1508748025", :width => "28"}/
+                        %img.tools-shared-category-card-tools-icon.data-qtip{:alt => "クラウドワークス", "data-qtipv" => "クラウドワークス", :height => "28", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=56,dh=56,da=l,ds=s,cw=56,ch=56,cc=FFFFFF)/assets/images/497447/original/0eb19fe5-a34e-4807-9fc5-c8965566bf21.png?1469759353", :width => "28"}/
+                        %img.tools-shared-category-card-tools-icon.data-qtip{:alt => "カオナビ", "data-qtipv" => "カオナビ", :height => "28", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=56,dh=56,da=l,ds=s,cw=56,ch=56,cc=FFFFFF)/assets/images/424626/original/5db9cb0d-e735-4b80-91f9-68b59ab4abd0.jpeg?1465814593", :width => "28"}/
+              %a.tools-shared-category-card{:href => "/tools/categories/sales"}
+                %article
+                  .tools-shared-category-card-name-wrapper
+                    %h1.tools-shared-category-card-name
+                      営業
+                  .tools-shared-category-card-info
+                    .tools-shared-category-card-tools
+                      .tools-shared-category-card-tools-title
+                        ツール (70)
+                      .tools-shared-category-card-tools-icons
+                        %img.tools-shared-category-card-tools-icon.data-qtip{:alt => "Eight", "data-qtipv" => "Eight", :height => "28", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=56,dh=56,da=l,ds=s,cw=56,ch=56,cc=FFFFFF)/assets/images/293296/original/100x100bb.jpg?1455072480", :width => "28"}/
+                        %img.tools-shared-category-card-tools-icon.data-qtip{:alt => "Wantedly People", "data-qtipv" => "Wantedly People", :height => "28", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=56,dh=56,da=l,ds=s,cw=56,ch=56,cc=FFFFFF)/assets/images/778911/original/e005e248-28e8-4e0e-8343-993c335d9cac.png?1479173609", :width => "28"}/
+                        %img.tools-shared-category-card-tools-icon.data-qtip{:alt => "Sansan", "data-qtipv" => "Sansan", :height => "28", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=56,dh=56,da=l,ds=s,cw=56,ch=56,cc=FFFFFF)/assets/images/178940/original/bc8cc025-4705-4007-b2e5-fc6dbca2626e.gif?1455235496", :width => "28"}/
+                        %img.tools-shared-category-card-tools-icon.data-qtip{:alt => "salesforce", "data-qtipv" => "salesforce", :height => "28", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=56,dh=56,da=l,ds=s,cw=56,ch=56,cc=FFFFFF)/assets/images/293303/original/100x100bb.jpg?1455072512", :width => "28"}/
+                        %img.tools-shared-category-card-tools-icon.data-qtip{:alt => "kintone", "data-qtipv" => "kintone", :height => "28", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=56,dh=56,da=l,ds=s,cw=56,ch=56,cc=FFFFFF)/assets/images/293511/original/dfa91959-f7f4-4b0a-9a5b-d5f9a786d378.png?1455083716", :width => "28"}/
+                        %img.tools-shared-category-card-tools-icon.data-qtip{:alt => "Senses", "data-qtipv" => "Senses", :height => "28", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=56,dh=56,da=l,ds=s,cw=56,ch=56,cc=FFFFFF)/assets/images/298746/original/39741d79-88f7-4407-92b5-3a54414157e1.png?1476675186", :width => "28"}/
+                        %img.tools-shared-category-card-tools-icon.data-qtip{:alt => "ネットプリント", "data-qtipv" => "ネットプリント", :height => "28", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=56,dh=56,da=l,ds=s,cw=56,ch=56,cc=FFFFFF)/assets/images/483188/original/ecf0faa3-35e2-49bb-93d6-236a6239ffc9.jpeg?1468998721", :width => "28"}/
+                        %img.tools-shared-category-card-tools-icon.data-qtip{:alt => "board", "data-qtipv" => "board", :height => "28", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=56,dh=56,da=l,ds=s,cw=56,ch=56,cc=FFFFFF)/assets/images/476486/original/306ab65d-5f7b-487a-932b-161197216dce.png?1468405162", :width => "28"}/
+                        %img.tools-shared-category-card-tools-icon.data-qtip{:alt => "Odoo", "data-qtipv" => "Odoo", :height => "28", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=56,dh=56,da=l,ds=s,cw=56,ch=56,cc=FFFFFF)/assets/images/492008/original/beb92c69-3fe7-4452-aea6-39d445422098.jpeg?1469511680", :width => "28"}/
+                        %img.tools-shared-category-card-tools-icon.data-qtip{:alt => "zoho", "data-qtipv" => "zoho", :height => "28", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=56,dh=56,da=l,ds=s,cw=56,ch=56,cc=FFFFFF)/assets/images/178920/original/35a9d815-6314-477e-9138-9b376f310c16.png?1455239768", :width => "28"}/
+          %section.company-tools-top-section2
+            .company-tools-top-section-header.cf
+              %h3.company-tools-top-section-title
+                テーマから探す
+              %p.company-tools-top-section-description
+                話題のツールをテーマ別に紹介
+            .company-tools-top-section-body.tools-shared-card-collection
+              %a.company-tools-theme-card{:href => "/tools/themes/east_ventures"}
+                %article
+                  .company-tools-theme-card-header
+                    %img.company-tools-theme-card-logo{:alt => "00062d46 ad06 4514 9143 bad41ddf4b02", :height => "60", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=640,dh=640,da=l,ds=n,cc=FFFFFF)/assets/images/557179/original/00062d46-ad06-4514-9143-bad41ddf4b02.png?1473752313", :width => "60"}/
+                    %h1.company-tools-theme-card-title
+                      East Ventures
+                  .company-tools-theme-card-body
+                    .company-tools-theme-card-tools
+                      .company-tools-theme-card-tools-title
+                        ツール (134)
+                      .company-tools-theme-card-tools-body
+                        %img.company-tools-theme-card-tool.data-qtip{:alt => "Slack", "data-qtipv" => "Slack", :height => "24", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=48,dh=48,da=l,ds=s,cw=48,ch=48,cc=FFFFFF)/assets/images/293290/original/100x100bb.jpg?1455072425", :width => "24"}/
+                        %img.company-tools-theme-card-tool.data-qtip{:alt => "Google Drive", "data-qtipv" => "Google Drive", :height => "24", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=48,dh=48,da=l,ds=s,cw=48,ch=48,cc=FFFFFF)/assets/images/293316/original/th.jpeg?1455073109", :width => "24"}/
+                        %img.company-tools-theme-card-tool.data-qtip{:alt => "GitHub", "data-qtipv" => "GitHub", :height => "24", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=48,dh=48,da=l,ds=s,cw=48,ch=48,cc=FFFFFF)/assets/images/293439/original/th.jpeg?1455080881", :width => "24"}/
+                        %img.company-tools-theme-card-tool.data-qtip{:alt => "Photoshop", "data-qtipv" => "Photoshop", :height => "24", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=48,dh=48,da=l,ds=s,cw=48,ch=48,cc=FFFFFF)/assets/images/293557/original/8b2a4ed3-1b4c-4d87-ae32-e0104472fa05.png?1465813280", :width => "24"}/
+                        %img.company-tools-theme-card-tool.data-qtip{:alt => "Illustrator", "data-qtipv" => "Illustrator", :height => "24", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=48,dh=48,da=l,ds=s,cw=48,ch=48,cc=FFFFFF)/assets/images/293556/original/be33048d-fe99-4741-9ba9-25b7ecef7d39.png?1465813300", :width => "24"}/
+                        %img.company-tools-theme-card-tool.data-qtip{:alt => "AWS", "data-qtipv" => "AWS", :height => "24", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=48,dh=48,da=l,ds=s,cw=48,ch=48,cc=FFFFFF)/assets/images/293432/original/59cf6eeb-0b7a-4a7a-8ab5-511c0c7f1425.png?1466053392", :width => "24"}/
+                    .company-tools-theme-card-companies
+                      .company-tools-theme-card-companies-title
+                        企業 (43)
+                      .company-tools-theme-card-companies-body
+                        %img.company-tools-theme-card-company.data-qtip{:alt => "株式会社メルカリ", "data-qtipv" => "株式会社メルカリ", :height => "24", :onerror => "this.src = \"https://dubpy8abnqmkw.cloudfront.net/images/anonymous/anonymous.png\";", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=48,dh=48,da=l,ds=s,cw=48,ch=48,cc=FFFFFF)/assets/images/35323/original/280ea972-2a2c-44a2-bf31-a2e858a47149?1499942068", :width => "24"}/
+                        %img.company-tools-theme-card-company.data-qtip{:alt => "CAMPFIRE", "data-qtipv" => "CAMPFIRE", :height => "24", :onerror => "this.src = \"https://dubpy8abnqmkw.cloudfront.net/images/anonymous/anonymous.png\";", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=48,dh=48,da=l,ds=s,cw=48,ch=48,cc=FFFFFF)/assets/images/351/original/dbc7bb67-be41-4e54-be34-84e43958d02f.png?1457071932", :width => "24"}/
+                        %img.company-tools-theme-card-company.data-qtip{:alt => "dely株式会社", "data-qtipv" => "dely株式会社", :height => "24", :onerror => "this.src = \"https://dubpy8abnqmkw.cloudfront.net/images/anonymous/anonymous.png\";", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=48,dh=48,da=l,ds=s,cw=48,ch=48,cc=FFFFFF)/assets/images/17639/original/eb75688f-bc30-454b-befb-e265feb52538.png?1496634358", :width => "24"}/
+                        %img.company-tools-theme-card-company.data-qtip{:alt => "株式会社メドレー", "data-qtipv" => "株式会社メドレー", :height => "24", :onerror => "this.src = \"https://dubpy8abnqmkw.cloudfront.net/images/anonymous/anonymous.png\";", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=48,dh=48,da=l,ds=s,cw=48,ch=48,cc=FFFFFF)/assets/images/389/original/be500e40-6979-4a03-94e8-69261c2dd359.png?1437970152", :width => "24"}/
+                        %img.company-tools-theme-card-company.data-qtip{:alt => "Gunosy", "data-qtipv" => "Gunosy", :height => "24", :onerror => "this.src = \"https://dubpy8abnqmkw.cloudfront.net/images/anonymous/anonymous.png\";", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=48,dh=48,da=l,ds=s,cw=48,ch=48,cc=FFFFFF)/assets/images/577/original/d11e384a-5f0e-45fd-990a-abc5aead517a.png?1400932561", :width => "24"}/
+                        %img.company-tools-theme-card-company.data-qtip{:alt => "株式会社３ミニッツ", "data-qtipv" => "株式会社３ミニッツ", :height => "24", :onerror => "this.src = \"https://dubpy8abnqmkw.cloudfront.net/images/anonymous/anonymous.png\";", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=48,dh=48,da=l,ds=s,cw=48,ch=48,cc=FFFFFF)/assets/images/43892/original/5e3dd439-bcef-4cbd-b6fc-b8db7c44ab6c?1500475272", :width => "24"}/
+              %a.company-tools-theme-card{:href => "/tools/themes/onlab"}
+                %article
+                  .company-tools-theme-card-header
+                    %img.company-tools-theme-card-logo{:alt => "Ec7c5861 daf1 48c4 9f7a 599fc7476932", :height => "60", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=640,dh=640,da=l,ds=n,cc=FFFFFF)/assets/images/534036/original/ec7c5861-daf1-48c4-9f7a-599fc7476932.jpeg?1471956281", :width => "60"}/
+                    %h1.company-tools-theme-card-title
+                      Open Network Lab
+                  .company-tools-theme-card-body
+                    .company-tools-theme-card-tools
+                      .company-tools-theme-card-tools-title
+                        ツール (88)
+                      .company-tools-theme-card-tools-body
+                        %img.company-tools-theme-card-tool.data-qtip{:alt => "GitHub", "data-qtipv" => "GitHub", :height => "24", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=48,dh=48,da=l,ds=s,cw=48,ch=48,cc=FFFFFF)/assets/images/293439/original/th.jpeg?1455080881", :width => "24"}/
+                        %img.company-tools-theme-card-tool.data-qtip{:alt => "AWS", "data-qtipv" => "AWS", :height => "24", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=48,dh=48,da=l,ds=s,cw=48,ch=48,cc=FFFFFF)/assets/images/293432/original/59cf6eeb-0b7a-4a7a-8ab5-511c0c7f1425.png?1466053392", :width => "24"}/
+                        %img.company-tools-theme-card-tool.data-qtip{:alt => "Slack", "data-qtipv" => "Slack", :height => "24", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=48,dh=48,da=l,ds=s,cw=48,ch=48,cc=FFFFFF)/assets/images/293290/original/100x100bb.jpg?1455072425", :width => "24"}/
+                        %img.company-tools-theme-card-tool.data-qtip{:alt => "Wantedly Admin", "data-qtipv" => "Wantedly Admin", :height => "24", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=48,dh=48,da=l,ds=s,cw=48,ch=48,cc=FFFFFF)/assets/images/293506/original/th.jpeg?1455083497", :width => "24"}/
+                        %img.company-tools-theme-card-tool.data-qtip{:alt => "Google Analytics", "data-qtipv" => "Google Analytics", :height => "24", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=48,dh=48,da=l,ds=s,cw=48,ch=48,cc=FFFFFF)/assets/images/293514/original/660f3427-f690-4466-bc01-169dd83ca611.png?1466053259", :width => "24"}/
+                        %img.company-tools-theme-card-tool.data-qtip{:alt => "Google Drive", "data-qtipv" => "Google Drive", :height => "24", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=48,dh=48,da=l,ds=s,cw=48,ch=48,cc=FFFFFF)/assets/images/293316/original/th.jpeg?1455073109", :width => "24"}/
+                    .company-tools-theme-card-companies
+                      .company-tools-theme-card-companies-title
+                        企業 (11)
+                      .company-tools-theme-card-companies-body
+                        %img.company-tools-theme-card-company.data-qtip{:alt => "株式会社Viibar", "data-qtipv" => "株式会社Viibar", :height => "24", :onerror => "this.src = \"https://dubpy8abnqmkw.cloudfront.net/images/anonymous/anonymous.png\";", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=48,dh=48,da=l,ds=s,cw=48,ch=48,cc=FFFFFF)/assets/images/3135273/original/b2161fce-78eb-4e1b-a00e-458e03d85a60?1538692851", :width => "24"}/
+                        %img.company-tools-theme-card-company.data-qtip{:alt => "Increments(Qiita)", "data-qtipv" => "Increments(Qiita)", :height => "24", :onerror => "this.src = \"https://dubpy8abnqmkw.cloudfront.net/images/anonymous/anonymous.png\";", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=48,dh=48,da=l,ds=s,cw=48,ch=48,cc=FFFFFF)/assets/images/457/original/0d88f846-1ad4-452b-a014-3844074ef8d7.png?1477387113", :width => "24"}/
+                        %img.company-tools-theme-card-company.data-qtip{:alt => "株式会社ギフティ", "data-qtipv" => "株式会社ギフティ", :height => "24", :onerror => "this.src = \"https://dubpy8abnqmkw.cloudfront.net/images/anonymous/anonymous.png\";", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=48,dh=48,da=l,ds=s,cw=48,ch=48,cc=FFFFFF)/assets/images/306878/original/25844cb7-bfa5-4387-9196-76bd2621c404.png?1456489745", :width => "24"}/
+                        %img.company-tools-theme-card-company.data-qtip{:alt => "Sider株式会社", "data-qtipv" => "Sider株式会社", :height => "24", :onerror => "this.src = \"https://dubpy8abnqmkw.cloudfront.net/images/anonymous/anonymous.png\";", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=48,dh=48,da=l,ds=s,cw=48,ch=48,cc=FFFFFF)/assets/images/576/original/d553cfbc-e0e7-4e46-9a61-a78a3ad5195e?1528957023", :width => "24"}/
+                        %img.company-tools-theme-card-company.data-qtip{:alt => "株式会社Lang-8", "data-qtipv" => "株式会社Lang-8", :height => "24", :onerror => "this.src = \"https://dubpy8abnqmkw.cloudfront.net/images/anonymous/anonymous.png\";", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=48,dh=48,da=l,ds=s,cw=48,ch=48,cc=FFFFFF)/assets/images/877/original/cba65372-a176-4f24-ba94-9f149e012d42.jpeg?1398675516", :width => "24"}/
+                        %img.company-tools-theme-card-company.data-qtip{:alt => "楽天株式会社ラクマ事業部", "data-qtipv" => "楽天株式会社ラクマ事業部", :height => "24", :onerror => "this.src = \"https://dubpy8abnqmkw.cloudfront.net/images/anonymous/anonymous.png\";", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=48,dh=48,da=l,ds=s,cw=48,ch=48,cc=FFFFFF)/assets/images/2943686/original/dd219ac9-397c-40ce-a20e-900488d4a17c?1531126733", :width => "24"}/
+              %a.company-tools-theme-card{:href => "/tools/themes/under5"}
+                %article
+                  .company-tools-theme-card-header
+                    %img.company-tools-theme-card-logo{:alt => "89af4116 c0ff 4be5 bfe1 17f54d9d22a9", :height => "60", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=640,dh=640,da=l,ds=n,cc=FFFFFF)/assets/images/557173/original/89af4116-c0ff-4be5-bfe1-17f54d9d22a9.png?1473752051", :width => "60"}/
+                    %h1.company-tools-theme-card-title
+                      調達額5億円未満
+                  .company-tools-theme-card-body
+                    .company-tools-theme-card-tools
+                      .company-tools-theme-card-tools-title
+                        ツール (221)
+                      .company-tools-theme-card-tools-body
+                        %img.company-tools-theme-card-tool.data-qtip{:alt => "Slack", "data-qtipv" => "Slack", :height => "24", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=48,dh=48,da=l,ds=s,cw=48,ch=48,cc=FFFFFF)/assets/images/293290/original/100x100bb.jpg?1455072425", :width => "24"}/
+                        %img.company-tools-theme-card-tool.data-qtip{:alt => "GitHub", "data-qtipv" => "GitHub", :height => "24", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=48,dh=48,da=l,ds=s,cw=48,ch=48,cc=FFFFFF)/assets/images/293439/original/th.jpeg?1455080881", :width => "24"}/
+                        %img.company-tools-theme-card-tool.data-qtip{:alt => "Google Drive", "data-qtipv" => "Google Drive", :height => "24", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=48,dh=48,da=l,ds=s,cw=48,ch=48,cc=FFFFFF)/assets/images/293316/original/th.jpeg?1455073109", :width => "24"}/
+                        %img.company-tools-theme-card-tool.data-qtip{:alt => "AWS", "data-qtipv" => "AWS", :height => "24", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=48,dh=48,da=l,ds=s,cw=48,ch=48,cc=FFFFFF)/assets/images/293432/original/59cf6eeb-0b7a-4a7a-8ab5-511c0c7f1425.png?1466053392", :width => "24"}/
+                        %img.company-tools-theme-card-tool.data-qtip{:alt => "Google Analytics", "data-qtipv" => "Google Analytics", :height => "24", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=48,dh=48,da=l,ds=s,cw=48,ch=48,cc=FFFFFF)/assets/images/293514/original/660f3427-f690-4466-bc01-169dd83ca611.png?1466053259", :width => "24"}/
+                        %img.company-tools-theme-card-tool.data-qtip{:alt => "Illustrator", "data-qtipv" => "Illustrator", :height => "24", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=48,dh=48,da=l,ds=s,cw=48,ch=48,cc=FFFFFF)/assets/images/293556/original/be33048d-fe99-4741-9ba9-25b7ecef7d39.png?1465813300", :width => "24"}/
+                    .company-tools-theme-card-companies
+                      .company-tools-theme-card-companies-title
+                        企業 (107)
+                      .company-tools-theme-card-companies-body
+                        %img.company-tools-theme-card-company.data-qtip{:alt => "株式会社favy", "data-qtipv" => "株式会社favy", :height => "24", :onerror => "this.src = \"https://dubpy8abnqmkw.cloudfront.net/images/anonymous/anonymous.png\";", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=48,dh=48,da=l,ds=s,cw=48,ch=48,cc=FFFFFF)/assets/images/148723/original/de8227fa-a0d7-4db4-b51b-9b1474c6abbf.png?1435402565", :width => "24"}/
+                        %img.company-tools-theme-card-company.data-qtip{:alt => "trippiece<トリッピース>", "data-qtipv" => "trippiece<トリッピース>", :height => "24", :onerror => "this.src = \"https://dubpy8abnqmkw.cloudfront.net/images/anonymous/anonymous.png\";", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=48,dh=48,da=l,ds=s,cw=48,ch=48,cc=FFFFFF)/assets/images/859/original/6ba844e3-5e05-4cda-9dc1-f0d5f76459c5.png?1392712793", :width => "24"}/
+                        %img.company-tools-theme-card-company.data-qtip{:alt => "株式会社メドレー", "data-qtipv" => "株式会社メドレー", :height => "24", :onerror => "this.src = \"https://dubpy8abnqmkw.cloudfront.net/images/anonymous/anonymous.png\";", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=48,dh=48,da=l,ds=s,cw=48,ch=48,cc=FFFFFF)/assets/images/389/original/be500e40-6979-4a03-94e8-69261c2dd359.png?1437970152", :width => "24"}/
+                        %img.company-tools-theme-card-company.data-qtip{:alt => "株式会社３ミニッツ", "data-qtipv" => "株式会社３ミニッツ", :height => "24", :onerror => "this.src = \"https://dubpy8abnqmkw.cloudfront.net/images/anonymous/anonymous.png\";", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=48,dh=48,da=l,ds=s,cw=48,ch=48,cc=FFFFFF)/assets/images/43892/original/5e3dd439-bcef-4cbd-b6fc-b8db7c44ab6c?1500475272", :width => "24"}/
+                        %img.company-tools-theme-card-company.data-qtip{:alt => "株式会社Branding Engineer", "data-qtipv" => "株式会社Branding Engineer", :height => "24", :onerror => "this.src = \"https://dubpy8abnqmkw.cloudfront.net/images/anonymous/anonymous.png\";", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=48,dh=48,da=l,ds=s,cw=48,ch=48,cc=FFFFFF)/assets/images/132623/original/7e1baed6-72c3-494a-8b7f-f593d6e99881.png?1443103306", :width => "24"}/
+                        %img.company-tools-theme-card-company.data-qtip{:alt => "株式会社ビザスク", "data-qtipv" => "株式会社ビザスク", :height => "24", :onerror => "this.src = \"https://dubpy8abnqmkw.cloudfront.net/images/anonymous/anonymous.png\";", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=48,dh=48,da=l,ds=s,cw=48,ch=48,cc=FFFFFF)/assets/images/67020/original/db43b051-a435-4fd9-9358-d1eef7d4b86f.png?1461204831", :width => "24"}/
+              %a.company-tools-theme-card{:href => "/tools/themes/overseas"}
+                %article
+                  .company-tools-theme-card-header
+                    %img.company-tools-theme-card-logo{:alt => "Aa591839 82ce 49a0 a878 7d41c2be2d64", :height => "60", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=640,dh=640,da=l,ds=n,cc=FFFFFF)/assets/images/565424/original/aa591839-82ce-49a0-a878-7d41c2be2d64.png?1474362943", :width => "60"}/
+                    %h1.company-tools-theme-card-title
+                      グローバルベンチャー
+                  .company-tools-theme-card-body
+                    .company-tools-theme-card-tools
+                      .company-tools-theme-card-tools-title
+                        ツール (204)
+                      .company-tools-theme-card-tools-body
+                        %img.company-tools-theme-card-tool.data-qtip{:alt => "Google Drive", "data-qtipv" => "Google Drive", :height => "24", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=48,dh=48,da=l,ds=s,cw=48,ch=48,cc=FFFFFF)/assets/images/293316/original/th.jpeg?1455073109", :width => "24"}/
+                        %img.company-tools-theme-card-tool.data-qtip{:alt => "Slack", "data-qtipv" => "Slack", :height => "24", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=48,dh=48,da=l,ds=s,cw=48,ch=48,cc=FFFFFF)/assets/images/293290/original/100x100bb.jpg?1455072425", :width => "24"}/
+                        %img.company-tools-theme-card-tool.data-qtip{:alt => "GitHub", "data-qtipv" => "GitHub", :height => "24", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=48,dh=48,da=l,ds=s,cw=48,ch=48,cc=FFFFFF)/assets/images/293439/original/th.jpeg?1455080881", :width => "24"}/
+                        %img.company-tools-theme-card-tool.data-qtip{:alt => "Google Analytics", "data-qtipv" => "Google Analytics", :height => "24", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=48,dh=48,da=l,ds=s,cw=48,ch=48,cc=FFFFFF)/assets/images/293514/original/660f3427-f690-4466-bc01-169dd83ca611.png?1466053259", :width => "24"}/
+                        %img.company-tools-theme-card-tool.data-qtip{:alt => "Illustrator", "data-qtipv" => "Illustrator", :height => "24", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=48,dh=48,da=l,ds=s,cw=48,ch=48,cc=FFFFFF)/assets/images/293556/original/be33048d-fe99-4741-9ba9-25b7ecef7d39.png?1465813300", :width => "24"}/
+                        %img.company-tools-theme-card-tool.data-qtip{:alt => "AWS", "data-qtipv" => "AWS", :height => "24", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=48,dh=48,da=l,ds=s,cw=48,ch=48,cc=FFFFFF)/assets/images/293432/original/59cf6eeb-0b7a-4a7a-8ab5-511c0c7f1425.png?1466053392", :width => "24"}/
+                    .company-tools-theme-card-companies
+                      .company-tools-theme-card-companies-title
+                        企業 (68)
+                      .company-tools-theme-card-companies-body
+                        %img.company-tools-theme-card-company.data-qtip{:alt => "チームラボ株式会社", "data-qtipv" => "チームラボ株式会社", :height => "24", :onerror => "this.src = \"https://dubpy8abnqmkw.cloudfront.net/images/anonymous/anonymous.png\";", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=48,dh=48,da=l,ds=s,cw=48,ch=48,cc=FFFFFF)/assets/images/592/original/ef2f4cf1-8cc8-4251-be5e-d60182e91934.png?1455592110", :width => "24"}/
+                        %img.company-tools-theme-card-company.data-qtip{:alt => "株式会社ディー・エヌ・エー", "data-qtipv" => "株式会社ディー・エヌ・エー", :height => "24", :onerror => "this.src = \"https://dubpy8abnqmkw.cloudfront.net/images/anonymous/anonymous.png\";", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=48,dh=48,da=l,ds=s,cw=48,ch=48,cc=FFFFFF)/assets/images/6435/original/dac90eee-c08c-4ffd-ab1e-1a312a323f55?1504592019", :width => "24"}/
+                        %img.company-tools-theme-card-company.data-qtip{:alt => "サイボウズ株式会社", "data-qtipv" => "サイボウズ株式会社", :height => "24", :onerror => "this.src = \"https://dubpy8abnqmkw.cloudfront.net/images/anonymous/anonymous.png\";", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=48,dh=48,da=l,ds=s,cw=48,ch=48,cc=FFFFFF)/assets/images/26682/original/d272c1aa-38fd-4ff2-82f0-0250997fcf21.png?1494918782", :width => "24"}/
+                        %img.company-tools-theme-card-company.data-qtip{:alt => "クックパッド株式会社", "data-qtipv" => "クックパッド株式会社", :height => "24", :onerror => "this.src = \"https://dubpy8abnqmkw.cloudfront.net/images/anonymous/anonymous.png\";", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=48,dh=48,da=l,ds=s,cw=48,ch=48,cc=FFFFFF)/assets/images/338/original/4c6d810a-196d-4db9-a362-f6604df47601.png?1498121795", :width => "24"}/
+                        %img.company-tools-theme-card-company.data-qtip{:alt => "株式会社ネオキャリア", "data-qtipv" => "株式会社ネオキャリア", :height => "24", :onerror => "this.src = \"https://dubpy8abnqmkw.cloudfront.net/images/anonymous/anonymous.png\";", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=48,dh=48,da=l,ds=s,cw=48,ch=48,cc=FFFFFF)/assets/images/16063/original/af4aa757-15ec-4cb3-9cf4-34618f462558.jpeg?1488331945", :width => "24"}/
+                        %img.company-tools-theme-card-company.data-qtip{:alt => "株式会社ビズリーチ", "data-qtipv" => "株式会社ビズリーチ", :height => "24", :onerror => "this.src = \"https://dubpy8abnqmkw.cloudfront.net/images/anonymous/anonymous.png\";", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=48,dh=48,da=l,ds=s,cw=48,ch=48,cc=FFFFFF)/assets/images/17420/original/737da607-2ceb-40fe-8139-bdfa1d097ef6.png?1497316660", :width => "24"}/
+          %section.company-tools-top-section3
+            .company-tools-top-section-header.cf
+              %h3.company-tools-top-section-title
+                人気企業
+              %p.company-tools-top-section-description
+                Wantedlyで人気の会社は、こんな環境で働いています
+            .company-tools-top-section-body.tools-shared-card-collection
+              %a.tools-shared-company-card{:href => "/tools/companies/lcp"}
+                %article
+                  %i.wt-icon.wt-icon-exclamation-circle-o-2.tools-shared-company-card-caution.data-qtip{"data-qtipv" => "株式会社Loco Partnersはツールの利用状況を公表していません"}
+                  %img.tools-shared-company-card-logo{:alt => "376f9d2e 0bef 453d 9b2d 6fdac3765832", :height => "60", :onerror => "this.src = \"https://dubpy8abnqmkw.cloudfront.net/images/anonymous/anonymous.png\";", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=120,dh=120,da=l,ds=s,cw=120,ch=120,cc=FFFFFF)/assets/images/458914/original/376f9d2e-0bef-453d-9b2d-6fdac3765832.jpeg?1467624242", :width => "60"}/
+                  %h1.tools-shared-company-card-name
+                    株式会社Loco Partners
+                  %p.tools-shared-company-card-category
+                    レジャー
+                  .tools-shared-company-card-info
+                    .tools-shared-company-card-using-tools
+                      .tools-shared-company-card-using-tools-title
+                        利用しているツール (24)
+                      .tools-shared-company-card-using-companies-icons.cf
+                        %img.tools-shared-company-card-using-companies-icon.data-qtip{:alt => "Slack", "data-qtipv" => "Slack", :height => "28", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=56,dh=56,da=l,ds=s,cw=56,ch=56,cc=FFFFFF)/assets/images/293290/original/100x100bb.jpg?1455072425", :width => "28"}/
+                        %img.tools-shared-company-card-using-companies-icon.data-qtip{:alt => "lastpass", "data-qtipv" => "lastpass", :height => "28", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=56,dh=56,da=l,ds=s,cw=56,ch=56,cc=FFFFFF)/assets/images/178911/original/e91ff7c7-2101-44df-8270-b1bde6a9d370.png?1455235249", :width => "28"}/
+                        %img.tools-shared-company-card-using-companies-icon.data-qtip{:alt => "LINE@", "data-qtipv" => "LINE@", :height => "28", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=56,dh=56,da=l,ds=s,cw=56,ch=56,cc=FFFFFF)/assets/images/178928/original/826d40e8-d18a-4c7c-bccf-c673d259573a.png?1455072640", :width => "28"}/
+                        %img.tools-shared-company-card-using-companies-icon.data-qtip{:alt => "GitHub", "data-qtipv" => "GitHub", :height => "28", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=56,dh=56,da=l,ds=s,cw=56,ch=56,cc=FFFFFF)/assets/images/293439/original/th.jpeg?1455080881", :width => "28"}/
+                        %img.tools-shared-company-card-using-companies-icon.data-qtip{:alt => "Eight", "data-qtipv" => "Eight", :height => "28", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=56,dh=56,da=l,ds=s,cw=56,ch=56,cc=FFFFFF)/assets/images/293296/original/100x100bb.jpg?1455072480", :width => "28"}/
+              %a.tools-shared-company-card{:href => "/tools/companies/team-lab"}
+                %article
+                  %i.wt-icon.wt-icon-exclamation-circle-o-2.tools-shared-company-card-caution.data-qtip{"data-qtipv" => "チームラボ株式会社はツールの利用状況を公表していません"}
+                  %img.tools-shared-company-card-logo{:alt => "Ef2f4cf1 8cc8 4251 be5e d60182e91934", :height => "60", :onerror => "this.src = \"https://dubpy8abnqmkw.cloudfront.net/images/anonymous/anonymous.png\";", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=120,dh=120,da=l,ds=s,cw=120,ch=120,cc=FFFFFF)/assets/images/592/original/ef2f4cf1-8cc8-4251-be5e-d60182e91934.png?1455592110", :width => "60"}/
+                  %h1.tools-shared-company-card-name
+                    チームラボ株式会社
+                  %p.tools-shared-company-card-category
+                    情報通信（Web/モバイル）
+                  .tools-shared-company-card-info
+                    .tools-shared-company-card-using-tools
+                      .tools-shared-company-card-using-tools-title
+                        利用しているツール (30)
+                      .tools-shared-company-card-using-companies-icons.cf
+                        %img.tools-shared-company-card-using-companies-icon.data-qtip{:alt => "Slack", "data-qtipv" => "Slack", :height => "28", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=56,dh=56,da=l,ds=s,cw=56,ch=56,cc=FFFFFF)/assets/images/293290/original/100x100bb.jpg?1455072425", :width => "28"}/
+                        %img.tools-shared-company-card-using-companies-icon.data-qtip{:alt => "Redmine", "data-qtipv" => "Redmine", :height => "28", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=56,dh=56,da=l,ds=s,cw=56,ch=56,cc=FFFFFF)/assets/images/293440/original/th.jpeg?1455080915", :width => "28"}/
+                        %img.tools-shared-company-card-using-companies-icon.data-qtip{:alt => "LINE@", "data-qtipv" => "LINE@", :height => "28", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=56,dh=56,da=l,ds=s,cw=56,ch=56,cc=FFFFFF)/assets/images/178928/original/826d40e8-d18a-4c7c-bccf-c673d259573a.png?1455072640", :width => "28"}/
+                        %img.tools-shared-company-card-using-companies-icon.data-qtip{:alt => "Backlog", "data-qtipv" => "Backlog", :height => "28", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=56,dh=56,da=l,ds=s,cw=56,ch=56,cc=FFFFFF)/assets/images/293442/original/032370b6-4953-4fd1-9ca6-fdfd719253c6.png?1465812217", :width => "28"}/
+                        %img.tools-shared-company-card-using-companies-icon.data-qtip{:alt => "GitHub", "data-qtipv" => "GitHub", :height => "28", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=56,dh=56,da=l,ds=s,cw=56,ch=56,cc=FFFFFF)/assets/images/293439/original/th.jpeg?1455080881", :width => "28"}/
+              %a.tools-shared-company-card{:href => "/tools/companies/retty"}
+                %article
+                  %i.wt-icon.wt-icon-exclamation-circle-o-2.tools-shared-company-card-caution.data-qtip{"data-qtipv" => "Retty株式会社はツールの利用状況を公表していません"}
+                  %img.tools-shared-company-card-logo{:alt => "7f7255dc a0b6 45fd 94b3 19808a962e2b", :height => "60", :onerror => "this.src = \"https://dubpy8abnqmkw.cloudfront.net/images/anonymous/anonymous.png\";", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=120,dh=120,da=l,ds=s,cw=120,ch=120,cc=FFFFFF)/assets/images/1024/original/7f7255dc-a0b6-45fd-94b3-19808a962e2b.png?1484877187", :width => "60"}/
+                  %h1.tools-shared-company-card-name
+                    Retty株式会社
+                  %p.tools-shared-company-card-category
+                    外食・フードサービス
+                  .tools-shared-company-card-info
+                    .tools-shared-company-card-using-tools
+                      .tools-shared-company-card-using-tools-title
+                        利用しているツール (21)
+                      .tools-shared-company-card-using-companies-icons.cf
+                        %img.tools-shared-company-card-using-companies-icon.data-qtip{:alt => "Slack", "data-qtipv" => "Slack", :height => "28", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=56,dh=56,da=l,ds=s,cw=56,ch=56,cc=FFFFFF)/assets/images/293290/original/100x100bb.jpg?1455072425", :width => "28"}/
+                        %img.tools-shared-company-card-using-companies-icon.data-qtip{:alt => "GitHub", "data-qtipv" => "GitHub", :height => "28", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=56,dh=56,da=l,ds=s,cw=56,ch=56,cc=FFFFFF)/assets/images/293439/original/th.jpeg?1455080881", :width => "28"}/
+                        %img.tools-shared-company-card-using-companies-icon.data-qtip{:alt => "Google Hangout", "data-qtipv" => "Google Hangout", :height => "28", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=56,dh=56,da=l,ds=s,cw=56,ch=56,cc=FFFFFF)/assets/images/293304/original/3148be24-3a0a-4dd9-be42-ceab13f2b15b.png?1465812101", :width => "28"}/
+                        %img.tools-shared-company-card-using-companies-icon.data-qtip{:alt => "Skype", "data-qtipv" => "Skype", :height => "28", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=56,dh=56,da=l,ds=s,cw=56,ch=56,cc=FFFFFF)/assets/images/293281/original/100x100bb.jpg?1455072362", :width => "28"}/
+                        %img.tools-shared-company-card-using-companies-icon.data-qtip{:alt => "Dropbox", "data-qtipv" => "Dropbox", :height => "28", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=56,dh=56,da=l,ds=s,cw=56,ch=56,cc=FFFFFF)/assets/images/293286/original/3d70db57-f819-4e74-a492-2dea09c4389d.jpeg?1465812768", :width => "28"}/
+              %a.tools-shared-company-card{:href => "/tools/companies/uuum"}
+                %article
+                  %i.wt-icon.wt-icon-exclamation-circle-o-2.tools-shared-company-card-caution.data-qtip{"data-qtipv" => "UUUM株式会社はツールの利用状況を公表していません"}
+                  %img.tools-shared-company-card-logo{:alt => "38953fde bcf1 4ebc afff 79a55c739d33", :height => "60", :onerror => "this.src = \"https://dubpy8abnqmkw.cloudfront.net/images/anonymous/anonymous.png\";", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=120,dh=120,da=l,ds=s,cw=120,ch=120,cc=FFFFFF)/assets/images/8999/original/38953fde-bcf1-4ebc-afff-79a55c739d33.jpeg?1440732749", :width => "60"}/
+                  %h1.tools-shared-company-card-name
+                    UUUM株式会社
+                  %p.tools-shared-company-card-category
+                    情報通信（Web/モバイル）
+                  .tools-shared-company-card-info
+                    .tools-shared-company-card-using-tools
+                      .tools-shared-company-card-using-tools-title
+                        利用しているツール (34)
+                      .tools-shared-company-card-using-companies-icons.cf
+                        %img.tools-shared-company-card-using-companies-icon.data-qtip{:alt => "Slack", "data-qtipv" => "Slack", :height => "28", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=56,dh=56,da=l,ds=s,cw=56,ch=56,cc=FFFFFF)/assets/images/293290/original/100x100bb.jpg?1455072425", :width => "28"}/
+                        %img.tools-shared-company-card-using-companies-icon.data-qtip{:alt => "salesforce", "data-qtipv" => "salesforce", :height => "28", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=56,dh=56,da=l,ds=s,cw=56,ch=56,cc=FFFFFF)/assets/images/293303/original/100x100bb.jpg?1455072512", :width => "28"}/
+                        %img.tools-shared-company-card-using-companies-icon.data-qtip{:alt => "Redmine", "data-qtipv" => "Redmine", :height => "28", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=56,dh=56,da=l,ds=s,cw=56,ch=56,cc=FFFFFF)/assets/images/293440/original/th.jpeg?1455080915", :width => "28"}/
+                        %img.tools-shared-company-card-using-companies-icon.data-qtip{:alt => "Backlog", "data-qtipv" => "Backlog", :height => "28", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=56,dh=56,da=l,ds=s,cw=56,ch=56,cc=FFFFFF)/assets/images/293442/original/032370b6-4953-4fd1-9ca6-fdfd719253c6.png?1465812217", :width => "28"}/
+                        %img.tools-shared-company-card-using-companies-icon.data-qtip{:alt => "GitHub", "data-qtipv" => "GitHub", :height => "28", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=56,dh=56,da=l,ds=s,cw=56,ch=56,cc=FFFFFF)/assets/images/293439/original/th.jpeg?1455080881", :width => "28"}/
+              %a.tools-shared-company-card{:href => "/tools/companies/mercariapp-com"}
+                %article
+                  %i.wt-icon.wt-icon-exclamation-circle-o-2.tools-shared-company-card-caution.data-qtip{"data-qtipv" => "株式会社メルカリはツールの利用状況を公表していません"}
+                  %img.tools-shared-company-card-logo{:alt => "280ea972 2a2c 44a2 bf31 a2e858a47149?1499942068", :height => "60", :onerror => "this.src = \"https://dubpy8abnqmkw.cloudfront.net/images/anonymous/anonymous.png\";", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=120,dh=120,da=l,ds=s,cw=120,ch=120,cc=FFFFFF)/assets/images/35323/original/280ea972-2a2c-44a2-bf31-a2e858a47149?1499942068", :width => "60"}/
+                  %h1.tools-shared-company-card-name
+                    株式会社メルカリ
+                  %p.tools-shared-company-card-category
+                    情報通信（Web/モバイル）
+                  .tools-shared-company-card-info
+                    .tools-shared-company-card-using-tools
+                      .tools-shared-company-card-using-tools-title
+                        利用しているツール (6)
+                      .tools-shared-company-card-using-companies-icons.cf
+                        %img.tools-shared-company-card-using-companies-icon.data-qtip{:alt => "Slack", "data-qtipv" => "Slack", :height => "28", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=56,dh=56,da=l,ds=s,cw=56,ch=56,cc=FFFFFF)/assets/images/293290/original/100x100bb.jpg?1455072425", :width => "28"}/
+                        %img.tools-shared-company-card-using-companies-icon.data-qtip{:alt => "Google Drive", "data-qtipv" => "Google Drive", :height => "28", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=56,dh=56,da=l,ds=s,cw=56,ch=56,cc=FFFFFF)/assets/images/293316/original/th.jpeg?1455073109", :width => "28"}/
+                        %img.tools-shared-company-card-using-companies-icon.data-qtip{:alt => "カオナビ", "data-qtipv" => "カオナビ", :height => "28", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=56,dh=56,da=l,ds=s,cw=56,ch=56,cc=FFFFFF)/assets/images/424626/original/5db9cb0d-e735-4b80-91f9-68b59ab4abd0.jpeg?1465814593", :width => "28"}/
+                        %img.tools-shared-company-card-using-companies-icon.data-qtip{:alt => "NET jinzai bank", "data-qtipv" => "NET jinzai bank", :height => "28", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=56,dh=56,da=l,ds=s,cw=56,ch=56,cc=FFFFFF)/assets/images/363671/original/bbfcbe89-8f43-465e-8af9-3c7a61d73807.jpeg?1461203561", :width => "28"}/
+                        %img.tools-shared-company-card-using-companies-icon.data-qtip{:alt => "Schoo", "data-qtipv" => "Schoo", :height => "28", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=56,dh=56,da=l,ds=s,cw=56,ch=56,cc=FFFFFF)/assets/images/475659/original/d71d6b5b-d97f-401a-aa50-2330456a2b30.jpeg?1479982378", :width => "28"}/
+          %section.company-tools-top-section4
+            .company-tools-top-section-header.cf
+              %h3.company-tools-top-section-title
+                ピックアップツール
+              %p.company-tools-top-section-description
+                Wantedly からのおすすめツールはこちらです
+            #tools-tops-show-pickup-tools.company-tools-top-section-body.tools-shared-card-collection
+              %a.tools-shared-tool-card{:href => "/tools/freee"}
+                %article
+                  %img.tools-shared-tool-card-logo{:alt => "A8b7c45b c274 4cb5 80a8 a860257f846b", :height => "80", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=160,dh=160,da=l,ds=s,cw=160,ch=160,cc=FFFFFF)/assets/images/298758/original/a8b7c45b-c274-4cb5-80a8-a860257f846b.png?1478483295", :width => "80"}/
+                  .tools-shared-tool-card-add-to-my-tools-wrapper
+                    .tools-shared-tool-card-logo-mask
+                    .tools-shared-add-to-my-tools
+                      .tools-shared-add-to-my-tools-popup.cf
+                        .tools-shared-add-to-my-tools-popup-account{"data-account-id" => "85521318", "data-account-type" => "user", "data-tool-id" => "177", "data-tool-name" => "会計freee", "data-using" => "false"}
+                          %img.tools-shared-add-to-my-tools-popup-account-icon.data-qtip{:alt => "Picture?height=60&width=60", "data-qtipv" => "濟川 奈津美に追加", :onerror => "this.src = \"https://dubpy8abnqmkw.cloudfront.net/images/anonymous/anonymous.png\";", :src => "https://graph.facebook.com/698893323801773/picture?height=60&width=60"}/
+                          .tools-shared-add-to-my-tools-popup-account-icon-mask.data-qtip{"data-qtipv" => "濟川 奈津美に追加済み"}
+                            %i.tools-shared-add-to-my-tools-popup-account-check.wt-icon.wt-icon-check
+                      .tools-shared-add-to-my-tools-label.cf{"data-account-id" => "85521318", "data-account-type" => "user"}
+                        %img.tools-shared-add-to-my-tools-label-icon{:alt => "Picture?height=36&width=36", :onerror => "this.src = \"https://dubpy8abnqmkw.cloudfront.net/images/anonymous/anonymous.png\";", :src => "https://graph.facebook.com/698893323801773/picture?height=36&width=36"}/
+                        .tools-shared-add-to-my-tools-label-text
+                          マイツールに追加
+                        .tools-shared-add-to-my-tools-label-already-using
+                          .tools-shared-add-to-my-tools-label-already-using-inner.cf
+                            %i.tools-shared-add-to-my-tools-label-already-using-check.wt-icon.wt-icon-check
+                            %span.tools-shared-add-to-my-tools-label-already-using-text
+                              追加済み
+                  %h1.tools-shared-tool-card-name
+                    会計freee
+                  %p.tools-shared-tool-card-category
+                    会計ソフト, 経理・財務
+                  %p.tools-shared-tool-card-usage-fee
+                    ¥1,980~
+                  .tools-shared-tool-card-rating
+                    .tools-shared-rating
+                      %i.bright.tools-shared-rating-star.wt-icon.wt-icon-star ★
+                      %i.bright.tools-shared-rating-star.wt-icon.wt-icon-star ★
+                      %i.bright.tools-shared-rating-star.wt-icon.wt-icon-star ★
+                      %i.bright.tools-shared-rating-star.wt-icon.wt-icon-star ★
+                      %i.wt-icon.wt-icon-star.tools-shared-rating-star ★
+                      .tools-shared-rating-total-count
+                        (78)
+                  .tools-shared-tool-card-info
+                    %p.tools-shared-tool-card-description
+                      シェアNo.1 クラウド会計ソフト。AI・銀行連携で、拡大する業務を自動化。スタートアップから500名規模の中堅法人まで対応。
+                    .tools-shared-tool-card-using-companies
+                      .tools-shared-tool-card-using-companies-title
+                        利用している企業 (106)
+                      .tools-shared-tool-card-using-companies-icons.cf
+                        %img.tools-shared-tool-card-using-companies-icon.data-qtip{:alt => "株式会社Loco Partners", "data-qtipv" => "株式会社Loco Partners", :height => "28", :onerror => "this.src = \"https://dubpy8abnqmkw.cloudfront.net/images/anonymous/anonymous.png\";", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=56,dh=56,da=l,ds=s,cw=56,ch=56,cc=FFFFFF)/assets/images/458914/original/376f9d2e-0bef-453d-9b2d-6fdac3765832.jpeg?1467624242", :width => "28"}/
+                        %img.tools-shared-tool-card-using-companies-icon.data-qtip{:alt => "freee 株式会社", "data-qtipv" => "freee 株式会社", :height => "28", :onerror => "this.src = \"https://dubpy8abnqmkw.cloudfront.net/images/anonymous/anonymous.png\";", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=56,dh=56,da=l,ds=s,cw=56,ch=56,cc=FFFFFF)/assets/images/2203764/original/e907fba0-c193-4bc5-a3f9-eb2de3f96bf8?1522834384", :width => "28"}/
+                        %img.tools-shared-tool-card-using-companies-icon.data-qtip{:alt => "株式会社BitStar", "data-qtipv" => "株式会社BitStar", :height => "28", :onerror => "this.src = \"https://dubpy8abnqmkw.cloudfront.net/images/anonymous/anonymous.png\";", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=56,dh=56,da=l,ds=s,cw=56,ch=56,cc=FFFFFF)/assets/images/193168/original/e3ac2c13-fa6d-4b92-a67a-a78479ee02b3?1517800348", :width => "28"}/
+                        %img.tools-shared-tool-card-using-companies-icon.data-qtip{:alt => "コインチェック株式会社", "data-qtipv" => "コインチェック株式会社", :height => "28", :onerror => "this.src = \"https://dubpy8abnqmkw.cloudfront.net/images/anonymous/anonymous.png\";", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=56,dh=56,da=l,ds=s,cw=56,ch=56,cc=FFFFFF)/assets/images/1460/original/fb6866cc-f93d-4dfe-bd13-35001a30daad.png?1489653073", :width => "28"}/
+                        %img.tools-shared-tool-card-using-companies-icon.data-qtip{:alt => "メディアマックスジャパン株式会社", "data-qtipv" => "メディアマックスジャパン株式会社", :height => "28", :onerror => "this.src = \"https://dubpy8abnqmkw.cloudfront.net/images/anonymous/anonymous.png\";", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=56,dh=56,da=l,ds=s,cw=56,ch=56,cc=FFFFFF)/assets/images/429359/original/7d4eb9a6-58e7-45a7-abd1-9d05ac66547a.png?1466146115", :width => "28"}/
+              %a.tools-shared-tool-card{:href => "/tools/domo"}
+                %article
+                  %img.tools-shared-tool-card-logo{:alt => "5bb3f273 5510 4dc1 9c48 d8c983782ff0", :height => "80", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=160,dh=160,da=l,ds=s,cw=160,ch=160,cc=FFFFFF)/assets/images/293577/original/5bb3f273-5510-4dc1-9c48-d8c983782ff0.png?1455240350", :width => "80"}/
+                  .tools-shared-tool-card-add-to-my-tools-wrapper
+                    .tools-shared-tool-card-logo-mask
+                    .tools-shared-add-to-my-tools
+                      .tools-shared-add-to-my-tools-popup.cf
+                        .tools-shared-add-to-my-tools-popup-account{"data-account-id" => "85521318", "data-account-type" => "user", "data-tool-id" => "90", "data-tool-name" => "Domo", "data-using" => "false"}
+                          %img.tools-shared-add-to-my-tools-popup-account-icon.data-qtip{:alt => "Picture?height=60&width=60", "data-qtipv" => "濟川 奈津美に追加", :onerror => "this.src = \"https://dubpy8abnqmkw.cloudfront.net/images/anonymous/anonymous.png\";", :src => "https://graph.facebook.com/698893323801773/picture?height=60&width=60"}/
+                          .tools-shared-add-to-my-tools-popup-account-icon-mask.data-qtip{"data-qtipv" => "濟川 奈津美に追加済み"}
+                            %i.tools-shared-add-to-my-tools-popup-account-check.wt-icon.wt-icon-check
+                      .tools-shared-add-to-my-tools-label.cf{"data-account-id" => "85521318", "data-account-type" => "user"}
+                        %img.tools-shared-add-to-my-tools-label-icon{:alt => "Picture?height=36&width=36", :onerror => "this.src = \"https://dubpy8abnqmkw.cloudfront.net/images/anonymous/anonymous.png\";", :src => "https://graph.facebook.com/698893323801773/picture?height=36&width=36"}/
+                        .tools-shared-add-to-my-tools-label-text
+                          マイツールに追加
+                        .tools-shared-add-to-my-tools-label-already-using
+                          .tools-shared-add-to-my-tools-label-already-using-inner.cf
+                            %i.tools-shared-add-to-my-tools-label-already-using-check.wt-icon.wt-icon-check
+                            %span.tools-shared-add-to-my-tools-label-already-using-text
+                              追加済み
+                  %h1.tools-shared-tool-card-name
+                    Domo
+                  %p.tools-shared-tool-card-category
+                    データ構築・分析, マーケティング
+                  %p.tools-shared-tool-card-usage-fee
+                    %span.tools-shared-tool-card-usage-fee-free-plan
+                      無料プランあり
+                    $175~
+                  .tools-shared-tool-card-rating
+                    .tools-shared-rating
+                      %i.bright.tools-shared-rating-star.wt-icon.wt-icon-star
+                      %i.bright.tools-shared-rating-star.wt-icon.wt-icon-star
+                      %i.bright.tools-shared-rating-star.wt-icon.wt-icon-star
+                      %i.bright.tools-shared-rating-star.wt-icon.wt-icon-star
+                      %i.wt-icon.wt-icon-star.tools-shared-rating-star
+                      .tools-shared-rating-total-count
+                        (15)
+                  .tools-shared-tool-card-info
+                    %p.tools-shared-tool-card-description
+                      ビジネスに必要な営業・マーケティング・データ分析などのサポートをするアプリ。モバイル対応のプラットフォームでビッグデータを簡略化し、経営を最適化してくれます。
+                    .tools-shared-tool-card-using-companies
+                      .tools-shared-tool-card-using-companies-title
+                        利用している企業 (22)
+                      .tools-shared-tool-card-using-companies-icons.cf
+                        %img.tools-shared-tool-card-using-companies-icon.data-qtip{:alt => "株式会社ディー・エヌ・エー", "data-qtipv" => "株式会社ディー・エヌ・エー", :height => "28", :onerror => "this.src = \"https://dubpy8abnqmkw.cloudfront.net/images/anonymous/anonymous.png\";", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=56,dh=56,da=l,ds=s,cw=56,ch=56,cc=FFFFFF)/assets/images/6435/original/dac90eee-c08c-4ffd-ab1e-1a312a323f55?1504592019", :width => "28"}/
+                        %img.tools-shared-tool-card-using-companies-icon.data-qtip{:alt => "ランサーズ株式会社", "data-qtipv" => "ランサーズ株式会社", :height => "28", :onerror => "this.src = \"https://dubpy8abnqmkw.cloudfront.net/images/anonymous/anonymous.png\";", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=56,dh=56,da=l,ds=s,cw=56,ch=56,cc=FFFFFF)/assets/images/1116/original/67bac93b-89c9-464e-92a6-6714d451da34.png?1493371032", :width => "28"}/
+                        %img.tools-shared-tool-card-using-companies-icon.data-qtip{:alt => "オイシックス・ラ・大地株式会社", "data-qtipv" => "オイシックス・ラ・大地株式会社", :height => "28", :onerror => "this.src = \"https://dubpy8abnqmkw.cloudfront.net/images/anonymous/anonymous.png\";", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=56,dh=56,da=l,ds=s,cw=56,ch=56,cc=FFFFFF)/assets/images/376/original/31e589ed-2bfb-441a-83c7-6e93d847d8c1?1530495597", :width => "28"}/
+                        %img.tools-shared-tool-card-using-companies-icon.data-qtip{:alt => "Wantedly, Inc.", "data-qtipv" => "Wantedly, Inc.", :height => "28", :onerror => "this.src = \"https://dubpy8abnqmkw.cloudfront.net/images/anonymous/anonymous.png\";", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=56,dh=56,da=l,ds=s,cw=56,ch=56,cc=FFFFFF)/assets/images/346/original/2e2bf254-efc6-4b96-93a9-78668de17b3e?1534906569", :width => "28"}/
+                        %img.tools-shared-tool-card-using-companies-icon.data-qtip{:alt => "株式会社サーバーワークス", "data-qtipv" => "株式会社サーバーワークス", :height => "28", :onerror => "this.src = \"https://dubpy8abnqmkw.cloudfront.net/images/anonymous/anonymous.png\";", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=56,dh=56,da=l,ds=s,cw=56,ch=56,cc=FFFFFF)/assets/images/2686729/original/8eb834ec-052c-45cc-9c45-0f6436562322?1523253116", :width => "28"}/
+              %a.tools-shared-tool-card{:href => "/tools/aipo"}
+                %article
+                  %img.tools-shared-tool-card-logo{:alt => "01132cf6 2063 4fb9 8cae 5ebef654d428", :height => "80", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=160,dh=160,da=l,ds=s,cw=160,ch=160,cc=FFFFFF)/assets/images/471440/original/01132cf6-2063-4fb9-8cae-5ebef654d428.png?1476692250", :width => "80"}/
+                  .tools-shared-tool-card-add-to-my-tools-wrapper
+                    .tools-shared-tool-card-logo-mask
+                    .tools-shared-add-to-my-tools
+                      .tools-shared-add-to-my-tools-popup.cf
+                        .tools-shared-add-to-my-tools-popup-account{"data-account-id" => "85521318", "data-account-type" => "user", "data-tool-id" => "214", "data-tool-name" => "Aipo.com", "data-using" => "false"}
+                          %img.tools-shared-add-to-my-tools-popup-account-icon.data-qtip{:alt => "Picture?height=60&width=60", "data-qtipv" => "濟川 奈津美に追加", :onerror => "this.src = \"https://dubpy8abnqmkw.cloudfront.net/images/anonymous/anonymous.png\";", :src => "https://graph.facebook.com/698893323801773/picture?height=60&width=60"}/
+                          .tools-shared-add-to-my-tools-popup-account-icon-mask.data-qtip{"data-qtipv" => "濟川 奈津美に追加済み"}
+                            %i.tools-shared-add-to-my-tools-popup-account-check.wt-icon.wt-icon-check
+                      .tools-shared-add-to-my-tools-label.cf{"data-account-id" => "85521318", "data-account-type" => "user"}
+                        %img.tools-shared-add-to-my-tools-label-icon{:alt => "Picture?height=36&width=36", :onerror => "this.src = \"https://dubpy8abnqmkw.cloudfront.net/images/anonymous/anonymous.png\";", :src => "https://graph.facebook.com/698893323801773/picture?height=36&width=36"}/
+                        .tools-shared-add-to-my-tools-label-text
+                          マイツールに追加
+                        .tools-shared-add-to-my-tools-label-already-using
+                          .tools-shared-add-to-my-tools-label-already-using-inner.cf
+                            %i.tools-shared-add-to-my-tools-label-already-using-check.wt-icon.wt-icon-check
+                            %span.tools-shared-add-to-my-tools-label-already-using-text
+                              追加済み
+                  %h1.tools-shared-tool-card-name
+                    Aipo.com
+                  %p.tools-shared-tool-card-category
+                    社内情報共有, タスク管理, コミュニケーション, 情報共有・蓄積, プロジェクト管理, 社内チャット
+                  %p.tools-shared-tool-card-usage-fee
+                    ¥400~
+                  .tools-shared-tool-card-rating
+                    .tools-shared-rating
+                      %i.bright.tools-shared-rating-star.wt-icon.wt-icon-star
+                      %i.bright.tools-shared-rating-star.wt-icon.wt-icon-star
+                      %i.bright.tools-shared-rating-star.wt-icon.wt-icon-star
+                      %i.bright.tools-shared-rating-star.wt-icon.wt-icon-star
+                      %i.wt-icon.wt-icon-star.tools-shared-rating-star
+                      .tools-shared-rating-total-count
+                        (6)
+                  .tools-shared-tool-card-info
+                    %p.tools-shared-tool-card-description
+                      コミュニケーションの活性化により会社の組織づくりを支援するクラウドサービスです。グループウェア、チャット、SNSのメリットをひとつに集約し、会社の生産性を...
+                    .tools-shared-tool-card-using-companies
+                      .tools-shared-tool-card-using-companies-title
+                        利用している企業 (11)
+                      .tools-shared-tool-card-using-companies-icons.cf
+                        %img.tools-shared-tool-card-using-companies-icon.data-qtip{:alt => "株式会社プロディジ", "data-qtipv" => "株式会社プロディジ", :height => "28", :onerror => "this.src = \"https://dubpy8abnqmkw.cloudfront.net/images/anonymous/anonymous.png\";", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=56,dh=56,da=l,ds=s,cw=56,ch=56,cc=FFFFFF)/assets/images/9719/original/145deb6d-e726-46d0-96b3-15bd7b6b6431.gif?1392712934", :width => "28"}/
+                        %img.tools-shared-tool-card-using-companies-icon.data-qtip{:alt => "株式会社オレンジキューブ", "data-qtipv" => "株式会社オレンジキューブ", :height => "28", :onerror => "this.src = \"https://dubpy8abnqmkw.cloudfront.net/images/anonymous/anonymous.png\";", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=56,dh=56,da=l,ds=s,cw=56,ch=56,cc=FFFFFF)/assets/images/5197/original/7408c78e-619d-4d53-921b-47d54f989ecc.png?1392712877", :width => "28"}/
+                        %img.tools-shared-tool-card-using-companies-icon.data-qtip{:alt => "TOWN株式会社", "data-qtipv" => "TOWN株式会社", :height => "28", :onerror => "this.src = \"https://dubpy8abnqmkw.cloudfront.net/images/anonymous/anonymous.png\";", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=56,dh=56,da=l,ds=s,cw=56,ch=56,cc=FFFFFF)/assets/images/217521/original/79be0cb1-2f10-421f-9a47-add6055363c1?1507268174", :width => "28"}/
+                        %img.tools-shared-tool-card-using-companies-icon.data-qtip{:alt => "株式会社グローバルソフトウェア", "data-qtipv" => "株式会社グローバルソフトウェア", :height => "28", :onerror => "this.src = \"https://dubpy8abnqmkw.cloudfront.net/images/anonymous/anonymous.png\";", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=56,dh=56,da=l,ds=s,cw=56,ch=56,cc=FFFFFF)/assets/images/67457/original/f4a36862-3e77-4355-8340-1f07fe8a098d.png?1421225941", :width => "28"}/
+                        %img.tools-shared-tool-card-using-companies-icon.data-qtip{:alt => "合同会社AIM INNOVATION", "data-qtipv" => "合同会社AIM INNOVATION", :height => "28", :onerror => "this.src = \"https://dubpy8abnqmkw.cloudfront.net/images/anonymous/anonymous.png\";", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=56,dh=56,da=l,ds=s,cw=56,ch=56,cc=FFFFFF)/assets/images/409194/original/88d282bf-46c1-48d3-b902-7b77a9185df0.jpeg?1464701863", :width => "28"}/
+              %a.tools-shared-tool-card{:href => "/tools/comnico_marketing_suite"}
+                %article
+                  %img.tools-shared-tool-card-logo{:alt => "D6b89c99 f9f2 4c45 93e5 ec00cf8f5eef", :height => "80", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=160,dh=160,da=l,ds=s,cw=160,ch=160,cc=FFFFFF)/assets/images/1177097/original/d6b89c99-f9f2-4c45-93e5-ec00cf8f5eef.png?1485821416", :width => "80"}/
+                  .tools-shared-tool-card-add-to-my-tools-wrapper
+                    .tools-shared-tool-card-logo-mask
+                    .tools-shared-add-to-my-tools
+                      .tools-shared-add-to-my-tools-popup.cf
+                        .tools-shared-add-to-my-tools-popup-account{"data-account-id" => "85521318", "data-account-type" => "user", "data-tool-id" => "769", "data-tool-name" => "コムニコ マーケティングスイート", "data-using" => "false"}
+                          %img.tools-shared-add-to-my-tools-popup-account-icon.data-qtip{:alt => "Picture?height=60&width=60", "data-qtipv" => "濟川 奈津美に追加", :onerror => "this.src = \"https://dubpy8abnqmkw.cloudfront.net/images/anonymous/anonymous.png\";", :src => "https://graph.facebook.com/698893323801773/picture?height=60&width=60"}/
+                          .tools-shared-add-to-my-tools-popup-account-icon-mask.data-qtip{"data-qtipv" => "濟川 奈津美に追加済み"}
+                            %i.tools-shared-add-to-my-tools-popup-account-check.wt-icon.wt-icon-check
+                      .tools-shared-add-to-my-tools-label.cf{"data-account-id" => "85521318", "data-account-type" => "user"}
+                        %img.tools-shared-add-to-my-tools-label-icon{:alt => "Picture?height=36&width=36", :onerror => "this.src = \"https://dubpy8abnqmkw.cloudfront.net/images/anonymous/anonymous.png\";", :src => "https://graph.facebook.com/698893323801773/picture?height=36&width=36"}/
+                        .tools-shared-add-to-my-tools-label-text
+                          マイツールに追加
+                        .tools-shared-add-to-my-tools-label-already-using
+                          .tools-shared-add-to-my-tools-label-already-using-inner.cf
+                            %i.tools-shared-add-to-my-tools-label-already-using-check.wt-icon.wt-icon-check
+                            %span.tools-shared-add-to-my-tools-label-already-using-text
+                              追加済み
+                  %h1.tools-shared-tool-card-name
+                    コムニコ マーケティングスイート
+                  %p.tools-shared-tool-card-category
+                    カスタマーサポート, マーケティング
+                  %p.tools-shared-tool-card-usage-fee
+                  .tools-shared-tool-card-rating
+                    .tools-shared-rating
+                      %i.wt-icon.wt-icon-star.tools-shared-rating-star
+                      %i.wt-icon.wt-icon-star.tools-shared-rating-star
+                      %i.wt-icon.wt-icon-star.tools-shared-rating-star
+                      %i.wt-icon.wt-icon-star.tools-shared-rating-star
+                      %i.wt-icon.wt-icon-star.tools-shared-rating-star
+                      .tools-shared-rating-total-count
+                        (0)
+                  .tools-shared-tool-card-info
+                    %p.tools-shared-tool-card-description
+                      comnico Marketing Suite（コムニコ マーケティングスイート）FacebookページやTwitterの投稿管理や効果測定にかける作業を...
+                    .tools-shared-tool-card-using-companies
+                      .tools-shared-tool-card-using-companies-title
+                        利用している企業 (0)
+                      .tools-shared-tool-card-using-companies-icons.cf
+              %a.tools-shared-tool-card{:href => "/tools/cookbiz"}
+                %article
+                  %img.tools-shared-tool-card-logo{:alt => "B7ba0139 57a6 457d b21b 7bebe1c015e2?1509943173", :height => "80", :src => "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=160,dh=160,da=l,ds=s,cw=160,ch=160,cc=FFFFFF)/assets/images/1881580/original/b7ba0139-57a6-457d-b21b-7bebe1c015e2?1509943173", :width => "80"}/
+                  .tools-shared-tool-card-add-to-my-tools-wrapper
+                    .tools-shared-tool-card-logo-mask
+                    .tools-shared-add-to-my-tools
+                      .tools-shared-add-to-my-tools-popup.cf
+                        .tools-shared-add-to-my-tools-popup-account{"data-account-id" => "85521318", "data-account-type" => "user", "data-tool-id" => "873", "data-tool-name" => "飲食求人 クックビズ", "data-using" => "false"}
+                          %img.tools-shared-add-to-my-tools-popup-account-icon.data-qtip{:alt => "Picture?height=60&width=60", "data-qtipv" => "濟川 奈津美に追加", :onerror => "this.src = \"https://dubpy8abnqmkw.cloudfront.net/images/anonymous/anonymous.png\";", :src => "https://graph.facebook.com/698893323801773/picture?height=60&width=60"}/
+                          .tools-shared-add-to-my-tools-popup-account-icon-mask.data-qtip{"data-qtipv" => "濟川 奈津美に追加済み"}
+                            %i.tools-shared-add-to-my-tools-popup-account-check.wt-icon.wt-icon-check
+                      .tools-shared-add-to-my-tools-label.cf{"data-account-id" => "85521318", "data-account-type" => "user"}
+                        %img.tools-shared-add-to-my-tools-label-icon{:alt => "Picture?height=36&width=36", :onerror => "this.src = \"https://dubpy8abnqmkw.cloudfront.net/images/anonymous/anonymous.png\";", :src => "https://graph.facebook.com/698893323801773/picture?height=36&width=36"}/
+                        .tools-shared-add-to-my-tools-label-text
+                          マイツールに追加
+                        .tools-shared-add-to-my-tools-label-already-using
+                          .tools-shared-add-to-my-tools-label-already-using-inner.cf
+                            %i.tools-shared-add-to-my-tools-label-already-using-check.wt-icon.wt-icon-check
+                            %span.tools-shared-add-to-my-tools-label-already-using-text
+                              追加済み
+                  %h1.tools-shared-tool-card-name
+                    飲食求人 クックビズ
+                  %p.tools-shared-tool-card-category
+                    採用・育成
+                  %p.tools-shared-tool-card-usage-fee
+                  .tools-shared-tool-card-rating
+                    .tools-shared-rating
+                      %i.wt-icon.wt-icon-star.tools-shared-rating-star
+                      %i.wt-icon.wt-icon-star.tools-shared-rating-star
+                      %i.wt-icon.wt-icon-star.tools-shared-rating-star
+                      %i.wt-icon.wt-icon-star.tools-shared-rating-star
+                      %i.wt-icon.wt-icon-star.tools-shared-rating-star
+                      .tools-shared-rating-total-count
+                        (0)
+                  .tools-shared-tool-card-info
+                    %p.tools-shared-tool-card-description
+                      クックビズは飲食専門の転職コンサルタントが運営する
+                      食産業に特化した転職サイトです。
+                    .tools-shared-tool-card-using-companies
+                      .tools-shared-tool-card-using-companies-title
+                        利用している企業 (0)
+                      .tools-shared-tool-card-using-companies-icons.cf
+
+
