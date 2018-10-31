@@ -1,0 +1,96 @@
+%footer.short
+  #footer-inner
+    #footer-main
+      #footer-links-and-contact
+        %ul.footer-menu-columns
+          %li.about-wrapper
+            %p.footer-menu-head About
+            %ul.footer-menu-column-single
+              %li
+                %a{:href => "https:http://localhost:3000/#feedback-confirm//wantedlyinc.com/ja"} 運営会社
+              %li
+                %a{:href => "/about/user_terms"} 利用規約
+              %li
+                %a{:href => "https://goo.gl/tEv435", :target => "_blank"} ヘルプ
+              %li
+                %a{:href => "/about/privacy"} プライバシー
+              %li
+                %a{:href => "/about/list"} 採用担当者
+          %li.products.true
+            %p.footer-menu-head Products
+            %ul.footer-menu-column-single.separate
+              %li
+                %a{:href => "/projects"}
+                  Wantedly
+                  %span.strong Visit
+                  %p.layer はたらくを面白く
+              %li
+                %a{:href => "https://people.wantedly.com"}
+                  Wantedly
+                  %span.strong People
+                  %p.layer かしこく、名刺管理
+              %li
+                %a{:href => "/chat?lang=ja"}
+                  Wantedly
+                  %span.strong Chat
+                  %p.layer チャットで仕事を加速する
+          %li.products.true2
+            %p.footer-menu-head{:style => "margin-top: 38px;"}
+            %ul.footer-menu-column-single
+              %li
+                %a{:href => "/feed"}
+                  Wantedly
+                  %span.strong Feed
+                  %p.layer ココロオドルナレッジ
+              %li
+                %a{:href => "/tools"}
+                  Wantedly
+                  %span.strong Tools
+                  %p.layer 運命のツールが見つかる
+              %li
+                %a{:href => "https://case.wantedly.com/"}
+                  %span.strong Case
+                  by Wantedly
+                  %p.layer アート・作品でつながる
+          %li.lang
+            %p.footer-menu-head Languages
+            %ul.footer-menu-column-single
+              %li
+                %a.current-lang{"data-language" => "ja", :href => "https://jp.wantedly.com/projects", :rel => "nofollow", "switch-locale-link" => "true"} 日本語
+              %li
+                %a{"data-language" => "en", :href => "https://en-jp.wantedly.com/projects", :rel => "nofollow", "switch-locale-link" => "true"} English
+          %li.footer-feedback-form
+            #footer-feedback
+              %form{"accept-charset" => "UTF-8", :action => "/feedbacks", "data-remote" => "true", :method => "post"}
+                %input{:name => "authenticity_token", :type => "hidden", :value => "RCV+8z6sTldn17KGUaizdbeiQtsl1c8w+JjQYonoBflwZdaKH2/LhvtYnK/faAEGHnYLCfxr/pUzlw9iHncAGg=="}/
+                %input#feedback_human{:name => "human", :type => "hidden"}/
+                %textarea#feedback{:name => "message", :placeholder => "Wantedlyに意見を送る...", :rows => "4"}
+                %br/
+              %a.ui-show-modal.footer-feedback.wt-ui-button{:href => "#feedback-confirm"} 送信
+      #footer-bottom
+        #footer-logo
+          %img{:alt => "Footer logo", :src => "https://de7iszmjjjuya.cloudfront.net/assets/footer-logo-6029a9c96009b301c4010a967172a36ea214bd2f4e3ceb1830d6fbb8c3a9351f.png"}/
+        #footer-sns-and-lang
+          %ul.sns
+            %li.facebook
+              %a{:href => "https://www.facebook.com/wantedly/", :target => "_blank"}
+                %i.icon-facebook
+                  = fa_icon 'facebook'
+            %li.twitter
+              %a{:href => "https://twitter.com/wantedly", :target => "_blank"}
+                %i.icon-twitter
+                  = fa_icon 'twitter'
+            %li.youtube
+              %a{:href => "https://www.youtube.com/channel/UCXM8y4bAQXdlKvBoPPnTjrg", :target => "_blank"}
+                %i.icon-youtube-play
+                  = fa_icon 'youtube'
+            .available-countries-wrapper.footer-menu-column-single
+              .current-country 日本
+              .available-countries-inner
+                %ul
+                  %li
+                    %a{"data-country" => "singapore", :href => "https://sg.wantedly.com/projects", :rel => "nofollow", "switch-locale-link" => "true"} シンガポール
+                  %li
+                    %a{"data-country" => "hong_kong", :href => "https://hk.wantedly.com/projects", :rel => "nofollow", "switch-locale-link" => "true"} 香港
+                  %li
+                    %a{"data-country" => "germany", :href => "https://de.wantedly.com/projects", :rel => "nofollow", "switch-locale-link" => "true"} ドイツ
