@@ -3,19 +3,19 @@
     .global-header
       .global-menu-wrapper
         .header-logo
-          %a.header-logo__icon{:href => '/abouts'}
+          %a.header-logo__icon{:href => 'projects'}
             %img{:alt => "Wantedly", :height => "44px", :src => "https://de7iszmjjjuya.cloudfront.net/assets/wantedly-logo-a0ae0c0da51ab402f4ae76a1772c19579277ec2b369fc42ea61a35c9957a2acc.svg", :width => "44px"}/
         .global-menu
           %li.user-menu
-            %a.recruitment{:href => '/projects/index'}
+            %a.recruitment{:href => 'projects'}
               募集をみる
           %li.user-menu
-            %a.feeds{:href => '/feeds/index'}
+            %a.feeds{:href => 'feeds'}
               フェードをみる
           %li.selected.user-menu
-            %a.profile{:href => "/introductions/index"}プロフィール
+            %a.profile{:href => "introductions"}プロフィール
           %li.user-menu
-            %a.tools{:href => "/tools/index"}ツール
+            %a.tools{:href => "tools"}ツール
           %li.form-bar
             %form.search{"accept-charset" => "UTF-8", :action => "/search", :method => "get"}
               %span.twitter-typeahead{:style => "position: relative; display: inline-block; direction: ltr;"}
