@@ -2,11 +2,10 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.main {
+.introduction-main {
   height: 100%;
   margin-bottom: 0;
   position: relative;
-  padding-top: 60px;
   width: 100%;
   .main-inner {
   	padding: 0;
@@ -455,7 +454,7 @@
 									  right: 20px;
 									  top: 17px;
 									  background: #D7DBDF;
-									  width: 410px;
+									  width: 390px;
 									  height: 6px;
 									  border-radius: 4px;
 	  	  	  	      .progress-bar{
@@ -486,10 +485,11 @@
 									    padding: 0;
 									    list-style: none;
                       p{
-                        margin-top: 1px;
 									      font-size: 13px;
 									      line-height: 19px;
 									      color: #444;
+									      text-align: center;
+                        margin: 0 auto;
                       }
                     }
                   }
@@ -536,7 +536,7 @@
                   position: absolute;
 							    color: #006F8E;
 							    top: 0;
-							    right: 0;
+							    right: 50px;
 							    line-height: 24px;
 							    cursor: pointer;
   	  	  	    }
