@@ -15,7 +15,7 @@
       flex: 1;
       position: relative;
       .feed-nav-inner {
-        padding: 0 0 -1 0;
+        padding-top: 15px;
         margin:0;
       }
     }
@@ -246,17 +246,16 @@
               -o-transition: ease-in, 200ms;
               transition: ease-in, 200ms;
             }
-              .like-icon {
-                width: 18px;
-                height: 16px;
+              .like-icon {                width: 18px;
                 margin-top: 50%;
-                transform: translateY(-50%);
+                margin-left: 30%;
               }
               .icon{
-                width: 18px;
-                height: 16px;
-                padding-left: 13px;
-                padding-bottom:10px;
+                width: 30px;
+                height: 30px;
+                position: absolute;
+                margin: 0 auto;
+                text-shadow: 0 0 black;
               }
               .filled{
                 width: 18px;

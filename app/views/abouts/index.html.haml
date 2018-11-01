@@ -1,0 +1,328 @@
+!!!
+%html{:lang => "ja"}
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{:charset => "utf-8"}/
+    %meta{:content => "IE=edge", "http-equiv" => "X-UA-Compatible"}/
+    %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}/
+    / The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags
+    %title Wantedly
+    / Bootstrap
+    %link{:href => "css/bootstrap.min.css", :rel => "stylesheet"}/
+    / HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries
+    / WARNING: Respond.js doesn't work if you view the page via file://
+    /[if lt IE 9]
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  %body
+    / jQuery (necessary for Bootstrap's JavaScript plugins)
+    %script{:src => "https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"}
+    / Include all compiled plugins (below), or include individual files as needed
+    %script{:src => "js/bootstrap.min.js"}
+/ hello
+%html
+  .hello
+    .hello_head
+      .icon
+      %ul.hello_nav_left
+        %li
+          %a お問い合わせ
+        %li 資料請求
+        %li 利用料金
+      .line
+      %ul.hello_nav_right
+        %li.phone 📞
+        %li.phone
+          %a 03-6868-5707
+      .login
+        %a.log_btn ログイン
+    .main_text
+      .main_logo
+      .catch
+        %p 採用は「共感」で
+        %p 進化する
+      .text
+        %p Wantedly Adminは給料や職歴などの条件ではなく、
+        %p やりがいや環境で求人者と求職者をマッチングし
+        %p シゴトを自己実現の場と捉える
+      .catch2
+        %span.catch_line 若手優秀層へとリーチできる採用広報ツール
+        %span.small です
+      .trial_block
+        %a.trial まずは３０日間無料トライアル
+    .hello_bottom
+      %p Wantedly Admin をもっと知る
+  / text
+  .logos
+    .sub_text
+      %p.captain 25,000 社以上
+      %p.sub が、すでに Wantedly Admin を活用中です
+  / benefit
+  %section.benefit
+    .section_header
+      .title なぜ Wantedly Admin なのか?
+      .sub_title 急成長する企業を惹きつける、5つの理由
+    .text2
+      .captain2
+        %p 100万人以上の
+        %p 成長意欲あふれる
+        %p 若手人材がいます
+      .description
+        %p.mini 登録ユーザーの多くは20-30代の若手成長人材です。
+        %p.mini 職種の幅は広く、多くの分野で活躍しています。
+        %p.mini 成長意欲の高いユーザーが積極的に応募しています。
+      .lazy
+      .methods
+        .image
+        .text3
+          .captain3
+            %p 会社の魅力を
+            %p 伝える手段が
+            %p そろっています
+          .description2
+            %p 募集では自由に要項を書くことができ、写真でも社風をアピール。ブログ機能であるフィードでは会社の生の声を伝え、採用広報やブランディングに役立てることができます。
+            %p スカウト機能や、募集を代行して作成する特別ライティングなど、多くのオプションもご利用いただけます。
+          .options
+            .option1
+              .option_image1
+              %p.option_tag ダイレクトスカウト
+            .option2
+              .option_image2
+              %p.option_tag タレントプール
+            .option3
+              .option_image3
+              %p.option_tag 特別ライティング
+            .option4
+              .option_image4
+              %p.option_tag 動画制作オプション
+          .other_benefit
+            .item
+              .matching_image
+                %img.matching_lazy{:src => "https://dubpy8abnqmkw.cloudfront.net/images/about-list/ardbeg/matching.svg"}/
+              .matching_text 良質なマッチング
+              .matching_subtext
+                %p 自社に合う志向をもつ候補者が応募しやすく
+                %p ミスマッチの少ない採用を実現しています。
+            .item
+              .matching_image
+                %img.matching_lazy{:src => "https://dubpy8abnqmkw.cloudfront.net/images/about-list/ardbeg/cost.svg"}/
+              .matching_text 成果報酬0円
+              .matching_subtext
+                %p 継続課金のみで成功報酬はかからないため
+                %p 低いコストで採用活動を行えます。
+            .item
+              .matching_image
+                %img.matching_lazy{:src => "https://dubpy8abnqmkw.cloudfront.net/images/about-list/ardbeg/reply.svg"}/
+              .matching_text 返信率の高いスカウト
+              .matching_subtext
+                %p 5通に1通ものスカウトメッセージに
+                %p 返信があります。
+            .trial_button
+              %a.trial2 今すぐ、３０日間トライアル
+            / survices
+            .services
+              .services_header
+                .services_title Wantedly Admin の主な機能
+                .services_sub_title 採用広報を成果に結びつける、３つの機能
+              .services_project
+                %img.project_image{:src => "https://dubpy8abnqmkw.cloudfront.net/images/about-list/ardbeg/jobpost.jpg"}/
+                .services_line
+                %p.captain4 募集で
+                %p.subcaptain シゴトの魅力を伝えよう
+                .description3
+                  %p 自分たちが、なぜ、今の事業を、どのようなメンバーで作っているのか、これからどうしていきたいのかをユーザーに伝えます。
+              .feed
+                .service_wrapper
+                  %p.captain5 フィードで、
+                  %p.subcaptain2 ファンを増やそう
+                  .description4
+                    %p フィードは、すぐ始められる効果的な採用ブランディングのためのブログ機能です。
+                    %p 会社の情報を発信して、ファンを増やしましょう。
+                  %img.feed_image{:src => "https://dubpy8abnqmkw.cloudfront.net/images/about-list/ardbeg/feed@2x.png"}/
+                  .feed_line
+              .scout
+                .scout_wrapper
+                  %img.scout_lazy{:src => "https://dubpy8abnqmkw.cloudfront.net/images/about-list/ardbeg/scout@2x.png"}/
+                  .scout_line
+                  %p.captain6 スカウトで、
+                  %p.subcaptain3 会いたい人材を探そう
+                  .description5
+                    %p Wantedly内のユーザーを自由に検索し、ニーズに合った候補者へ直接メッセージを送ることができる「オプションサービス」です。
+                    %p 応募が少ない職種でも、主体的に採用活動を行なうことができるため、多くの企業で活用されています。
+              %a.trial_button2 今すぐ、３０日間トライアル
+            .prices
+              .price_header
+                .price_title Wantedly Admin 料金プラン
+                .price_subtitle 月額料金のみ、成功報酬なし
+              .pricing_panel
+                .select-durations
+                  .selector ６ヶ月
+                  .selector １２ヶ月
+                  .selector ２４ヶ月
+                .pricing_panels
+                  .trial_plan
+                    .plan_name1 トライアル
+                    .plan_price1 無料
+                    %dic.plan_infor1 本格的に利用される前に利用方法を確認したい方
+                  .minimum_plan
+                    .plan_name2 ミニマム
+                    .plan_price2
+                      .price1 3万円
+                      .month /月
+                    .plan_infor5 面談に出る社員が1-2名の採用を始めたばかりの企業
+                  .light_plan
+                    .plan_name3 ライト
+                    .plan_price3
+                      .price2 5万円
+                      .month /月
+                    .plan_infor3 ご利用に慣れていて、面談者が3名以上の急拡大企業
+                  .standard_plan
+                    .plan_name4 スタンダード
+                    .plan_price4
+                      .price4 9万円
+                      .month /月
+                    .plan_infor4 初めて利用される方、お得にスカウトを活用したい方
+                  .enterprice_plan
+                    .plan_name5 エンタープライズ
+                    .plan_price5
+                      .price4 50万円~
+                      .month /月
+                    .plan_infor5 早急に応募を集め、採用を成功させたい方
+              %table.pricing_table
+                %tbody
+                  %tr.table_header
+                    %th.table_title
+                    %th.table_trial_plan
+                      .table_plan_name1 トライアル
+                      %a.register-button 申し込む
+                    %th.table_minimum_plan
+                      .table_plan_name2 ミニマム
+                      %a.register-button 申し込む
+                    %th.table_light_plan
+                      .table_plan_name3 ライト
+                      %a.register-button 申し込む
+                    %th.table_standard_plan
+                      .table_plan_name4 スタンダード
+                      %a.register-button 申し込む
+                    %th.table_enterprice_plan
+                      .table_plan_name3 ライト
+                      %a.register-button お問い合わせ
+                  %tr.border_bottom
+                    %td.first_reference_cell 採用・面談担当アカウント数
+                    %td.trial_plan2 3名
+                    %td.minimum_plan2
+                      .number 3名
+                      .chabge_text 超過につき1名1.5万円 x 12ヶ月
+                    %td.light_plan2
+                      .number 15名
+                      .chabge_text 超過につき1名1.5万円 x 12ヶ月
+                    %td.standard_plan2 無制限
+                    %td.enterprice_plan2 無制限
+                  %tr
+                    %td.first_reference_cell ブックマーク・スカウト機能
+                    %td.trial_plan_null
+                    %td.minimum_plan_null
+                    %td.light_plan_free 無制限
+                    %td.standard_plan_free 無制限
+                    %td.enterprice_plan_free 無制限
+                  %tr
+                    %td.first_reference_cell ダイレクト・スカウト機能
+                    %td.trial_plan_null
+                    %td.minimum_plan_null
+                    %td.light_plan_null
+                    %td.standard_plan3 400通
+                    %td.enterprice_plan3 400通~
+                  %tr
+                    %td.first_reference_cell 募集事項の作成代行
+                    %td.trial_plan_null
+                    %td.minimum_plan_null
+                    %td.light_plan_null
+                    %td.standard_plan4 電話取材
+                    %td.enterprice_plan4
+                      .enter_plan 現地取材
+                      .enter_subplan (特別ライティングが無料)
+                  %tr
+                    %td.first_reference_cell トップページ枠への掲載
+                    %td.trial_plan_null
+                    %td.minimum_plan_null
+                    %td.light_plan_null
+                    %td.standard_plan_null
+                    %td.enterprice_plan_check ☑️
+                  %tr
+                    %td.first_reference_cell 専任担当による導入サポート
+                    %td.trial_plan_null
+                    %td.minimum_plan_null
+                    %td.light_plan_null
+                    %td.standard_plan_null
+                    %td.enterprice_plan_check ☑️
+                  %tr
+                    %td.first_reference_cell 募集の掲載本数
+                    %td.trial_plan3 5本
+                    %td.minimum_plan_free 無制限
+                    %td.light_plan_free 無制限
+                    %td.standard_plan_free 無制限
+                    %td.enterprice_plan_free 無制限
+                  %tr
+                    %td.first_reference_cell 応募者のプロフィール閲覧数
+                    %td.trial_plan3 先着5名
+                    %td.minimum_plan_free 無制限
+                    %td.light_plan_free 無制限
+                    %td.standard_plan_free 無制限
+                    %td.enterprice_plan_free 無制限
+                  %tr
+                    %td.first_reference_cell サポート体制
+                    %td.trial_plan4 メール
+                    %td.minimum_plan3 メール
+                    %td.light_plan3 メール
+                    %td.standard_plan5 メール+電話
+                    %td.enterprice_plan5 メール+電話
+                  %tr
+                    %td.first_reference_cell サポートの初回対応時間
+                    %td.trial_plan_null
+                    %td.minimum_plan3 48営業時間以内
+                    %td.light_plan3 24営業時間以内
+                    %td.standard_plan5 8営業時間院内
+                    %td.enterprice_plan5 4営業時間以内
+              .tax_explanation ※価格はすべて税別です
+            %section.achievements
+              .section_header2
+                .title2 Wantedly Admin の実績
+                .sub_title2 多種多様な企業での採用実績
+              %section.companies
+                %img.lazy2{:src => "https://dubpy8abnqmkw.cloudfront.net/images/about-list/ardbeg/company.svg"}/
+                .companie_text
+                  .captain7
+                    %p.main 25,000社以上
+                    %p.sub1 の企業が活用
+                  .description6
+                    %p サービス開始から6年、登録企業数は25,000社を超え、多くのお客様にご満足いただいています。
+                    %p サービスやサポートの質を日々高めており、ブランディングや採用が成功したという声が増え続けています。
+              %section.industry_type
+                .captain8
+                  %p.main2 多彩な業種で
+                  %p.sub2 効果を発揮
+                .description7
+                  %p Wantedly AdminはIT企業やスタートアップ専用のサービスというわけではありません。
+                  %p 企業規模や所在地を問わず、幅広い業種でご活用いただいています。
+                %img.lazy3{:src => "https://dubpy8abnqmkw.cloudfront.net/images/about-list/ardbeg/industry_type.svg"}/
+              .trial_button3
+                %a.trial2 今すぐ、３０日間トライアル
+              .case_captain 多くの採用体験が寄せられています
+              %section.cases
+                .case_edge
+                  .image1
+                    %img.edge{:src => "https://dubpy8abnqmkw.cloudfront.net/images/about-list/ardbeg/case_edge2.png"}/
+                .case_center
+                  %img.cock{:src => "https://dubpy8abnqmkw.cloudfront.net/images/about-list/ardbeg/case_1.png"}/
+                  .description8 Wantedlyは飲食系人材のブルーオーシャン。コストを抑えて18名の飲食人材を採用
+                  .name1 COVA JAPAN CO.,LTD
+                .case_center
+                  %img.cock{:src => "https://dubpy8abnqmkw.cloudfront.net/images/about-list/ardbeg/case_2.png"}/
+                  .description8 IT人材の獲得に抜群。スカウトも効果を発揮し5名の採用に成功！
+                  .name1 JapanTaxi株式会社
+                .case_center
+                  %img.image2{:src => "https://dubpy8abnqmkw.cloudfront.net/images/about-list/ardbeg/case_3.png"}/
+                  .description8 異色の旅館業界！「思い」を伝えて4名の採用に成功
+                  .name1 有限会社橘
+                .case_edge2
+                  %img.edge2{:src => "https://dubpy8abnqmkw.cloudfront.net/images/about-list/ardbeg/case_edge1.png"}/

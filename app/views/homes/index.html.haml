@@ -1,0 +1,214 @@
+#main-outer.cf
+  #main.about-controller.about-root.action-root.cf
+    #main-inner.cf
+      #login_modal.closable-by-click.ui-modal-wrapper{"data-modal-options" => "{\"page\":\"login\",\"trigger\":\"japan_root_hero\"}", :style => "overflow: scroll; display: none;"}
+        .ui-modal-close.ui-modal-overlay{:style => "height: 644px;"}
+          %span.ui-modal-close
+            %i.icon-remove
+        .ui-modal-contents-container{:style => "height: 644px;"}
+          .ui-modal-contents-inner{:style => "top: 50px; margin-top: 0px;"}
+            .ui-modal-contents-title
+              %p.title
+                ログイン
+            .ui-modal-contents
+              .login-modal-wrapper
+                .login-container.active{"data-title" => "ログイン"}
+                  .login-buttons
+                    %a.login-button.facebook{:href => "https://www.wantedly.com/user/auth/facebook?ref=root_header_signup"} Facebook
+                  .or-wrapper
+                    %span または
+                    %hr/
+                  .login-email
+                    %form#login_new_user.new_user{"accept-charset" => "UTF-8", :action => "/user/sign_in", :method => "post"}
+                      %input{:name => "authenticity_token", :type => "hidden", :value => "srfTMKp400PWy9IdLWzrL2yZr5g3EpjA6y3iFotUz8bSvJ4l9yNFqCGceVaDCBbapgXJ2iU2I5SfzrSBVsnG8w=="}/
+                      %label{:for => "login_user_email"}
+                        %input#login_user_email{:autofocus => "autofocus", :name => "user[email]", :placeholder => "メールアドレス", :type => "email"}/
+                      %label{:for => "login_user_password"}
+                        %input#login_user_password{:autocomplete => "off", :name => "user[password]", :placeholder => "パスワード", :type => "password"}/
+                      .forgot-password-wrapper
+                        %a.forgot-password{:href => "/user/password/new"} パスワードをお忘れですか？
+                      .action-wrapper
+                        %input.wt-ui-button.wt-ui-button-blue{"data-disable-with" => "ログイン", :name => "commit", :type => "submit", :value => "ログイン"}/
+                        %hr/
+                        .register
+                          %span Wantedlyは初めてですか？
+                          %a.wt-ui-button{:href => "/user/sign_up"} 登録
+                .forgot-password-container{"data-title" => "パスワードの再設定"}
+                  %p パスワードを再設定するためのリンクを、あなたのメールアドレスにお送りします。
+                  %form#password_new_user.new_user{"accept-charset" => "UTF-8", :action => "/user/password", :method => "post"}
+                    %input{:name => "authenticity_token", :type => "hidden", :value => "srfTMKp400PWy9IdLWzrL2yZr5g3EpjA6y3iFotUz8bSvJ4l9yNFqCGceVaDCBbapgXJ2iU2I5SfzrSBVsnG8w=="}/
+                    %label{:for => "password_user_email"}
+                      %input#password_user_email{:autofocus => "autofocus", :name => "user[email]", :placeholder => "メールアドレス", :size => "40", :type => "email"}/
+                    %input.wt-ui-button.wt-ui-button-blue{"data-disable-with" => "送信する", :name => "commit", :type => "submit", :value => "送信する"}/
+    %p#back-top
+      %a{:href => "#top"}
+        %img{:alt => "Page top icon", :src => "https://de7iszmjjjuya.cloudfront.net/assets/page-top-icon-e88562a7253cfde72225eeb1abc7f57e61f7a9ca32df6437d257988ac6b5c3ea.png"}/
+  #about_root_japan
+    .bg{:style => "background-image: url(\"https://de7iszmjjjuya.cloudfront.net/assets/about/root/bg_features-18ae01d71a928bfa0e88c4b47b374900538884195cea3e6c48c751f525a1a715.jpg\"); opacity: 1;"}
+    .hero
+      %video{:autoplay => "autoplay", :loop => "loop", :src => "https://dubpy8abnqmkw.cloudfront.net/videos/lp_background2.mp4", :style => "opacity: 0.1;"}
+      %header.header
+        %img.wantedly-logo{:alt => "Wantedly", :height => "22", :src => "https://de7iszmjjjuya.cloudfront.net/assets/about/root/img_header_logo-6029a9c96009b301c4010a967172a36ea214bd2f4e3ceb1830d6fbb8c3a9351f.png", :width => "151"}/
+        %ul.nav
+          %li
+            %a.ui-show-modal{"data-modal-options" => "{\"page\":\"login\",\"trigger\":\"japan_root_hero\"}", :href => "#login_modal"} ログイン
+          %li
+            %a{:href => "/"}
+            %a#header-recruiter{:href => "/about/list"} 採用担当者の方
+          %li.separator
+          %li.mobile-apps
+            %span iOS/Android アプリ
+            %a.android{:href => "https://play.google.com/store/apps/details?id=com.wantedly.android.visit&", :target => "_blank"}
+              %img{:alt => "Android", :height => "24", :src => "https://de7iszmjjjuya.cloudfront.net/assets/about/root/ic_android-fab51f2118632af06c1f9a1c3512755436bf892a38c27cf03832250ae70ea2d6.png", :width => "24"}/
+            %a.apple{:href => "https://itunes.apple.com/sg/app/wantedly-kokoroodoru-shi-shigakitto/id804727886?", :target => "_blank"}
+              %img{:alt => "iOS", :height => "24", :src => "https://de7iszmjjjuya.cloudfront.net/assets/about/root/ic_ios-71ca2f3f21f29d3c391acf5423fb3ec3af9f984f1fc3aa2fa912abe221759e0b.png", :width => "24", :opacity => "1"}/
+      .ja.visual
+        %h1.text.loaded
+          %img{:alt => "「はたらく」を面白く", :height => "72", :src => "https://de7iszmjjjuya.cloudfront.net/assets/about/root/img_visutal_text_ja-f59b30d3c5f12201cdfe39a9c6070d05358c1335d78614c0edd8c48cae5b4470.png", :width => "536"}/
+      .lead
+        %p
+          %b ウォンテッドリーは、月間200万人が利用するビジネスSNSです
+        %ul.buttons
+          %li.fb
+            %a#root-login.need-to-signin{"data-ref" => "root", :href => "javascript:;"} Facebookで今すぐログイン
+          %li.email
+            %a{:href => "/user/sign_up?ref=root"} Emailで登録
+      .more
+        %ul
+          %li
+            %img{:alt => "More", :height => "24", :src => "https://de7iszmjjjuya.cloudfront.net/assets/about/root/ic_chevron_bottom-3df843a38d23002d647276c1ff79901a834bd926f74e81ae4753e4565483b577.png", :width => "24"}/
+          %li
+            MORE ABOUT WANTEDLY
+    %section.sec-features{"data-background" => "https://de7iszmjjjuya.cloudfront.net/assets/about/root/bg_features-18ae01d71a928bfa0e88c4b47b374900538884195cea3e6c48c751f525a1a715.jpg"}
+      .container
+        %h2 共感で人や企業とつながり、シゴトでココロおどろう。無料です。
+        %ul
+          %li
+            %img{:alt => "", :height => "170", :src => "https://de7iszmjjjuya.cloudfront.net/assets/about/root/img_feature_visit_ja-06ea407612030299c12c97d56b1cd65e8d383b49a0d4c54919ba0d89c30a43e4.png", :width => "300"}/
+            %h3 であう
+            %p
+              キラっと光るプロジェクトや
+              %br>/
+              会社を見つけて、気軽に訪問しよう
+          %li
+            %img{:alt => "", :height => "170", :src => "https://de7iszmjjjuya.cloudfront.net/assets/about/root/img_feature_profile-53ef0cf437b04b5606bab0395bb4f738dff94b5231a7c6fe03a3c9c8c160234e.png", :width => "300"}/
+            %h3 つながる
+            %p
+              キャリアプロフィールを作成
+              %br>/
+              人脈を構築し、広げよう
+          %li
+            %img{:alt => "", :height => "170", :src => "https://de7iszmjjjuya.cloudfront.net/assets/about/root/img_feature_chat-05a57752a77dcfb581d825f0b49fa0393e8153e80fe030089a1aff0833cb4380.png", :width => "300"}/
+            %h3 つくる
+            %p
+              ビジネス専用グループチャット
+              %br>/
+              Wantedly Chat で生産性を倍に
+  %footer.long
+    #footer-inner
+      #home-footer-main
+        #footer-logo-and-like.cf
+          #footer-logo
+            %img{:alt => "Footer logo", :src => "https://de7iszmjjjuya.cloudfront.net/assets/footer-logo-6029a9c96009b301c4010a967172a36ea214bd2f4e3ceb1830d6fbb8c3a9351f.png"}/
+          #footer-facebook-page-like
+            .fb-like.fb_iframe_widget{"data-href" => "https://www.facebook.com/wantedly", "data-send" => "false", "data-show-faces" => "true", "data-width" => "374", "fb-iframe-plugin-query" => "app_id=234170156611754&container_width=778&href=https%3A%2F%2Fwww.facebook.com%2Fwantedly&locale=ja_JP&sdk=joey&send=false&show_faces=true&width=374", "fb-xfbml-state" => "rendered"}
+              %span{:style => "vertical-align: bottom; width: 374px; height: 56px;"}
+                %iframe{:allow => "encrypted-media", :allowfullscreen => "true", :allowtransparency => "true", :frameborder => "0", :height => "1000px", :name => "f3cdd4bc0477ee8", :scrolling => "no", :src => "https://www.facebook.com/v2.10/plugins/like.php?app_id=234170156611754&channel=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2F__Bz3h5RzMx.js%3Fversion%3D42%23cb%3Df1a5438942c3df8%26domain%3Dwww.wantedly.com%26origin%3Dhttps%253A%252F%252Fwww.wantedly.com%252Fff1a63d139ba64%26relation%3Dparent.parent&container_width=778&href=https%3A%2F%2Fwww.facebook.com%2Fwantedly&locale=ja_JP&sdk=joey&send=false&show_faces=true&width=374", :style => "border: none; visibility: visible; width: 374px; height: 56px;", :title => "fb:like Facebook Social Plugin", :width => "374px"}
+        #footer-links-and-contact
+          %ul.footer-menu-columns
+            %li
+              %p.footer-menu-head
+                サービス
+              %ul.footer-menu-column-single
+                %li
+                  %a{:href => "https://people.wantedly.com"} Wantedly People
+                %li
+                  %a{:href => "/chat"} Wantedly Chat
+                %li
+                  %a{:href => "/campaign/newgrad"} Wantedlyインターン
+                %li
+                  %a{:href => "/journals"} Wantedly Journal
+                %li
+                  %a{:href => "https://wantedly.stores.jp/", :target => "_blank"} Wantedly Store
+                %li
+                  %a{:href => "/developers"} 開発者向けAPI
+              %p.footer-menu-head{:style => "margin-top: 20px;"} アプリ
+              %ul.footer-menu-column-single
+                %li
+                  %a{:href => "https://itunes.apple.com/jp/app/jiu-huo-intanshippu-banwantedly/id951598320?"} Wantedlyインターン・就活 (iPhone)
+                %li
+                  %a{:href => "https://itunes.apple.com/sg/app/wantedly-kokoroodoru-shi-shigakitto/id804727886?"} 転職に使える会社訪問アプリWantedly Visit (iPhone/iPad)
+                %li
+                  %a{:href => "https://play.google.com/store/apps/details?id=com.wantedly.android.visit&"} 転職に使える会社訪問アプリWantedly Visit (Android)
+            %li
+              %p.footer-menu-head
+                Wantedlyについて
+              %ul.footer-menu-column-single
+                %li
+                  %a{:href => "/about/overview"} 使い方
+                %li
+                  %a{:href => "https://goo.gl/tEv435", :target => "_blank"} ヘルプ
+                %li
+                  %a{:href => "https://wantedlyinc.com/ja"} 運営会社
+                %li
+                  %a{:href => "/about/user_terms"} ユーザー向け利用規約
+                %li
+                  %a{:href => "/about/privacy"} プライバシー
+                %li
+                  %a{:href => "/about/users"} 採用された方の声
+                %li
+                  %a{:href => "/medical"} 医療向けWantedly Visit
+              %p.footer-menu-head
+                リンク
+              %ul.footer-menu-column-single
+                %li
+                  %a{:href => "/project_lists"} 特集一覧
+                %li
+                  %a{:href => "/campaign/shukatsu_mail_template"} 就活メール例文
+                %li
+                  %a{:href => "/resume"} できる履歴書
+                %li
+                  %a{:href => "/resume/way_of_writing"} 履歴書の書き方
+                %li
+                  %a{:href => "/newgrad"} 新卒採用
+                %li
+                  %a{:href => "/internship"} インターン・学生バイト
+                %li
+                  %a{:href => "/mid_career"} 中途採用
+                %li
+                  %a{:href => "/contract"} 副業・契約・委託
+            %li
+              %p.footer-menu-head
+                言語
+              %ul.footer-menu-column-single
+                %li
+                  %a{"data-language" => "en", :href => "https://en-jp.wantedly.com/", :rel => "nofollow", "switch-locale-link" => "true"} English
+              %p.footer-menu-head
+                国
+              .available-countries-wrapper.footer-menu-column-single
+                .current-country 日本
+                .available-countries-inner
+                  %ul
+                    %li
+                      %a{"data-country" => "singapore", :href => "https://sg.wantedly.com/", :rel => "nofollow", "switch-locale-link" => "true"} シンガポール
+                    %li
+                      %a{"data-country" => "hong_kong", :href => "https://hk.wantedly.com/", :rel => "nofollow", "switch-locale-link" => "true"} 香港
+                    %li
+                      %a{"data-country" => "germany", :href => "https://de.wantedly.com/", :rel => "nofollow", "switch-locale-link" => "true"} ドイツ
+              %p.footer-menu-head{:style => "margin-top: 40px;"}
+                採用担当者の方へ
+              %ul.footer-menu-column-single
+                %li
+                  %a{:href => "/about/list"} 採用担当者の方はこちら
+                %li
+                  %a{:href => "https://hr.wantedly.com/", :target => "_blank"} 人事アンテナ
+                %li
+                  %a{:href => "https://wantedly.zendesk.com/hc/ja/requests/new", :target => "_blank"} お問い合わせ
+            %li.footer-feedback-form
+              #footer-feedback
+                %form{"accept-charset" => "UTF-8", :action => "/feedbacks", "data-remote" => "true", :method => "post"}
+                  %input{:name => "authenticity_token", :type => "hidden", :value => "srfTMKp400PWy9IdLWzrL2yZr5g3EpjA6y3iFotUz8bSvJ4l9yNFqCGceVaDCBbapgXJ2iU2I5SfzrSBVsnG8w=="}/
+                  %input#feedback_human{:name => "human", :type => "hidden"}/
+                  %textarea#feedback{:name => "message", :placeholder => "Wantedlyについてご意見をお願いします。※ご返答を要するお問合せの場合には、ログインするかメールアドレスを記載の上ご連絡下さい。", :rows => "4"}
+                  %br/
+                %a.ui-show-modal.footer-feedback.wt-ui-button{:href => "#feedback-confirm"} Wantedlyに意見を送る
