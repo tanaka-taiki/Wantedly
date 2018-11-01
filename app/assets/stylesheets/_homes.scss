@@ -462,11 +462,13 @@
         opacity: .9;
         -webkit-text-fill-color: transparent;
         -webkit-background-clip: text;
+        background-image: unset;
         h1{
           background: rgba(0,0,0,0.08);
           font-size: 2em;
           line-height: 1.5;
           img{
+            background-image: unset;
             display: block;
             background-clip:text;
           }

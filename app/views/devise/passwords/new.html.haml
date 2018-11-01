@@ -1,0 +1,8 @@
+.forgot-password-container{"data-title" => "パスワードの再設定"}
+  %p パスワードを再設定するためのリンクを、あなたのメールアドレスにお送りします。
+  %form#password_new_user.new_user{"accept-charset" => "UTF-8", :action => "/user/password", :method => "post"}
+    %input{:name => "authenticity_token", :type => "hidden", :value => "lE4660k1D1J7iNWuM3k7t436yKpzPWT5lTIFBamp/bj0RXf+FG6ZuYzffuWdHcZCR2au6GEZ363h0VOSdDT0jQ=="}/
+    %label{:for => "password_user_email"}
+      %input#password_user_email{:autofocus => "autofocus", :name => "user[email]", :placeholder => "メールアドレス", :size => "40", :type => "email"}/
+    %input.wt-ui-button.wt-ui-button-blue{"data-disable-with" => "送信する", :name => "commit", :type => "submit", :value => "送信する"}/
+

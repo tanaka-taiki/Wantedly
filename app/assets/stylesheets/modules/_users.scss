@@ -1,0 +1,280 @@
+// Place all the styles related to the users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+#login_modal.closable-by-click.ui-modal-wrapper{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  overflow: scroll;
+  display: none;
+  .ui-modal-close.ui-modal-overlay{
+    height: 644px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    z-index: -1;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
+    opacity: 0.9;
+    display: block;
+    span{
+      display: block;
+      position: absolute;
+      top: 30px;
+      right: 30px;
+      color: #9DA0A4;
+      font-size: 24px;
+      cursor: pointer;
+      i{
+        display: inline-block;
+        width: auto;
+        height: auto;
+        line-height: normal;
+        vertical-align: baseline;
+        background-image: none;
+        background-position: 0% 0%;
+        background-repeat: repeat;
+        margin-top: 0;
+      }
+    }
+  }
+  .ui-modal-contents-container{
+    height: 644px;
+    display: block;
+    .ui-modal-contents-inner{
+      max-width: 400px;
+      border-radius: 4px;
+      box-shadow: 0 4px 4px 0 rgba(0,0,0,0.05);
+      top: 50px;
+      margin-top: 0px;
+      .ui-modal-contents-title{
+        padding: 25px;
+        border: none;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 1.6;
+        border-bottom: 1px solid #EBEDEF;
+        padding: 15px 20px;
+        color: #24282A;
+        p{
+          font-size: 24px;
+          line-height: normal;
+          letter-spacing: -0.2px;
+          text-align: center;
+          color: #45494b;
+        }
+      }
+      .ui-modal-contents{
+        padding-top: 0;
+        display: block;
+        padding: 20px;
+        .login-modal-wrapper{
+          display: block;
+          .login-container.active{
+            padding: 0 30px 20px 30px;
+            display: block;
+            .login-buttons{
+              display: -webkit-flex;
+              display: flex;
+              -webkit-justify-content: space-between;
+              justify-content: space-between;
+              margin-bottom: 20px;
+              a{
+                flex: 1;
+                color: white;
+                line-height: 50px;
+                text-align: center;
+                height: 50px;
+                border-radius: 4px;
+                transition: opacity .4s ease-in-out;
+                background-color: #5172dc;
+              }
+            }
+            .or-wrapper{
+              font-size: 16px;
+              font-weight: normal;
+              font-style: normal;
+              font-stretch: normal;
+              line-height: normal;
+              letter-spacing: 0.6px;
+              text-align: center;
+              margin-bottom: 20px;
+              display: block;
+              span{
+                background-color: #fff;
+                display: inline-block;
+                padding: 0 15px;
+                position: relative;
+                z-index: 1;
+              }
+              hr{
+                position: relative;
+                top: -8px;
+                background-color: #979797;
+                border: none;
+                height: 1px;
+                margin: 0;
+              }
+            }
+            .login-email{
+              display: block;
+              form{
+                margin: 0px;
+                padding: 0px;
+                background: none repeat scroll 0 0;
+                border: 0px solid #DDDDDD;
+                border-radius: 5px;
+                display: block;
+                input{
+                  -webkit-appearance: initial;
+                  background-color: initial;
+                  cursor: default;
+                  padding: initial;
+                  border: initial;
+                }
+                label{
+                  display: block;
+                  margin-bottom: 10px;
+                  cursor: pointer;
+                  input{
+                    border-radius: 3px;
+                    border: 1px solid #ccc;
+                    width: 100%;
+                    height: 40px;
+                    padding: 0 10px;
+                    box-sizing: border-box;
+                    letter-spacing: .5px;
+                    background: white;
+                  }
+                }
+                .forgot-password-wrapper{
+                  text-align: center;
+                  margin-bottom: 30px;
+                  margin-top: 20px;
+                  display: block;
+                  a{
+                    font-size: 14px;
+                    font-weight: 600;
+                    font-style: normal;
+                    font-stretch: normal;
+                    line-height: normal;
+                    letter-spacing: 0.3px;
+                    color: #00a4bb;
+                  }
+                }
+                .action-wrapper{
+                  text-align: center;
+                  display: block;
+                  input{
+                    width: 100%;
+                    height: 50px;
+                    border-radius: 4px;
+                    border: none;
+                    margin-bottom: 30px;
+                    display: block;
+                    transition: background-color .4s ease-in-out;
+                    font-size: 16px;
+                  }
+                  hr{
+                    margin-bottom: 20px;
+                    background-color: #979797;
+                    border: none;
+                    height: 1px;
+                    margin: 0;
+                  }
+                  .register{
+                    display: flex;
+                    -webkit-justify-content: space-between;
+                    justify-content: space-between;
+                    span{
+                      display: block;
+                      line-height: 40px;
+                      height: 40px;
+                      font-size: 14px;
+                      font-style: normal;
+                      font-stretch: normal;
+                      letter-spacing: 0.3px;
+                      color: #45494b;
+                    }
+                    a{
+                      width: 80px;
+                      height: 40px;
+                      border-radius: 3px;
+                      border: solid 1px #6cc644;
+                      box-sizing: border-box;
+                      color: #6cc644 !important;
+                      padding: 5px;
+                      background: none;
+                      transition: background-color .4s ease-in-out;
+                      line-height: 28px;
+                      letter-spacing: 0.6px;
+                      font-weight: normal;
+                      opacity: 0.8;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.forgot-password-container{
+  display: none;
+  padding: 0 30px 30px 30px;
+  p{
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 0.2px;
+    color: #45494b;
+    margin-bottom: 50px;
+  }
+  form{
+    margin: 0px;
+    padding: 0px;
+    background: none repeat scroll 0 0;
+    border: 0px solid #DDDDDD;
+    border-radius: 5px;
+    input{
+      -webkit-appearance: initial;
+      background-color: initial;
+      cursor: default;
+      padding: initial;
+      border: initial;
+    }
+    label{
+      display: block;
+      margin-bottom: 20px;
+      cursor: pointer;
+      input{
+        border-radius: 3px;
+        border: 1px solid #ccc;
+        width: 100%;
+        height: 40px;
+        padding: 0 10px;
+        box-sizing: border-box;
+        letter-spacing: .5px;
+        background: white;
+      }
+    }
+    input{
+      width: 100%;
+      height: 50px;
+      border-radius: 4px;
+      border: none;
+      display: block;
+      transition: background-color .4s ease-in-out;
+      font-size: 16px;
+    }
+  }
+}

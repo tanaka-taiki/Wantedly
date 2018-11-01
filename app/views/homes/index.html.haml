@@ -51,10 +51,10 @@
         %img.wantedly-logo{:alt => "Wantedly", :height => "22", :src => "https://de7iszmjjjuya.cloudfront.net/assets/about/root/img_header_logo-6029a9c96009b301c4010a967172a36ea214bd2f4e3ceb1830d6fbb8c3a9351f.png", :width => "151"}/
         %ul.nav
           %li
-            %a.ui-show-modal{"data-modal-options" => "{\"page\":\"login\",\"trigger\":\"japan_root_hero\"}", :href => "#login_modal"} ログイン
+            %a.ui-show-modal{"data-modal-options" => "{\"page\":\"login\",\"trigger\":\"japan_root_hero\"}", :href => "/users/sign_in#login_modal"} ログイン
           %li
             %a{:href => "/"}
-            %a#header-recruiter{:href => "/about/list"} 採用担当者の方
+            %a#header-recruiter{:href => "/abouts/"} 採用担当者の方
           %li.separator
           %li.mobile-apps
             %span iOS/Android アプリ
@@ -72,7 +72,7 @@
           %li.fb
             %a#root-login.need-to-signin{"data-ref" => "root", :href => "javascript:;"} Facebookで今すぐログイン
           %li.email
-            %a{:href => "/user/sign_up?ref=root"} Emailで登録
+            %a{:href => "/users/sign_up?ref=root"} Emailで登録
       .more
         %ul
           %li
