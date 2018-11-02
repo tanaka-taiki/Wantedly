@@ -1,32 +1,28 @@
-#login_modal.closable-by-click.ui-modal-wrapper{"data-modal-options" => "{\"page\":\"login\",\"trigger\":\"japan_root_hero\"}", :style => "overflow: scroll;"}
-  .ui-modal-close.ui-modal-overlay{:style => "height: 644px;"}
-    %span.ui-modal-close
-      %i.icon-remove
-  .ui-modal-contents-container{:style => "height: 644px;"}
-    .ui-modal-contents-inner{:style => "top: 50px; margin-top: 0px;"}
-      .ui-modal-contents-title
-        %p.title
-          ログイン
-      .ui-modal-contents
-        .login-modal-wrapper
-          .login-container.active{"data-title" => "ログイン"}
-            .login-buttons
-              %a.login-button.facebook{:href => "https://www.wantedly.com/user/auth/facebook?ref=root_header_signup"} Facebook
-            .or-wrapper
-              %span または
-              %hr/
-            .login-email
-              %form#login_new_user.new_user{"accept-charset" => "UTF-8", :action => "/user/sign_in", :method => "post"}
-                %input{:name => "authenticity_token", :type => "hidden", :value => "lE4660k1D1J7iNWuM3k7t436yKpzPWT5lTIFBamp/bj0RXf+FG6ZuYzffuWdHcZCR2au6GEZ363h0VOSdDT0jQ=="}/
-                %label{:for => "login_user_email"}
-                  %input#login_user_email{:autofocus => "autofocus", :name => "user[email]", :placeholder => "メールアドレス", :type => "email"}/
-                %label{:for => "login_user_password"}
-                  %input#login_user_password{:autocomplete => "off", :name => "user[password]", :placeholder => "パスワード", :type => "password"}/
-                .forgot-password-wrapper
-                  %a.forgot-password{:href => "password/new"} パスワードをお忘れですか？
-                .action-wrapper
-                  %input.wt-ui-button.wt-ui-button-blue{"data-disable-with" => "ログイン", :name => "commit", :type => "submit", :value => "ログイン"}/
-                  %hr/
-                  .register
-                    %span Wantedlyは初めてですか？
-                    %a.wt-ui-button{:href => "sign_up"} 登録
+.ui-modal-contents-container{:style => "height: 644px;"}
+  .ui-modal-contents-inner{:style => "top: 50px; margin-top: 0px;"}
+    .ui-modal-contents-title
+      %p.title
+        ログイン
+    .ui-modal-contents
+      .login-modal-wrapper
+        .login-container.active{"data-title" => "ログイン"}
+          .login-buttons
+            %a.login-button.facebook{:href => "https://www.wantedly.com/user/auth/facebook?ref=root_header_signup"} Facebook
+          .or-wrapper
+            %span または
+            %hr/
+          .login-email
+            %form#login_new_user.new_user{"accept-charset" => "UTF-8", :action => "/user/sign_in", :method => "post"}
+              %input{:name => "authenticity_token", :type => "hidden", :value => "lE4660k1D1J7iNWuM3k7t436yKpzPWT5lTIFBamp/bj0RXf+FG6ZuYzffuWdHcZCR2au6GEZ363h0VOSdDT0jQ=="}/
+              %label{:for => "login_user_email"}
+                %input#login_user_email{:autofocus => "autofocus", :name => "user[email]", :placeholder => "メールアドレス", :type => "email"}/
+              %label{:for => "login_user_password"}
+                %input#login_user_password{:autocomplete => "off", :name => "user[password]", :placeholder => "パスワード", :type => "password"}/
+              .forgot-password-wrapper
+                %a.forgot-password{:href => "password/new"} パスワードをお忘れですか？
+              .action-wrapper
+                %input.wt-ui-button.wt-ui-button-blue{"data-disable-with" => "ログイン", :name => "commit", :type => "submit", :value => "ログイン"}/
+                %hr/
+                .register
+                  %span Wantedlyは初めてですか？
+                  %a.wt-ui-button{:href => "sign_up"} 登録
