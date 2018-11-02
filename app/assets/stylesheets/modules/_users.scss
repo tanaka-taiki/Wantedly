@@ -247,3 +247,321 @@
     }
   }
 }
+
+#header.cf{
+  min-width: 980px;
+  height: 60px;
+  position: relative;
+  display: block;
+  #header-inner{
+    display: block;
+    .signup{
+      display: block;
+      .global-menu-wrapper.cf{
+        float: left;
+        display: block;
+        .header-logo{
+          float: left;
+          a{
+            padding: 19px;
+            display: block;
+            img{
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+#main.registrations-controller.registrations-new.action-new.cf{
+  display: block;
+  #main-inner.cf{
+    padding: 0;
+    margin: 0 auto;
+    width: 980px;
+    .main-body{
+      width: 590px;
+      margin-right: 40px;
+      padding: 40px 40px 40px 0;
+      border-right: 1px solid #D7DBDF;
+      float: left;
+      display: block;
+      h1{
+        font-weight: 600;
+        font-size: 22px;
+      }
+      #confirm-email-and-signup{
+        border: 1px solid #D7DBDF;
+        margin: 20px 0 40px;
+        padding: 50px 40px 40px;
+        position: relative;
+        display: block;
+        form{
+          margin: 0px;
+          padding: 0px;
+          background: none repeat scroll 0 0;
+          border: 0px solid #DDDDDD;
+          border-radius: 5px;
+          input{
+            -webkit-appearance: initial;
+            background-color: initial;
+            cursor: default;
+            padding: initial;
+            border: initial;
+          }
+          #country{
+            -webkit-appearance: initial;
+            background-color: initial;
+            cursor: default;
+            padding: initial;
+            border: initial;
+          }
+          .confirm-email-block{
+            margin-bottom: 18px;
+            display: block;
+            span{
+              min-width: 120px;
+              display: inline-block;
+            }
+            #name_ja{
+              padding: 10px;
+              border-radius: 3px;
+              border: 1px solid #D7DBDF;
+            }
+          }
+          .confirm-email-block{
+            margin-bottom: 18px;
+            display: block;
+            span{
+              min-width: 120px;
+              display: inline-block;
+            }
+            #gender_cd_m{
+              -webkit-appearance: radio;
+              box-sizing: border-box;
+              background-color: initial;
+              cursor: default;
+              margin: 3px 0.5ex;
+              padding: initial;
+              border: initial;
+            }
+            #gender_cd_f{
+              -webkit-appearance: radio;
+              box-sizing: border-box;
+              background-color: initial;
+              cursor: default;
+              margin: 3px 0.5ex;
+              padding: initial;
+              border: initial;
+            }
+            #gender_cd_error{
+              min-width: 120px;
+              display: inline-block;
+            }
+          }
+          .confirm-email-block{
+            margin-bottom: 18px;
+            display: block;
+            span{
+              min-width: 120px;
+              display: inline-block;
+            }
+            #birthday_year{
+              padding: 3px 4px;
+              border: 1px solid #D7DBDF;
+              border-radius: 3px;
+              overflow: visible !important;
+              option{
+                display: block;
+                white-space: pre;
+                min-height: 1.2em;
+                padding: 0px 2px 1px;
+              }
+            }
+            #birthday_month{
+              padding: 3px 4px;
+              border: 1px solid #D7DBDF;
+              border-radius: 3px;
+              overflow: visible !important;
+              option{
+                display: block;
+                white-space: pre;
+                min-height: 1.2em;
+                padding: 0px 2px 1px;
+              }
+            }
+            #birthday_day{
+              padding: 3px 4px;
+              border: 1px solid #D7DBDF;
+              border-radius: 3px;
+              overflow: visible !important;
+              option{
+                display: block;
+                white-space: pre;
+                min-height: 1.2em;
+                padding: 0px 2px 1px;
+              }
+            }
+            #birthday_error{
+              min-width: 120px;
+              display: inline-block;
+            }
+          }
+          .confirm-email-block{
+            margin-bottom: 18px;
+            display: block;
+            span{
+              min-width: 120px;
+              display: inline-block;
+            }
+            #email{
+              padding: 10px;
+              border: 1px solid #D7DBDF;
+              border-radius: 3px;
+            }
+          }
+          .confirm-email-block{
+            margin-bottom: 18px;
+            span{
+              min-width: 120px;
+              display: inline-block;
+            }
+            #password{
+              padding: 10px;
+              border: 1px solid #D7DBDF;
+              border-radius: 3px;
+            }
+          }
+          .signup-up-captions{
+            border-top: 1px solid #D7DBDF;
+            font-size: 12px;
+            padding-top: 20px;
+            margin: 40px 0 15px;
+            position: relative;
+            display: block;
+            #agree{
+              -webkit-appearance: radio;
+              box-sizing: border-box;
+              background-color: initial;
+              cursor: default;
+              margin: 3px 0.5ex;
+              padding: initial;
+              border: initial;
+            }
+            label{
+              display: inline-block;
+              cursor: pointer;
+              a{
+                opacity: 0.8;
+              }
+              a{
+                opacity: 0.8;
+              }
+            }
+          }
+          .wt-ui-button.wt-ui-button-green.wt-ui-button-large{
+            background: #6CC644;
+            border-color: #4f8338;
+            color: #fff !important;
+            border-radius: 4px;
+            font-weight: normal;
+            height: 60px;
+            line-height: 60px;
+            font-size: 18px;
+            padding: 0 70px;
+          }
+          .signin-link{
+            margin-top: 40px;
+            .email-signin-button{
+              opacity: 0.8;
+            }
+          }
+          .change-registration-language{
+            float: right;
+            font-size: 11px;
+            display: block;
+            #signup-change-lang{
+              color: #9DA0A4;
+            }
+          }
+        }
+      }
+      #footer-facebook.fb-like.fb_iframe_widget{
+        margin: 20px 0 0 0;
+        float: left;
+        display: inline-block;
+        position: relative;
+        span{
+          vertical-align: bottom;
+          width: 590px;
+          height: 56px;
+          display: inline-block;
+          position: relative;
+          text-align: justify;
+          iframe{
+            border: none;
+            visibility: visible;
+            width: 590px;
+            height: 56px;
+            position: absolute;
+          }
+        }
+      }
+    }
+    .right-side-message{
+      padding: 40px 0 40px;
+      width: 290px;
+      float: left;
+      display: block;
+      h2{
+        font-size: 17px;
+        font-weight: 600;
+        margin-bottom: 20px;
+        display: block;
+      }
+      p{
+        font-size: 13px;
+        color: #6A6E71;
+        margin-bottom: 10px;
+        display: block;
+      }
+      h3{
+        font-size: 14px;
+        margin: 30px 0 15px;
+        font-weight: 600;
+        display: block;
+      }
+      p{
+        font-size: 13px;
+        color: #6A6E71;
+        margin-bottom: 10px;
+        display: block;
+          }
+    }
+  }
+  #back-top{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s, visibility 0.5s;
+    display: block;
+    a{
+      display: block;
+      opacity: 0;
+      img{
+        width: 40px;
+        height: 40px;
+        display: block;
+      }
+    }
+  }
+}
+
+
+
+
+
+

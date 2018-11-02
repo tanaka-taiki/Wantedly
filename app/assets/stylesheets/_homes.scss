@@ -459,10 +459,10 @@
         top: 50%;
         left: 50%;
         margin-top: -96px;
-        opacity: .9;
-        -webkit-text-fill-color: transparent;
+        // opacity: .9;
+        background-color: black;
+        -webkit-text-fill-color: rgba(0,0,0,0);;
         -webkit-background-clip: text;
-        background-image: unset;
         h1{
           background: rgba(0,0,0,0.08);
           font-size: 2em;
